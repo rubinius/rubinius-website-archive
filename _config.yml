@@ -1,5 +1,5 @@
 ---
-markdown: kramdown
+markdown: rdiscount
 pygments: true
 permalink: pretty
 host: http://rubini.us
