@@ -4,29 +4,28 @@ title: Concurrent garbage collection
 author: Dirkjan Bussink
 ---
 
-Just yesterday my work on making the Rubinius garbage collector more
-concurrent has landed. In this post I'll describe how this work was done
-and what the ideas behind it and pitfalls encountered are. Hopefully
-you'll better understand what this concurrent garbage collector means
-for your Ruby program and how it works. I have explicitly chose to keep
-things like benchmark and performance numbers out. These are good
-material for a separate blog post, but this is already long enough in
-it's current form.
+Just a few days ago my work on making the Rubinius garbage collector more
+concurrent has landed in Rubinius master. In this post I'll describe how
+this work was done and what the ideas behind it and pitfalls encountered
+are. Hopefully after reading this post, you'll better understand what
+concurrent garbage collection means for your Ruby programs and how they
+operate. Note that I have explicitly chosen to keep things like benchmark
+and performance numbers out of this post - it is long enough as is.
 
 ### In the beginning there were long pauses
 
-Everybody with a somewhat complex app usually knows about them, garbage
-collection pauses. They often result in wildly varying performance of
-your web requests and cause performance issues in unexpecting
-situations. There is a lot of work done on working around these issues,
-such as out of band garbage collection done with servers such as Unicorn
-and Passenger.
+Garbage Collection pauses: anyone with a somewhat complex app usually
+knows about them. They often result in wildly varying performance of
+your web requests and cause performance issues in unexpected
+situations. There has been a lot of effort put towards working around
+these issues, such as out of band garbage collection done with servers
+such as Unicorn and Passenger. Honestly, I think these techniques are
+very useful but in essence still workarounds because of a deeper
+problem in MRI.
 
-Honestly, I think these techniques are very useful but in essence still
-workarounds because of a deeper problem in MRI. With this work on
-concurrent garbage collection, these long pauses are a thing of the past
-in Rubinius. You can run a single process application server and see
-stable and fast performance in highly concurrent scenario's.
+With this work on concurrent garbage collection, long pauses are a
+thing of the past in Rubinius. You can run a single process application
+server and see stable and fast performance in highly concurrent scenarios.
 
 So for this post I'll first introduce some fundamental concepts that we
 needed to make explicit in Rubinius to support concurrent garbage
@@ -40,38 +39,40 @@ correct and relevant even when things are changing in the future.
 
 For people having some knowledge about garbage collection theory, the
 term tri-color invariant probably sounds familiar. It is a term that
-describes a property of the system that is important on being able to
+describes a property of the system that is important in being able to
 garbage collect properly without for example cleaning up used data.
 
-The tri-color invariant defines three different states for an object
-call white, grey and black. Each of these states describes the state of
-an object during a garbage collection phase. The first state is a white
-object. This is an object that the garbage collector hasn't seen yet
+The tri-color invariant defines three different states for an object:
+white, grey and black. Each of these states describes the state of an
+object during a garbage collection phase.
+
+**White objects** are objects that the garbage collector hasn't seen yet
 and doesn't know about yet. It might be found in the future, or it might
 not if it's actually garbage and not a reachable object.
 
-The second state is a grey object. This is an object that the garbage
+**Grey objects** are objects that the garbage
 collector has seen, but hasn't completely handled yet. By handling I
-mean that this object has not been complete scanned for references to
+mean that this object has not been completely scanned for references to
 other objects. This means for example that we haven't visited the class
-or instance variables table in Rubinius. The final state is a black
-object. This is an object that has been seen by the garbage collector
+or instance variables table in Rubinius.
+
+**Black objects** have been seen by the garbage collector
 and also has been scanned. This means that this object is handled and
-doesn't need to be revisited in the future.
+doesn't need to be revisited again during the current phase.
 
 Garbage collection works in different phases. The first phase is to
 start and mark objects known as roots. Roots are objects that we define
-as always reachable and who should never be cleaned up. One in example
-of these in Rubinius are the built-in classes. We never want to clean up
+as always reachable and who should never be cleaned up. One example
+of these in Rubinius are the built-in classes. We never want to garbage collect
 Module, Class or Object. Another group of root objects are the objects
-current on the stack when we garbage collect. These might be used still
+currently on the stack when we garbage collect. These might be used still
 after the garbage collection finishes and the application continues to run.
 
-When we start the garbage collection cycle, we start with making the
-roots grey. This is done in Rubinius by marking them and adding them to
-a list of objects that are going to be scanned in the future. This
-allows us to do garbage collection without having to use recursion here,
-which could lead to very deep call stacks and potential stack overflows.
+When we start the garbage collection cycle, we make the roots grey. This
+is done in Rubinius by marking them and adding them to a list of objects
+that are going to be scanned in the future. This allows us to do garbage
+collection without having to use recursion here, which could lead to very
+deep call stacks and potential stack overflows.
 
 When we have done this, we start handling the so called mark stack. We
 pop off an object and scan it. This makes the object implicitly black,
@@ -81,16 +82,17 @@ sometimes implied by the total system state. They are a tool for
 reasoning about garbage collection, not a design for how you must write
 an algorithm.
 
-During the scanning of an object we might encounter new objects, which
-in the invariant are called white. We mark them and add them to the
-mark stack as well making them grey. This process of handling the mark
-stack continues until the entire mark stack is empty. At that point we
-know that all the reachable objects are now black and the remaining
-objects can be cleaned up.
+During the scanning of an object we might encounter new ("white") objects.
+We mark them and add them to the mark stack as well, thus making them grey.
+This process of handling the mark stack continues until the entire mark
+stack is empty. At that point we know that all the reachable objects are
+now black and the remaining objects can be cleaned up.
 
-From these steps you can see the following invariant. A black object
-never points to a white object, but always only to grey objects. This
-invariant is important because if it would be violated, we would clean
+From these steps you can see the following invariant:
+
+> "A black object never points to a white object, but always only to grey or other black objects."
+
+This invariant is important because if it were to be violated, we would clean
 up a white object if it would be never marked. But that would mean the
 black object would refer to garbage instead of a valid object.
 
@@ -102,31 +104,30 @@ where violation of the invariant might happen in a concurrent scenario.
 
 The simplest example is the following. When we start to handle the mark
 stack, we scan objects and make them implicitly black. Now imagine the
-case where our code that also keeps running writes an unseen white
+case where our code (that still runs during GC) writes an unseen white
 object into that already scanned black object. In this case we can't
 guarantee the tri-color invariant because our application might change
 things behind our back without the garbage collector knowing about it.
 
 So the question is, what would be a solution for this problem? Well, the
 obvious thing would be to make sure we run some additional checks when
-we encounter the scenario of a white object being writting into a black
-object. This however means, that we have to make sure we can catch all
+we encounter the scenario of a white object being writing into a black
+object. This means, however, that we have to make sure we can catch all
 these cases where this happens. What if somewhere in the virtual machine
 we would assign a variable and not run this code? It would mean breaking
 the invariant and that leads to memory corruption down the road.
 
-This is actually a first time we can leverage existing mechanisms in
-Rubinius, making this much easier to implement. Rubinius garbage
-collector already has another property, namely that it is generational.
-This means we have multiple generations of objects that we can collect
-separately.
+This situation represents a triumph in the history of Rubinius engineering -
+because the VM already had a Generational GC and no global interpreter
+lock, the work that went toward making the GC concurrent was much simpler.
+Let's try to understand why.
 
 ### The write barrier
 
 In generational collection, we have a problem that is somewhat similar
 to the tri-color invariant problem here under concurrent garbage
-collection. Generational garbage collection comes from the generational
-hypothesis, that basically states that objects tend to die young. One
+collection. Generational garbage collection stems from the "weak generational
+hypothesis" which states that "objects tend to die young." One
 obvious example of this can be found in Rails. The objects loaded in
 your Rails app often consist of two classes of objects.
 
@@ -153,7 +154,7 @@ additional check when writing an object into another object.
 
 The code running these checks is called a write barrier, because it's a
 piece of code that is being run on each write of object into another
-object. What exactly the code is we need to run, depends on the use
+object. What exactly this code is depends on the use
 case. We have already described two of them now, one for generational
 and one for concurrent garbage collection.
 
@@ -167,10 +168,10 @@ set.
 
 The remember set is a set of objects that is used to scan for young
 objects during a generational collection. This is needed for the cases
-where we store a young object into a mature object. What we do is store
-the mature object in the remember set, so we can scan it when we do a
-young collection. This makes sure we follow all the paths which through
-a young object is reachable.
+where we store a reference to a young object into a mature object. What
+we do is store the mature object in the remember set, so we can scan it
+when we do a young collection. This makes sure we follow all the paths
+which through a young object is reachable.
 
 ### Changing the write barrier for concurrent GC
 
@@ -203,13 +204,13 @@ again in the future.
 The first solution has the advantage of moving the collection forward,
 not backward like the second solution. It does however have the downside
 that it could keep objects alive longer than the second solution would.
-In the implementation for Rubinius we've chosen for the first option,
+In the implementation for Rubinius we've chosen the first option,
 mainly because it proved to be the simplest to implement and it moves
 the so-called wavefront forward.
 
-The other we need for this check, is knowing whether an object is white,
+The other thing we need for this check is to know whether an object is white,
 grey or black. As you might remember, I've said before that these states
-might not be explicitly modelled. This was actually the case in
+might not be explicitly modeled. This was actually the case in
 Rubinius. There was a way to determine that an object was black, namely
 when it was marked but not in the mark stack anymore. The first check is
 easy and cheap, but the second check isn't. We would have to scan the
@@ -247,7 +248,7 @@ to store additional information.
 We could have solved this basically in two ways, one would be to just
 use a single bit as the scanned state. This would work fine, but it
 would make updating the header with this bit more expensive in certain
-concurrent scenario's, where we would end up doing a compare and swap
+concurrent scenarios, where we would end up doing a compare and swap
 operation twice instead of once.
 
 Therefore we opted for merging it with the mark bits. This means that
@@ -295,7 +296,7 @@ are necessary because the JIT basically emits the assembly code for the
 write barrier directly, so it also needs to emit the new version of the
 code.
 
-There is one thing here, that might strike some as surprising. That is
+There is one thing here that might strike some as surprising. That is
 the fact that we actually set the scanned state before scanning the
 object. This is not a bug, but deliberate, since otherwise there is a
 race condition possible. The race condition would be that a scan of on
@@ -368,8 +369,8 @@ supporting another feature, which is described in the next section.
 
 ### Running young collections while concurrently marking
 
-So on thing that is of concern with doing a concurrent garbage
-collection of the whole program, is what happens to the young
+One thing that is of concern when doing a concurrent garbage
+collection of the whole program is what happens to the young
 generation. As explained earlier, Rubinius has a generational garbage
 collector, so we run different styles of collection at different times.
 Only when a young collection can't satisfy memory release, or we have
@@ -377,7 +378,7 @@ allocated a lot in mature space, we trigger a full concurrent
 collection.
 
 The easiest way to prevent this issue is of course preventing a young
-collection from happening while we're concurrenly marking. This however,
+collection from happening while we're concurrently marking. This however,
 introduces a significant problem. The problem is that when this happens,
 any allocation that would normally create a young object can't succeed.
 This means those objects would be allocated as mature objects,
@@ -408,7 +409,7 @@ This also applies to the set that is tracked by the write barrier.
 ### Inflated headers and code resources
 
 Another solution to the problem of writing white objects into black ones
-is actually by always make all objects grey if they are allocated during
+is to always make all objects grey if they are allocated during
 a concurrent garbage collection cycle. This approach is similar to how
 we solved problems with other managed resources that aren't Ruby
 objects.
@@ -438,10 +439,10 @@ objects that will stick around longer, for example because they are used
 as a lock.
 
 The second case is code resources. Code resources are things like code
-compile into the virtual machine representation of bytecode, or native
+compiled into the virtual machine representations of bytecode, or native
 code created for jitted functions.
 
-Here also the same approach is used, by always allocating them with the
+Here we use the same approach: always allocate them with the
 current mark. Code resources are also very likely to stay around, since
 often code gets executed more than once. This approach here is also the
 simplest for fixing issues related to this problem.
@@ -497,7 +498,7 @@ Immix algorithm used.
 What would happen if a marked object was promoted is that the mark was
 retained. This means however, that the underlying Immix memory space was
 not marked. This means that during the sweep phase the memory was
-incurrectly seen as not in use and reclaimed. This leads to memory
+incorrectly seen as not in use and reclaimed. This leads to memory
 corruption because now a piece of memory is used for two different
 objects.
 
@@ -508,37 +509,29 @@ would go through the write barrier and will be scheduled for proper
 marking in the future. This will result in the underlying memory to be
 also marked and the problem is gone.
 
-The solution to this problem is actually very simple. The only thing we
-have to do is when an object is promoted, is to remove the mark. This
-makes sure that when this object is stored into some other object, it
-would go through the write barrier and will be scheduled for proper
-marking in the future. This will result in the underlying memory to be
-also marked and the problem is gone.
-
-// TODO: Update with proper # reference
-[Introducing concurrent mature mark phase](https://github.com/rubinius/rubinius/commit/22c8c9c72e35be71d4258f00e57d8e9bb1f91a2f "Introducing concurrent mature mark phase")
+[Introducing concurrent mature mark phase](https://github.com/rubinius/rubinius/commit/22c8c9c72e35be71d4258f00e57d8e9bb1f91a2f#L14R488 "Introducing concurrent mature mark phase")
 
 ### Concurrency, forking and deadlock hell
 
 One of the most difficult features to get working correctly in a
 concurrent virtual machine like Rubinius is forking. I can perfectly
 understand the reason for the JVM not supporting this, besides it not
-being cross platform. It needs careful orchestrating of all the threads
+being cross platform. It requires careful orchestration of all the threads
 to prevent the child process from ending up in a problematic state.
 
 Of course, since we added a new thread for concurrent marking, this also
-introduced a deadlock that could easiest be triggered by forking. This
-was show in a Sidekiq app that relied on forking to spawn subprocesses
+introduced a deadlock that could be triggered by forking easily. This
+was evident in a Sidekiq app that relied on forking to spawn subprocesses
 with the fork and exec pattern.
 
 The problem here was that we still had the lock that is used to
 safeguard the internals of the marker thread, while also waiting for a
 stop the world pause. This stop the world pause would then be triggered
-by a fork(), which then also requests all the auxiliary threads in the
+by a `fork()`, which then also requests all the auxiliary threads in the
 system to pause at a safe point.
 
 To get to this safe point, the forking thread would try to grab the lock
-of the immix thread, which it couldn't because the thread itself still
+of the Immix thread, which it couldn't because the thread itself still
 had the lock. The fix is similar to how other auxiliary threads such as
 the signal thread and finalizer thread work, by releasing their own lock
 just before they mark themselves as being dependent on the garbage
@@ -554,7 +547,8 @@ This last found and fixed bug was the most elusive one. It was really
 hard to trigger and only happened rarely, but luckily often enough so
 that finding it wasn't completely impossible. As always with these bugs,
 reproducing the bug is really 50% of all the work. 49% is finding what
-causes it and 1% of the time is actually spent fixing it.
+causes it and 1% of the time is actually spent fixing it. Remember
+though, that 80% of all statistics are made up on the spot.
 
 Here again the intricate play between different threads and the timing
 dependency of execution caused the issue to only appear rarely. The
@@ -584,21 +578,21 @@ updated value.
 
 That last sentence might seem easy and straightforward, but it took a
 few hours to actually consciously realize the implications of it. I
-sometimes call it A-ha driver development. The point where you just poke
+sometimes call it "A-ha driven development." The point where you just poke
 at code, trying to see through it in a concurrent scenario, until the
 case where it can go wrong pops into your head. I haven't been able to
 really identify the though processes going into it, but it includes a
 lot of poking around and pondering. 
 
 Actually often in cases like that I just go and take a walk to ponder
-things, or if it's late just go to bed. I've literally had euruka
+things, or if it's late just go to bed. I've literally had eureka
 moments the next morning in the shower, realizing what the problem was.
 If anyone has insights or ideas on how to improve this process, I really
 welcome them. I'd love to get a better handle on it to see if it can be
 made more consistent in some way.
 
 So let's go back to the original sentence that is much more important
-than it seems. It stated that the problem occured if a mature fiber
+than it seems. It stated that the problem occurred if a mature fiber
 object would not have it's young variables updated. This should makes us
 remember the concept of the write barrier. As explained we use that to
 make sure that if we add a young object to a mature object, we register
@@ -607,7 +601,7 @@ remember set, that is always scanned during a young collection. This
 ensures these values get updated properly.
 
 So what was happening here? After adding some debug logic (yes, just
-printf statements often), I could see that the Fiber was no longer in
+lots and lots of printf statements), I could see that the Fiber was no longer in
 the remember set. But it should be, since it had young objects
 referenced to it!
 
@@ -677,3 +671,39 @@ also why it was merged into master.
 
 I've tried to highlight the tricky and more complex issues here, so you
 hopefully have a better insight into what implementing all this means.
+
+### Resources
+
+If you're interested in more background on the things discussed here,
+these are some pointers to more resources. As a general reference work,
+there is the Garbage Collection Handbook. So far the best book on
+garbage collection I've seen with a lot of clearly explained content.
+It provides a really good starting point to learn about garbage collection
+and contains a lot of references to papers that can be read for even
+digging deeper into the subject matter at hand.
+
+[The Garbage Collection Handbook website](http://gchandbook.org)
+
+[The Garbage Collection Handbook on Amazon](http://www.amazon.com/gp/product/1420082795)
+
+The original paper in the Immix garbage collector, which Rubinius uses.
+Note that our version of Immix isn't compacting, something that made concurrent
+collection possible. In the future this is something we want to revisit
+and improve upon.
+
+[Immix: A Mark-Region Garbage Collector with Space Efficiency, Fast Collection, and Mutator Performance](http://users.cecs.anu.edu.au/~steveb/pubs/papers/immix-pldi-2008.pdf)
+
+For finding more resources on garbage collection, you can also check out
+this bibliography of garbage collection related papers:
+
+[the Garbage Collection Bibliography](http://www.cs.kent.ac.uk/people/staff/rej/gcbib/)
+
+I would also like to thank Michael R. Bernstein for reviewing this post.
+He's been writing interesting blog posts on garbage collection and gave
+a presentation at GoRuCo 2013. These articles can be really useful if
+you want to have a starting point for the basic garbage collection
+concepts that this article assumes you are somewhat familiar with.
+
+[Adventures in Garbage Collection Pedagogy and an Introduction to Racket](http://michaelrbernste.in/2013/05/20/adventures-in-GC-pedagogy.html)
+
+[To Know A Garbage Collector: GoRuCo 2013](http://michaelrbernste.in/2013/06/10/to-know-a-garbage-collector-goruco-2013.html)
