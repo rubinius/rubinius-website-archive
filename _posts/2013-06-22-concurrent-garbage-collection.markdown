@@ -268,9 +268,6 @@ commit:
 
 [Introduce explicit scanned state for mature GC](https://github.com/rubinius/rubinius/commit/d1d99d6048a01f1687080f98baa904d4562ed920 "Introduce explicit scanned state for mature GC")
 
-
-https://github.com/rubinius/rubinius/commit/d1d99d6048a01f1687080f98baa904d4562ed920
-
 ### A new version of the write barrier
 
 So with this new addition, we actually have the tools at hand to change
