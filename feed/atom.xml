@@ -7,17 +7,17 @@ layout: nil
   <title>Rubinius Blog</title>
   <link rel="self" type="application/atom+xml" href="{{ site.host }}{{ page.url }}" />
   <link rel="alternate" type="text/html" href="{{ site.host }}/blog" />
-  <updated>{{ post.date | date: '%Y-%m-%dT00:00:00+00:00' }}</updated>
   <id>{{ site.host }}/</id>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
 
   {% for post in site.posts %}
   <entry>
-    <title>{{ post.title }}</title>
+    <title>{{ post.title | xml_escape }}</title>
     <id>{{ site.host }}{{ post.url }}</id>
     <link rel="alternate" type="text/html" href="{{ site.host }}{{ post.url }}" />
-    <updated>{{ post.date | date: '%Y-%m-%dT00:00:00+00:00' }}</updated>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>{{ post.author }}</name>
+      <name>{{ post.author | xml_escape }}</name>
     </author>
     {% for category in post.categories %}
     <category term="{{ category | downcase }}" />
