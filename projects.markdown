@@ -54,6 +54,11 @@ The Fancy Programming Language - Fancy is a dynamic, object-oriented
 programming language heavily inspired by Smalltalk, Ruby and Erlang.
 
 
+### Lani
+[github.com/queenfrankie/lani](https://github.com/queenfrankie/lani)
+
+Learning language from Rails Girls Summer of Code. Features TBD.
+
 ### Lupin
 [github.com/twisol/lupin](https://github.com/twisol/lupin)
 
