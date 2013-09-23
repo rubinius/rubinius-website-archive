@@ -1,0 +1,63 @@
+---
+layout: post
+title: Ready, Set, ...
+author: Brian Shirai
+---
+
+There are some big changes coming in Rubinius. A full post about this should
+arrive later in the week, but for people who are tracking master HEAD on the
+[GitHub repository](https://github.com/rubinius/rubinius), here are a few
+essential pieces of information.
+
+
+## What's Changed?
+
+I've just merged a work-in-progress branch into master. The master branch now
+supports Ruby language version 2.1 only. It also moves Rubinius components,
+such as the parser, compiler, debugger, as well as the Ruby standard library,
+to gems. The changes lay the foundation for numerous planned features to
+improve performance and concurrency support.
+
+The syntax support for 2.1 is not yet complete but should be merged in a few
+days.  Applications using Ruby 1.9.3 are expected to run. The standard library
+gems are installed by default, so there should not be a noticable difference
+in how programs using the standard library run.
+
+
+## How To Build
+
+To build Rubinius, MRI 2.0 or Rubinius master are required. Other versions may
+work, but are not supported. Bundler is also required.
+
+To clone and build, follow these steps:
+
+1. git clone --depth 1 https://github.com/rubinius/rubinius
+1. cd rubinius
+1. bundle
+1. ./configure --prefix=/path/to/install
+1. rake
+
+The main difference is that bundle is used to install build requirements.
+
+After building, add `path/to/install/bin:/path/to/install/gems/bin` to PATH to
+run Rubinius. Alternatively, use a Ruby switcher like
+[chruby](https://github.com/postmodern/chruby).
+
+
+## Where Are 1.8 & 1.9?
+
+There are two branches under Rubinius for
+[1.8.7](https://github.com/rubinius/rubinius/tree/1.8.7) and
+[1.9.3](https://github.com/rubinius/rubinius/tree/1.9.3). The default language
+mode when building from the branches matches the branch name. These branches
+are provided to ease transitions. No active development will occurr on the
+branches. If you would like to volunteer to maintain one of the branches,
+please let us know.
+
+
+## Issues
+
+Please open an [issue](https://github.com/rubinius/rubinius/issues)
+if you have any trouble building or running the master branch.
+
+More details coming soon. Happy Rubying!
