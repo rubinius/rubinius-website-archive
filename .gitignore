@@ -1,4 +1,4 @@
-_site
 .rbx
 *.un~
+public/*
 build/*

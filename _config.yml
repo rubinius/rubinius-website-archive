@@ -1,7 +1,21 @@
 ---
+url: http://rubini.us
+safe: true
+lsi: false
+permalink: pretty
+source: .
+destination: ./public
+exclude:
+  - Rakefile
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - .gitignore
+  - ./public
+  - ./stylesheets/*.scss
+  - drafts
 markdown: rdiscount
 pygments: true
-permalink: pretty
-host: http://rubini.us
-exclude:
-- drafts
+pygments: false
+port: 9876
