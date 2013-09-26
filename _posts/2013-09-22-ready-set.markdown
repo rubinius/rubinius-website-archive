@@ -4,6 +4,10 @@ title: Ready, Set, ...
 author: Brian Shirai
 ---
 
+
+** ED: Updated the section on How To Build and added a section on gems and
+Rubinius.**
+
 There are some big changes coming in Rubinius. A full post about this should
 arrive later in the week, but for people who are tracking master HEAD on the
 [GitHub repository](https://github.com/rubinius/rubinius), here are a few
@@ -29,6 +33,12 @@ in how programs using the standard library run.
 To build Rubinius, MRI 2.0 or Rubinius master are required. Other versions may
 work, but are not supported. Bundler is also required.
 
+The easiest way to get MRI 2.0 if it's not already installed on your system is
+probably [ruby-install](https://github.com/postmodern/ruby-install#readme).
+However, use whatever is easiest for you to install MRI 2.0. Rubinius also
+highly recommends using [chruby](https://github.com/postmodern/chruby) as a
+Ruby switcher.
+
 To clone and build, follow these steps:
 
 1. git clone --depth 1 https://github.com/rubinius/rubinius
@@ -42,6 +52,30 @@ The main difference is that bundle is used to install build requirements.
 After building, add `path/to/install/bin:/path/to/install/gems/bin` to PATH to
 run Rubinius. Alternatively, use a Ruby switcher like
 [chruby](https://github.com/postmodern/chruby).
+
+
+## What Are Gems?
+
+As noted above, the Ruby standard library in Rubinius, and other Rubinius
+components like the code build tools and developer tools, are provided as
+gems.  These are regular gems. There is nothing special about them. They are
+installed as gems, they are bundled as gems, they are updated with `gem
+update`, they are simply gems.
+
+You even have the option at configure time to not install them (except for a
+few that are required to run (e.g. IRB), but we plan to make this optional as
+well). See `configure --help` for the `--with[out]-stdlib` configure option.
+
+Since they are gems, other Ruby ecosystem components, like Bundler, need to
+know about them. When using Bundler, for example, add `gem "rubysl", "~> 2.0"`
+to your Gemfile. For other dependency management, what is needed depends on
+how intrusively it invades the Ruby require process.  With plain RubyGems,
+simply install the gems and requires will work as expected.
+
+There are several meta-gems provided (e.g. rubysl, rubysl-rake,
+rubysl-bundler) that can be used to install all the standard library gems that
+those tools depend on. To install (or update) the entire standard library, run
+`gem install rubysl`.
 
 
 ## Where Are 1.8 & 1.9?
