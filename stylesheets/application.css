@@ -434,6 +434,21 @@ div.post {
   color: #454454;
 }
 
+.comments {
+  text-align: center;
+  margin: 0 0 2em 0;
+  background: #dedded;
+  border-radius: .3em;
+  -moz-border-radius: .3em;
+  -webkit-border-radius: .3em;
+}
+
+.comments p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.2em;
+}
+
 /* MailChimp Form Embed Code - Slim - 08/17/2011 */
 #mc_embed_signup form {
   display: block;
@@ -442,9 +457,10 @@ div.post {
   margin: 0 0 1em 0;
 }
 
-#mc_embed_signup p {
+#mc_embed_signup form p {
   text-align: left;
   padding: 0 0 0 8px;
+  font-style: italic;
 }
 
 #mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
