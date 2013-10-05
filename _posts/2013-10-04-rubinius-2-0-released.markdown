@@ -131,7 +131,7 @@ Rubinius tools like the bytecode compiler, are written in Ruby. The Rubinius
 systems treat them just like Ruby application code (e.g. the JIT combining core
 library methods and application methods to best optimize running code). This
 consistency also improves understanding of the entire Rubinius system. Ruby
-developers can contribute to significant parts of Rubinius by simply by writing
+developers can contribute to significant parts of Rubinius simply by writing
 Ruby code.
 
 ## Plans, Meet Future
