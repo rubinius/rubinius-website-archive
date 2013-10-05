@@ -257,7 +257,7 @@ on MRI and JRuby. It provides Ruby applications excellent performance and
 multi-core scaling, especially when there's no global interpreter lock.
 
 Rubinius as a language platform has inspired many
-[**projects**](http://rubini.us/proceecs) and encouraged people who may have
+[**projects**](http://rubini.us/projects) and encouraged people who may have
 thought language design was beyond their skills to experiment and discover the
 tremendous joy in creating [**their own programming
 language**](https://github.com/queenfrankie/lani).
