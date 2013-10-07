@@ -39,9 +39,10 @@ See the next section for more details on that.
 We recommend installing Rubinius to a location that does not require `sudo` or
 superuser privileges. To install Rubinius:
 
-  1. `./configure --prefix=/path/to/install/dir`
-  2. `rake install`
-  3. Follow the directions to add the Rubinius _bin_ directory to your PATH
+  1. `bundle install`
+  2. `./configure --prefix=/path/to/install/dir`
+  3. `rake install`
+  4. Follow the directions to add the Rubinius _bin_ directory to your PATH
 
 
 ### Running from the Source Directory
