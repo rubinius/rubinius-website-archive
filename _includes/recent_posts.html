@@ -1,0 +1,13 @@
+  <div class="container">
+  <h3>Recent Posts</h3>
+  <ul>
+  {% for post in site.posts limit:5 %}
+    {% if post.title != page.title %}
+      <li>
+        <a href="{{ post.url }}" title="{{ post.title }}" class="post_title"> {{ post.title }} </a>
+        <span class="author">{{ post.author }}</span>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  </div>
