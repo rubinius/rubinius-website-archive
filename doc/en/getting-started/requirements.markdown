@@ -17,15 +17,15 @@ manager may have other packages available.
 
   * [GCC and G++ 4.x](http://gcc.gnu.org/)
   * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 1.8.7+](http://www.ruby-lang.org/) If your system does not have
-    Ruby 1.8.7 installed, consider using [RVM](https://rvm.beginrescueend.com/)
+  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) If your system does not have
+    Ruby 2.0.0 installed, consider using [RVM](https://rvm.beginrescueend.com/)
     to install it.
   * [Rubygems](http://www.rubygems.org/)
   * [Git](http://git.or.cz/)
   * [ZLib](http://www.zlib.net/)
   * pthread - The pthread library should be installed by your operating system
   * [gmake](http://savannah.gnu.org/projects/make/)
-  * [rake](http://rake.rubyforge.org/) `[sudo] gem install rake`
+  * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
 ### Apple OS X

@@ -18,15 +18,15 @@ d'autres paquets disponibles.
 
   * [GCC et G++ 4.x](http://gcc.gnu.org/)
   * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 1.8.7+](http://www.ruby-lang.org/) Si votre système n'a pas
-    Ruby 1.8.7 installé, pensez à utiliser [RVM](https://rvm.beginrescueend.com/)
+  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Si votre système n'a pas
+    Ruby 2.0.0 installé, pensez à utiliser [RVM](https://rvm.beginrescueend.com/)
     pour l'installer.
   * [Rubygems](http://www.rubygems.org/)
   * [Git](http://git.or.cz/)
   * [ZLib](http://www.zlib.net/)
   * pthread - La bibliothèque pthread devrait être installée par votre système d'exploitation
   * [gmake](http://savannah.gnu.org/projects/make/)
-  * [rake](http://rake.rubyforge.org/) `[sudo] gem install rake`
+  * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
 ### Apple OS X

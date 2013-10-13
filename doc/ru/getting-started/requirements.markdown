@@ -17,8 +17,8 @@ next_url: getting-started/building
 
   * [GCC и G++ 4.x](http://gcc.gnu.org/)
   * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 1.8.7+](http://www.ruby-lang.org/) Если на вашей системе не
-    установлен Ruby 1.8.7, подумайте об использовании
+  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Если на вашей системе не
+    установлен Ruby 2.0.0, подумайте об использовании
     [RVM](https://rvm.beginrescueend.com/) для его установки.
   * [Rubygems](http://www.rubygems.org/)
   * [Git](http://git.or.cz/)

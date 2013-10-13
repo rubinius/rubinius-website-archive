@@ -18,8 +18,8 @@ disponibili.
 
   * [GCC e G++ 4.x](http://gcc.gnu.org/)
   * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 1.8.7+](http://www.ruby-lang.org/) Se sul vostro sistema non è
-    installato Ruby 1.8.7, considerate l'uso di
+  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Se sul vostro sistema non è
+    installato Ruby 2.0.0, considerate l'uso di
     [RVM](http://rvm.beginrescueend.com/) per installarlo.
   * [Rubygems](http://www.rubygems.org/)
   * [Git](http://git.or.cz/)
@@ -27,7 +27,7 @@ disponibili.
   * pthread - La libreria pthread dovrebbe essere stata installata come parte 
     del vostro sistema operativo
   * [gmake](http://savannah.gnu.org/projects/make/)
-  * [rake](http://rake.rubyforge.org/) `[sudo] gem install rake`
+  * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
 ### Apple OS X
