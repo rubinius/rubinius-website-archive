@@ -25,7 +25,7 @@ manager may have other packages available.
   * [ZLib](http://www.zlib.net/)
   * pthread - The pthread library should be installed by your operating system
   * [gmake](http://savannah.gnu.org/projects/make/)
-  * [rake](http://rake.rubyforge.org/) `[sudo] gem install rake`
+  * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
 ### Apple OS X

@@ -27,7 +27,7 @@ disponibili.
   * pthread - La libreria pthread dovrebbe essere stata installata come parte 
     del vostro sistema operativo
   * [gmake](http://savannah.gnu.org/projects/make/)
-  * [rake](http://rake.rubyforge.org/) `[sudo] gem install rake`
+  * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
 ### Apple OS X

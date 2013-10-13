@@ -26,7 +26,7 @@ andere/weitere Pakete bereit.
   * [ZLib](http://www.zlib.net/)
   * pthread - Die pthread Bibliothek sollte auf deinem System installiert sein.
   * [gmake](http://savannah.gnu.org/projects/make/)
-  * [rake](http://rake.rubyforge.org/) `[sudo] gem install rake`
+  * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
 ### Mac OS X
