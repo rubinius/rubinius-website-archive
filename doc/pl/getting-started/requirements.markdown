@@ -17,8 +17,8 @@ system zarządzania pakietami może udostępniać inne odpowiedniki tych bibliot
 
   * [GCC oraz G++ 4.x](http://gcc.gnu.org/)
   * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 1.8.7+](http://www.ruby-lang.org/) Jeśli nie masz
-    zainstalowanego Ruby 1.8.7 w systemie rozważ skorzystanie z [RVM](https://rvm.beginrescueend.com/)
+  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Jeśli nie masz
+    zainstalowanego Ruby 2.0.0 w systemie rozważ skorzystanie z [RVM](https://rvm.beginrescueend.com/)
     aby go zainstalować.
   * [Rubygems](http://www.rubygems.org/)
   * [Git](http://git.or.cz/)

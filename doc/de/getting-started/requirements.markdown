@@ -18,7 +18,7 @@ andere/weitere Pakete bereit.
 
   * [GCC and G++ 4.x](http://gcc.gnu.org/)
   * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 1.8.7+](http://www.ruby-lang.org/) Falls Ruby 1.8.7
+  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Falls Ruby 2.0.0
     nicht auf deinem System installiert ist, sollte
     [RVM](https://rvm.beginrescueend.com/) in Erwägung gezogen werden.
   * [Rubygems](http://www.rubygems.org/)
