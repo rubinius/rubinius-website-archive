@@ -53,6 +53,11 @@ A Scheme.
 The Fancy Programming Language - Fancy is a dynamic, object-oriented
 programming language heavily inspired by Smalltalk, Ruby and Erlang.
 
+### Fuby
+[github.com/txus/fuby](https://github.com/txus/fuby)
+
+Functional Ruby. Fuby is a hybrid functional/object-oriented programming
+language.
 
 ### Lani
 [github.com/queenfrankie/lani](https://github.com/queenfrankie/lani)
