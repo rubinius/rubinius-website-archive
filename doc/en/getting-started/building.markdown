@@ -11,12 +11,11 @@ You can build and run Rubinius from the source directory. You do not need to
 install Rubinius to run it. The directions below will detail both installing
 Rubinius and running it from the source directory.
 
-Rubinius uses LLVM for the JIT compiler. Rubinius depends on a particular
-version of LLVM and LLVM must be built with C++ RTTI (run-time type
-information) enabled.  The `configure` script will automatically verify these
-requirements when searching for an installed version of LLVM. If you do have
-LLVM installed and Rubinius fails to link with it for any reason, pass
-`--skip-system` to the `configure` script in the directions below.
+Rubinius uses LLVM for the JIT compiler and depends on LLVM 3.x. The
+`configure` script will automatically check whether a version is already
+available or will download one if not. If you do have LLVM installed and
+Rubinius fails to link with it for any reason, pass `--skip-system` to the
+`configure` script in the directions below.
 
 ### Getting the Source
 
