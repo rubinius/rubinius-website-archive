@@ -9,6 +9,18 @@ next_url: tools/profiler
 
 Rubinius includes a reference Ruby source-level debugger.
 
+## Installing the Necessary Components
+
+Depending on what gems you are using, you may need to install one or both of the following.
+
+The `rubinius-compiler` gem. To install:
+
+    gem install rubinius-compiler
+
+The `rubinius-debugger` gem. To install:
+
+    gem install rubinius-debugger
+
 ## Invoking in Code
 
 The Rubinius debugger can be invoked from code by embedding a call to start
