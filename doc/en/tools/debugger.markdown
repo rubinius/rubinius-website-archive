@@ -13,10 +13,12 @@ Rubinius includes a reference Ruby source-level debugger.
 
 Depending on what gems you are using, you may need to install one or both of the following.
 
-rubinius-compiler
+The `rubinius-compiler` gem. To install:
+
     gem install rubinius-compiler
 
-rubinius-debugger
+The `rubinius-debugger` gem. To install:
+
     gem install rubinius-debugger
 
 ## Invoking in Code
