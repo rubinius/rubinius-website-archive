@@ -1,0 +1,41 @@
+---
+layout: post
+title: Happy 2014!
+author: Brian Shirai
+---
+
+New beginnings are exciting and I'm delighted to announce that I've joined a
+terrific team of people at [Enova](http://enova.com) who are working hard to
+innovate and push Ruby well beyond its comfort zone.
+
+I'm looking forward to sharing the journey with you as we build fantastic
+developer tools, migrate giant monolithic Rails apps, and create
+next-generation distributed applications that scale efficiently to _all the
+cores_. There are huge challenges given the engineering tasks, but also
+tremendous opportunities to demonstrate how powerful Ruby is and can be.
+
+At Enova, I'll be continuing my OSS work on Rubinius and RubySpec. This is a
+generous contribution from Enova to the Ruby community. I'll also be devoting
+time to Rubinius X as we explore and address the many deficiencies in Ruby
+that continue to drive developers and businesses to other languages like Go,
+Clojure, and Node.js.
+
+For those still running on Ruby 1.8.7, we'd love for you to collaborate with
+us as we build tools to migrate to newer Ruby versions. If you're already on
+Ruby 1.9.3 or later, we'd love to help you explore migrating from MRI to a
+Ruby implementation with a modern garbage collector, JIT compiler, and good
+support for concurrency. If you're considering rewriting your Ruby app in some
+other language, please let us know why.
+
+If you've already rewritten your Ruby apps in another language, I'd especially
+like to hear from you. Rewrites always involve new architecture decisions as
+well. I'd like to understand if the Ruby _language_ prevented your new
+architecture decisions or if better technology in Ruby would have saved the
+cost of rewriting an application.
+
+Kumiko, Miwa, and I will be moving to Chicago. If you're in the area, we look
+forward to meeting you. If not, hopefully you'll come visit Chicago and say
+hello, maybe at [RailsConf 2014](http://lanyrd.com/2014/railsconf/)!
+
+Happy New Year!
+
