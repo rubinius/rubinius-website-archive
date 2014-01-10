@@ -8,27 +8,26 @@ next_url: getting-started/troubleshooting
 translated: true
 ---
 
-Once you have followed the steps for building (and possibly installing)
-Rubinius, you can verify it is working:
+Rubiniusをビルドする（そしておそらくインストールする）指示に従ったのであれば、
+Rubiniusが動作していることを以下のコマンドで確かめられます。
 
     rbx -v
 
-Rubinius generally works like Ruby from the command-line. For example:
+Rubiniusはコマンドライン上でRubyと同じように動作します。例えば、
 
     rbx -e 'puts "Hello!"'
 
-To run a ruby file named 'code.rb':
+'code.rb'という名前のRubyファイルを実行したい場合、
 
     rbx code.rb
 
-To run IRB:
+IRBを実行したい場合、
 
     rbx
 
-If you added the Rubinius bin directory to your PATH, Rubinius should perform
-just as you would expect from MRI. There are commands for `ruby`, `rake`,
-`gem`, `irb`, `ri`, and `rdoc`.
+RubiniusのbinディレクトリをPATHに追加していれば、Rubiniusは
+MRIから期待されるのと同様に振る舞うはずです。
+`ruby`, `rake`, `gem`, `irb`, `ri`, そして `rdoc`のためのコマンドがあります。
 
-You can add the Rubinius bin directory to your PATH only when you want to use
-Rubinius. This way, it will not interfere with your normally installed Ruby
-when you do not want to use Rubinius.
+Rubiniusを利用したい場合にのみ、binディレクトリをPATHに追加してください。
+そうすれば、Rubiniusを利用したくないときに通常のRubyの邪魔をせずに済みます。
