@@ -8,21 +8,22 @@ next_url: contributing
 translated: true
 ---
 
-あなたは、建物、または、インストール中に発生する可能性がある、次のエラー
-推奨する解決方法と一緒にRubiniusのを実行している。
+以下ではRubiniusのビルドやインストール、実行の際に直面する可能性のあるエラーについて、
+推奨される解決策とともに説明しています。
 
-すべてのエラーは、最初のステップは、現在、クリーンなチェックアウトをれていること
-を確認することですRubiniusの。先に進む前に、次の手順を実行することを検討：
+どんな場合でも、最初にすべきことは最新でクリーンなRubiniusをチェックアウトしていることを
+確認することです。先に進む前に、以下を実行してください。
 
 
-    $ git co master
+    $ git checkout master
     $ git reset --hard
     $ git pull
     $ rake distclean
     $ rake
 
+### Rubiniusが`runtime`ディレクトリを発見できない
 
-Error:
+  ビルドまたはインストールのあと、Rubiniusを実行しようとすると以下のエラーが起こる。
 
     ERROR: unable to find runtime directory
 
@@ -38,15 +39,43 @@ Error:
     You may have configured Rubinius for a different install
     directory but you have not run 'rake install' yet.
 
-Solution:
+#### 解決策
 
-  If you configured Rubinius with a `--prefix`, run rake install.
+  Rubiniusを`--prefix`オプション付きで設定したなら、`rake install`を実行します。
 
-  If you configured Rubinius with a `--prefix` and renamed the install
-  directory after installing Rubinius, re-configure Rubinius and reinstall it.
+  Rubiniusを`--prefix`オプション付きで設定したあとでインストール先のディレクトリを
+  インストール後にリネームしたなら、Rubiniusを再設定して再インストールします。
 
-  If you renamed the source directory after building Rubinius, re-configure
-  and rebuild it.
+  Rubiniusのビルド後にソースディレクトリをリネームしたなら、再設定してリビルドします。
 
-  In general, do not rename the source or build directory after building
-  Rubinius.
+  一般的に、ビルド後またはインストール後にリネームを行わないでください。
+
+
+### FreeBSDでビルドする際にセグメンテーション違反が起こる
+
+  バージョン8.1stableを含めたFreeBSDで、execinfoがらみの問題が
+  Rubiniusのロード時にセグメンテーション違反を引き起こす。
+
+#### 解決策
+
+  設定時にexecinfoを無効化します。
+
+    ./configure --without-execinfo
+    
+### ruby-buildでのインストールが失敗する
+
+  時折、[ruby-build](https://github.com/sstephenson/ruby-build)でRubiniusをインストールする際に
+  問題が発生する。
+  
+#### 解決策
+
+  依存関係を確認後、自身でRubiniusをインストールしてください。
+  
+    $ git clone https://github.com/rubinius/rubinius
+    $ cd rubinius
+    $ ./configure --prefix=/path/to/rubinius/location
+    $ rake install
+    
+  `--prefix`オプションを指定する必要はありません。特定のディレクトリに
+  インストールしたい場合のみ指定してください。
+  RubiniusをPATHの通ったディレクトリに置くのがいいでしょう。
