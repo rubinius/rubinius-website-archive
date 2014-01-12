@@ -5,7 +5,6 @@ previous: Running Rubinius
 previous_url: getting-started/running-rubinius
 next: Contributing
 next_url: contributing
-translated: true
 ---
 
 以下ではRubiniusのビルドやインストール、実行の際に直面する可能性のあるエラーについて、
