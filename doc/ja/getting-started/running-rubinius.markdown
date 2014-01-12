@@ -5,7 +5,6 @@ previous: Building
 previous_url: getting-started/building
 next: Troubleshooting
 next_url: getting-started/troubleshooting
-translated: true
 ---
 
 Rubiniusをビルドする（そしておそらくインストールする）指示に従ったのであれば、

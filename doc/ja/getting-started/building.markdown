@@ -5,7 +5,6 @@ previous: Requirements
 previous_url: getting-started/requirements
 next: Running Rubinius
 next_url: getting-started/running-rubinius
-translated: true
 ---
 
 あなたはソースディレクトリからRubiniusをビルドし、実行することができます。
