@@ -59,6 +59,12 @@ programming language heavily inspired by Smalltalk, Ruby and Erlang.
 Functional Ruby. Fuby is a hybrid functional/object-oriented programming
 language.
 
+### Lambra
+[github.com/txus/lambra](https://github.com/txus/lambra)
+
+An experiment to implement a functional, distributed Lisp on the actor model,
+inspired by Erlang.
+
 ### Lani
 [github.com/queenfrankie/lani](https://github.com/queenfrankie/lani)
 
