@@ -1,8 +1,8 @@
 ---
 layout: doc_en
 title: How-To
-previous: Tools - Memory Analysis
-previous_url: tools/memory-analysis
+previous: Guides - Migrating from MRI to Rubinius
+previous_url: guides/migrating-from-mri-to-rubinius
 next: Write a Ticket
 next_url: how-to/write-a-ticket
 review: true
