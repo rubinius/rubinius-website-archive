@@ -7,9 +7,9 @@ next: How-To
 next_url: how-to
 ---
 
-This guide will assist you to migrate your Ruby or Ruby on Rails application
-from MRI (Matz's Ruby Implementation) to Rubinius. This guide assumes that you
-are familiar with Ruby or Ruby on Rails, RubyGems, and Bundler. It also assumes
+This guide will assist you to migrate your Ruby or Rails application from MRI
+(Matz's Ruby Implementation) to Rubinius. This guide assumes that you are
+familiar with Ruby or Ruby or Rails, RubyGems, and Bundler. It also assumes
 that you can use the command line shell.
 
 ## 1. Installing Rubinius
@@ -53,7 +53,7 @@ straightforward:
 
 For instructions for installing other Ruby implementations, please see the
 `ruby-install` [installation
-synopsis](https://github.com/postmodern/ruby-install#synopsis)
+synopsis](https://github.com/postmodern/ruby-install#synopsis).
 
 ### Using chruby
 
