@@ -1,8 +1,8 @@
 ---
 layout: doc_de
 title: Anleitungen
-previous: Tools - Speicher Analyse
-previous_url: tools/memory-analysis
+previous: Umstellung von MRI zu Rubinius
+previous_url: guides/migrating-from-mri-to-rubinius
 next: Ein Ticket erstellen
 next_url: how-to/write-a-ticket
 review: true
