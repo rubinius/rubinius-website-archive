@@ -80,7 +80,10 @@ its own Ruby source debugger and profiler, as well as other tools. See the
 
 ## 3. Gemfiles
 
-Your Gemfile should work fine with Rubinius but you should run `bundle update` to force the gem dependencies to be recomputed for Rubinius. Also, if you are using gems that are incompatible with Rubinius, you can put them in a `platforms` block until completing the migration to Rubinius as follows:
+Your Gemfile should work fine with Rubinius but you should run `bundle update`
+to force the gem dependencies to be recomputed for Rubinius. Also, if you are
+using gems that are incompatible with Rubinius, you can put them in a
+`platforms` block until completing the migration to Rubinius as follows:
 
     # Example platforms block for MRI-specific gems
     platforms :mri do
@@ -102,5 +105,5 @@ Ripper, TracePoint, and Tracer, are not yet implemented but may be in the
 future.
 
 If you encounter an incompatible behavior in Rubinius compared to MRI, it's
-most likely a bug. Please [open an
-issue](https://github.com/rubinius/rubinius/issues) for it.
+most likely a bug. Please
+[open an issue](https://github.com/rubinius/rubinius/issues) for it.
