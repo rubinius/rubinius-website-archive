@@ -58,6 +58,8 @@ next_url: what-is-rubinius
     1. [Debugger](/doc/it/tools/debugger/)
     1. [Profiler](/doc/it/tools/profiler/)
     1. [Analisi della memoria](/doc/it/tools/memory-analysis/)
+1. [Guide](/doc/it/guides/)
+    1. [Migrare da MRI a Rubinius](/doc/it/guides/migrating-from-mri-to-rubinius/)
 1. [How-To](/doc/it/how-to/)
     1. [Write a Ticket](/doc/it/how-to/write-a-ticket/)
     1. [Write a Ruby Spec](/doc/it/how-to/write-a-ruby-spec/)
