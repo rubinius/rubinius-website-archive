@@ -32,12 +32,14 @@ as follows:
     $ brew install chruby ruby-install
 
 If you are not using Homebrew or are using a different operating system than OS
-X, please see the [chruby install
-instructions](https://github.com/postmodern/chruby#install) and the
-[ruby-install install
-instructions](https://github.com/postmodern/ruby-install#install).
+X, please see the the following:
 
-To configure `chruby`, add the following to the ~/.bashrc or ~/.zshrc file:
+1. [chruby install instructions](https://github.com/postmodern/chruby#install)
+1. [ruby-install install instructions](https://github.com/postmodern/ruby-install#install)
+
+### Enabling chruby
+
+To enable `chruby`, add the following to the ~/.bashrc or ~/.zshrc file:
 
     source /usr/local/opt/chruby/share/chruby/chruby.sh
 
