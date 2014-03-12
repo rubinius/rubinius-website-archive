@@ -51,7 +51,7 @@ instructions](https://github.com/postmodern/chruby#configuration).
 Once you have installed the `ruby-install` utility, installing Rubinius is
 straightforward:
 
-    $ ruby-install rbx 2.2.5
+    $ ruby-install rbx 2.2.6
 
 For instructions for installing other Ruby implementations, please see the
 `ruby-install` [installation
