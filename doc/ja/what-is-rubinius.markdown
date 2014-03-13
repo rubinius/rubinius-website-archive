@@ -28,7 +28,7 @@ Rubinius は BSD ライセンスを使用しています。
 Rubinius は、Mac OS X と多くの Unix/Linux オペレーティングシステム上で実行されます。
 Microsoft Windows のサポートも間近です。
 
-Rubinius のをインストールするには、次の手順を実行します。
+Rubinius をインストールするには、次の手順を実行します。
 詳細については、[はじめに](/doc/ja/getting-started/) を参照してください。
 
 1. `git clone git://github.com/rubinius/rubinius.git`
