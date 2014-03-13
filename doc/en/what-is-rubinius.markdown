@@ -13,7 +13,7 @@ Rubinius includes a bytecode virtual machine, Ruby syntax parser, bytecode
 compiler, generational garbage collector, just-in-time (JIT) native machine
 code compiler, and Ruby Core and Standard libraries.
 
-Rubinius currently implements Ruby version 1.8.7.
+Rubinius targets Ruby version 2.1.0.
 
 
 ## License
