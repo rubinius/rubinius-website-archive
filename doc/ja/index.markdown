@@ -64,4 +64,4 @@ next_url: what-is-rubinius
     1. [ドキュメントを翻訳する](/doc/ja/how-to/translate-documentation/)
 1. [Appendix A - 用語辞典](/doc/ja/appendix-a-glossary/)
 1. [Appendix B - 参考文書](/doc/ja/appendix-b-reading-list/)
-1. [目次](/doc/ja/index-of-terms/)
+1. [索引](/doc/ja/index-of-terms/)
