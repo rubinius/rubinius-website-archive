@@ -377,7 +377,9 @@ a.instruction:hover {
   font-weight: bold;
   letter-spacing: -0.04em;
   color: black;
-  margin-left: -0.25em;
+  margin: -0.125em -0.25em -0.25em;
+  padding: 0.125em 0.25em;
+  display: inline-block;
 }
 
 .blog_posts h2 a.post_title:hover {
