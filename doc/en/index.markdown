@@ -71,3 +71,4 @@ next_url: what-is-rubinius
 1. [Appendix A - Glossary](/doc/en/appendix-a-glossary/)
 1. [Appendix B - Reading List](/doc/en/appendix-b-reading-list/)
 1. [Index of Terms](/doc/en/index-of-terms/)
+1. [Frequently Asked Questions](/doc/en/frequently-asked-questions/)
