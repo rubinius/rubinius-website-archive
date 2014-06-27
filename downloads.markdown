@@ -2,6 +2,7 @@
 layout: site
 ---
 
+* Rubinius 2.2.10 release [http://releases.rubini.us/rubinius-2.2.10.tar.bz2](http://releases.rubini.us/rubinius-2.2.10.tar.bz2)
 * Rubinius 2.2.9 release [http://releases.rubini.us/rubinius-2.2.9.tar.bz2](http://releases.rubini.us/rubinius-2.2.9.tar.bz2)
 * Rubinius 2.2.8 release [http://releases.rubini.us/rubinius-2.2.8.tar.bz2](http://releases.rubini.us/rubinius-2.2.8.tar.bz2)
 * Rubinius 2.2.7 release [http://releases.rubini.us/rubinius-2.2.7.tar.bz2](http://releases.rubini.us/rubinius-2.2.7.tar.bz2)
