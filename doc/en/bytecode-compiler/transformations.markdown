@@ -23,11 +23,11 @@ possible to change fundamental classes like Fixnum in ways that violate the
 semantics that other classes depend on. For example, imagine we did the
 following:
 
-  class Fixnum
-    def +(other)
-      (self + other) % 5
+    class Fixnum
+      def +(other)
+        (self + other) % 5
+      end
     end
-  end
 
 While it is certainly possible to redefine fixed point arithmetic plus to be
 modulo 5, doing so will certainly cause some class like Array to be unable to
