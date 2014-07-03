@@ -3,10 +3,9 @@ layout: doc_ja
 title: Abstract Syntax Trees
 previous: Parser
 previous_url: bytecode-compiler/parser
-next: Compiler
-next_url: bytecode-compiler/compiler
+next: Generator Stage
+next_url: bytecode-compiler/generator
 review: true
-translated: true
 ---
 
 パーサが`process_*`メソッドでの処理を終えると、抽象構文木が出来上がります。
