@@ -12,7 +12,7 @@ Rubinius incluye una máquina virtual para código intermedio (bytecode), analiz
 sintaxis de Ruby, compilador a código intermedio, recolector de basura generacional,
 compilador JIT a código máquina nativo, el núcleo de Ruby y sus bibliotecas estándar.
 
-Actualmente, Rubinius implementa la versión 1.8.7 de Ruby.
+Actualmente, Rubinius apunta a ser compatible con la versión 2.1.0 de Ruby.
 
 
 ## Licencia
