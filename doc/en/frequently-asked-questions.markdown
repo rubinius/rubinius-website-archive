@@ -61,6 +61,6 @@ Warning: don't try to install Rubinius using system ruby. Use `rbenv`, `chruby` 
 1. Get Homewbrew if you don't have it: ``ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"``
 2. Get LLVM: ``brew install llvm``
 3. Get latest ruby-install: ``brew install ruby-install --HEAD``
-4. Install with homebrews LLVM: ``ruby-install rbx -- --llvm-path="/usr/local/Cellar/llvm/3.2.4"``
+4. Install with homebrews LLVM: ``ruby-install rbx -- --llvm-path="/usr/local/Cellar/llvm/3.4.2"``
 
 
