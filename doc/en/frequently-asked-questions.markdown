@@ -53,3 +53,14 @@ installed, updated and otherwise maintained as ordinary Gems.
 Although you can technically remove then it is not recommended to do so. Due to
 these components being used throughout the Rubinius & Ruby ecosystem you might
 end up with a broken installation if you remove them.
+
+## How to install rubinius on OSX 10.10 "Yosemite"?
+
+Warning: don't try to install rubinius using system ruby. Use `rbenv`, `chruby` or `rvm` to build latest stable MRI and then run ``ruby-install`` after selecting freshly built ruby.
+
+1. Get the homewbrew if you don't have it: ``ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"``
+2. Get llvm: ``brew install llvm``
+3. Get latest ruby-install: ``brew install ruby-install --HEAD``
+4. Install with homebrews llvm: ``ruby-install rbx -- --llvm-path="/usr/local/Cellar/llvm/3.2.4"``
+
+
