@@ -54,9 +54,9 @@ Although you can technically remove then it is not recommended to do so. Due to
 these components being used throughout the Rubinius & Ruby ecosystem you might
 end up with a broken installation if you remove them.
 
-## How to install rubinius on OSX 10.10 "Yosemite"?
+## How to install Rubinius on OSX 10.10 "Yosemite"?
 
-Warning: don't try to install rubinius using system ruby. Use `rbenv`, `chruby` or `rvm` to build latest stable MRI and then run ``ruby-install`` after selecting freshly built ruby.
+Warning: don't try to install Rubinius using system ruby. Use `rbenv`, `chruby` or `rvm` to build latest stable MRI and then run ``ruby-install`` after selecting freshly built ruby.
 
 1. Get Homewbrew if you don't have it: ``ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"``
 2. Get llvm: ``brew install llvm``
