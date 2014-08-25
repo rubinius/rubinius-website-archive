@@ -37,10 +37,22 @@ desarrolladores en: /Developer/Applications/Utilities/CrashReporterPrefs.app
 
 ### Debian/Ubuntu
 
-  * ruby-dev o ruby1.8-dev
-  * libreadline5-dev
-  * zlib1g-dev
-  * libssl-dev
+Ejecute el siguiente comando para instalar los paquetes requeridos:
+
+  $ sudo apt-get install -y build-essential bison ruby-dev rake zlib1g-dev \
+        libyaml-dev libssl-dev libreadline-dev libncurses5-dev llvm llvm-dev
+
+Esto fue probado con una instalación *fresca* de Ubuntu 12.10. Puede haber
+algunas diferencias menores con distribuciones viejas de Ubuntu, Debian o
+variantes de Debian.
+
+### Fedora/CentOS
+
+  * ruby-devel
+  * readline-devel
+  * zlib-devel
+  * openssl-devel
+
 
 ### FreeBSD
 
