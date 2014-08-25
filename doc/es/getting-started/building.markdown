@@ -13,10 +13,11 @@ ejecutarlo.
 Las instrucciones a continuación detallarán tanto la instalación de
 Rubinius, como su ejecución desde el directorio fuente.
 
-Rubinius utiliza LLVM para el compilador JIT. Rubinius depende de una
-version particular de LLVM. Si ha instalado LLVM en su sistema,
-utilize la bandera `--skip-system` al ejecutar el script configure en
-las instrucciones que encontrará a continuación.
+Rubinius utiliza LLVM para el compilador JIT y depende de LLVM 3.x. El `script`
+de configuración revisará si alguna versión instalada, en caso de no ser 
+así lo descargará. Si ha instalado LLVM en su sistema y por alguna razón
+Rubinius no hace link con el, utilize la bandera `--skip-system` al ejecutar el
+`script` de configuración que encontrará a continuación.
 
 ### Obtención del Código Fuente
 
