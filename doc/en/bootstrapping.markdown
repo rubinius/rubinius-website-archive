@@ -26,7 +26,7 @@ all Ruby code can be executed. There are seven stages to the bootstrap process:
      several fundamental Ruby methods are bound to primitives.
 
      At this point there is enough defined behavior to begin to load up the
-     rest of the runtime kernel which is all defined in ruby. This has to be
+     rest of the runtime kernel which is all defined in Ruby. This has to be
      done in several passes as the language grows.
 
   2. alpha: This starts the loading of Ruby code. The ability to open classes
@@ -64,13 +64,13 @@ all Ruby code can be executed. There are seven stages to the bootstrap process:
 
   7. loader: The compiled version of kernel/loader.rb is run.
 
-     The final stage sets up the life cycle of a ruby process. It starts by
+     The final stage sets up the life cycle of a Ruby process. It starts by
      connecting the VM to the system, sets up load paths, and reads
      customization scripts from the home directory. It traps signals, and
      processes command line arguments.
 
      After that, it either runs the script passed to it from the command line
-     or boots up the interactive ruby shell. When that finishes, it runs any
+     or boots up the interactive Ruby shell. When that finishes, it runs any
      at_exit blocks that had been registered, finalizes all objects, and
      exits.
 

@@ -16,7 +16,7 @@ Rubinius generally works like Ruby from the command-line. For example:
 
     rbx -e 'puts "Hello!"'
 
-To run a ruby file named 'code.rb':
+To run a Ruby file named 'code.rb':
 
     rbx code.rb
 
