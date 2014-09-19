@@ -59,6 +59,11 @@ programming language heavily inspired by Smalltalk, Ruby and Erlang.
 Functional Ruby. Fuby is a hybrid functional/object-oriented programming
 language.
 
+### Huia
+[github.com/jamesotron/Huia](https://github.com/jamesotron/Huia)
+
+Huia is a whitespace-aware dynamic language with inspiriation from Smalltalk, Objective-C and JavaScript.
+
 ### Lambra
 [github.com/txus/lambra](https://github.com/txus/lambra)
 
