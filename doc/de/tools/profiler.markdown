@@ -54,6 +54,8 @@ Weitere Informationen finden sich in der MRI Dokumentation.
 Betrachtet man lib/profiler.rb, so kann man die grundlegenden Schritte zur
 Nutzung des Profilers in Ruby erkennen:
 
+    require 'rubinius/profiler'
+
     # Eine Profiler-Instanz erstellen
     profiler = Rubinius::Profiler::Instrumenter.new
 
@@ -71,6 +73,8 @@ Nutzung des Profilers in Ruby erkennen:
 
 Ebenso kann man eine Methode verwenden, die den Profiler mit einem Block
 verwendet.
+
+    require 'rubinius/profiler'
 
     # Eine Profiler-Instanz erstellen
     profiler = Rubinius::Profiler::Instrumenter.new
