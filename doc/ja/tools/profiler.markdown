@@ -53,6 +53,8 @@ Rubiniusは互換性のある標準ライブラリprofile.rbとprofiler.rbを提
 あなたはプロファイラを使用するための基本的な手順を参照してください`lib/profiler.rb`のですることができますみる
 Rubyのコードから。
 
+    require 'rubinius/profiler'
+
     # create a profiler instance
     profiler = Rubinius::Profiler::Instrumenter.new
 

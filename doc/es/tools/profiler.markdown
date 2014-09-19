@@ -53,6 +53,7 @@ de estas en la documentación de MRI.
 Se puede observar los pasos básicos para usar el analizador desde el código Ruby en
 lib/profiler.rb.
 
+    require 'rubinius/profiler'
 
     # crea una instancia del analizador
     profiler = Rubinius::Profiler::Instrumenter.new

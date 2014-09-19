@@ -52,6 +52,8 @@ Refer to MRI documentation on how to use those.
 Looking at lib/profiler.rb, you can see the basic steps for using the profiler
 from Ruby code:
 
+    require 'rubinius/profiler'
+
     # create a profiler instance
     profiler = Rubinius::Profiler::Instrumenter.new
 
