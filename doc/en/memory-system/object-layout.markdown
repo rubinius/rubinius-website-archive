@@ -28,8 +28,8 @@ pointers, because they use a simple trick that takes advantage of the
 fact that pointers to Ruby objects in virtual machine are always aligned
 and therefore not every possible word sized value is a valid pointer.
 
-On for example a 32 bit system pointers are 32 bit aligned, so that means
-that for example `0x1` can never be a valid pointer. This means that we
+On a 32 bit system, for example, pointers are 32 bit aligned, so that means
+that `0x1` can never be a valid pointer. This means that we
 can use these address values for other purposes. The same of course is
 also valid for 64 bit systems where pointers are aligned too.
 
@@ -37,10 +37,10 @@ We use the available space for a few different types, namely the
 following ones:
 
 1. __Fixnum__: We represent Fixnums with an immediate, where we use the tag
-   `0x1`. This means that for example the value `1` is stored in memory as
-   `0x3`. This means that operations on Fixnums have to remove the tag,
-   run the operation and re-tag the resulting value. This is however
-   much more efficient that to have to allocate memory for each `Fixnum` used.
+   `0x1`. This means that the value `1` is stored in memory as
+   `0x3`. Operations on Fixnums have to remove the tag,
+   run the operation and re-tag the resulting value. This is
+   much more efficient than having to allocate memory for each `Fixnum` used.
 
 1. __Symbol__: Symbols are represented by an immediate too and use the tag
    `0x6`. A separate symbol table stores the map from these immediate
