@@ -48,7 +48,7 @@ mature collection occurs. This can be turned off or a static number may be used
 via `gc.lifetime`. `gc.lifetime` is used by autotune which sets the initial value.
 
 For more information on configuration variables available read the
-[vm configuration source file ](https://github.com/rubinius/rubinius/blob/master/vm/configuration.hpp)
+[vm configuration source file ][config]
 
 ## Large objects
 
@@ -64,6 +64,7 @@ object* which by default is 2700 (such a good baud rate eh?) bytes.
     rbx ... -Xgc.large_object=<number of bytes> ...
 
 For more information on configuration variables available read the
-[vm configuration source file ](https://github.com/rubinius/rubinius/blob/master/vm/configuration.hpp)
+[vm configuration source file ][config]
 
 [gc]: http://en.wikipedia.org/wiki/Garbage_collection_(computer_science)#Generational_GC_.28ephemeral_GC.29
+[config]: https://github.com/rubinius/rubinius/blob/master/library/rubinius/configuration.rb
