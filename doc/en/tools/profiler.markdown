@@ -83,6 +83,10 @@ The #profile method starts the profiler, yields, stops the profiler and prints
 the profile data by default. Pass 'false' to #profile to not print the data.
 Either way, the profile data itself is returned by #profile.
 
+You can also start the profiler via command line option:
+
+    $ rbx -Xprofile <script>
+
 
 How to Read the Flat Profiler Output
 ------------------------------------
@@ -178,6 +182,10 @@ How to Read the Graph Output
 The graph output is enabled with the configuration option:
 
     -Xprofiler.graph
+
+or with following command line options:
+
+    $ rbx -Xprofile -Xprofiler.graph <script>
 
 Given the same script above, the graph output is shown below. Each "entry" in
 the graph has three sections: 1) the method for the entry, called the
