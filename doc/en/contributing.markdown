@@ -68,6 +68,8 @@ that fixes it.
 Study how Rubinius works and write highlevel documentation that will help
 others learn about the implementation details.
 
+See [How-To - Write Documentation](/doc/en/how-to/write-documentation/).
+
 
 ## Cleanup Code
 
