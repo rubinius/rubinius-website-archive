@@ -2,7 +2,7 @@
 layout: site
 ---
 
-* Rubinius 2.3.0 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-3.0.0.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-3.0.0.tar.bz2)
+* Rubinius 2.3.0 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.3.0.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.3.0.tar.bz2)
 * Rubinius 2.2.10 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.10.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.10.tar.bz2)
 * Rubinius 2.2.9 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.9.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.9.tar.bz2)
 * Rubinius 2.2.8 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.8.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.8.tar.bz2)
