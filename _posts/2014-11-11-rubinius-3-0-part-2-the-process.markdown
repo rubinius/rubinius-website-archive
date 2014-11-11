@@ -16,7 +16,7 @@ Our priority is to have an _impact_, providing value to people using Rubinius. W
 
 > If it doesn't work when someone tries it, they may wait a long time before trying it again, if ever.
 
-There are several problems with this fallacy. It confuses local and global effects. For every one person for whom a feature did not work, there are an unknown number of people for whom some feature did work. The latter group may have a much bigger global affect than the one person. It also does not account for the cost of people waiting for features. Finally, it's rooted in fear. The best antidote to fear is facts. If engagement is important, we should measure engagement and take steps to improve it.
+There are several problems with this fallacy. It confuses local and global effects. For every one person for whom a feature did not work, there are an unknown number of people for whom some feature did work. The latter group may have a much bigger global effect than the one person. It also does not account for the cost of people waiting for features. Finally, it's rooted in fear. The best antidote to fear is facts. If engagement is important, we should measure engagement and take steps to improve it.
 
 Now that we know what to *not* do, what should we do? To understand that, we need to question how we release software.
 
@@ -36,7 +36,7 @@ The fact that features are constantly being developed does not mean that a syste
 
 As opposed to mechanical systems, biological systems are *very well adapted* to functioning as a whole while changing or growing. Consider the difference between a plant growing from a seed and building a car. It's only at the very end of the manufacturing process that a car is able to function as a whole. Meanwhile, the fundamental metabolic processes in a plant function from the very beginning. The plant changes as it grows, so not every part is functional at the start. The key is to decide which parts should function first.
 
-Another important aspect of biological systems is where the boundaries lie. There are cellular boundaries, system boundaries, and the organism as a whole, which has a boundary between itself and its environment. These boundaries serve the dual purpose of keeping things separate but in contact. Along with these boundaries, different parts of a biological system have different degrees of resilience. For example, a skeleton versus soft tissue. These two concepts&#151;boundaries and joining different types of resilience&#151;can be useful in understanding software release. I'll return to them later.
+Another important aspect of biological systems is where the boundaries lie. There are cellular boundaries, system boundaries, and the organism as a whole, which has a boundary between itself and its environment. These boundaries serve the dual purpose of keeping things separate but in contact. Along with these boundaries, different parts of a biological system have different degrees of resilience. For example, a skeleton versus soft tissue. These two concepts&#151;boundaries and joining different types of resilience&#151;can be useful in understanding software releases. I'll return to them later.
 
 ### Releasing Costs A Lot
 
@@ -77,7 +77,7 @@ Besides changing the focus of the release process, we are adding a feature to Ru
 The first time you start Rubinius after a fresh installation, if the setting does not already exist, you'll get a message like the following:
 
     Rubinius is able to automatically install new versions. Installing
-    a new version will not overwrite you existing version.
+    a new version will not overwrite your existing version.
 
     Enable this feature? ([Y]es, [n]o, [a]uto, ne[v]er, [h]elp):
 
