@@ -14,35 +14,34 @@ experiences using or developing Rubinius.
 The preferred format for blog posts is Markdown. However, if you have special
 formatting needs, the post can be written in HTML directly.
 
-Clone Rubinius repository as that is where the website and posts are stored.
+Clone Rubinius repository as that is where the website and posts are stored:
 
-    git clone https://github.com/rubinius/rubinius.git
+    git clone https://github.com/rubinius/rubinius.github.io.git
 
-To get started, ensure you have the `kramdown` and `jekyll` gems installed.
+To get started, ensure you have the `github-pages` gem installed. Use
+`bundler` inside your local clone directory:
 
-    rbx gem install jekyll kramdown
+    rbx -S bundle install
 
-Now go to the posts directory
+Now go to the posts directory:
 
-    cd rubinius/web/_posts
+    cd _posts
 
 Create a file in the console using the filename format `YYYY-MM-DD-perma-link.markdown`.
 
     touch "%(date +"%Y-%m-%d")-perma-link-title.markdown"
 
-Write your brilliant post.
+Write your brilliant post:
 
     cat /dev/random > <<the file post>> # :-p
 
-Run jekyll to compile the website, including your post.
+Run jekyll to serve the website locally, including your post:
 
-    cd ../web/
-    rbx -S jekyll build
+    rbx -S jekyll serve --watch
 
-Create a commit of all the changes in the `web/` directory.
+Once you are happy with the results create a commit of your post:
 
-    cd ../
-    git add web/
+    git add _posts/
     git commit -m "Wrote a blog post on ....."
 
 Submit a patch, pull request, or if you have commit rights, push the commit to

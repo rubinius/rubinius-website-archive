@@ -36,7 +36,7 @@ The fact that features are constantly being developed does not mean that a syste
 
 As opposed to mechanical systems, biological systems are *very well adapted* to functioning as a whole while changing or growing. Consider the difference between a plant growing from a seed and building a car. It's only at the very end of the manufacturing process that a car is able to function as a whole. Meanwhile, the fundamental metabolic processes in a plant function from the very beginning. The plant changes as it grows, so not every part is functional at the start. The key is to decide which parts should function first.
 
-Another important aspect of biological systems is where the boundaries lie. There are cellular boundaries, system boundaries, and the organism as a whole, which has a boundary between itself and its environment. These boundaries serve the dual purpose of keeping things separate but in contact. Along with these boundaries, different parts of a biological system have different degrees of resilience. For example, a skeleton versus soft tissue. These two concepts&#151;boundaries and joining different types of resilience&#151;can be useful in understanding software release. I'll return to them later.
+Another important aspect of biological systems is where the boundaries lie. There are cellular boundaries, system boundaries, and the organism as a whole, which has a boundary between itself and its environment. These boundaries serve the dual purpose of keeping things separate but in contact. Along with these boundaries, different parts of a biological system have different degrees of resilience. For example, a skeleton versus soft tissue. These two concepts&#151;boundaries and joining different types of resilience&#151;can be useful in understanding software releases. I'll return to them later.
 
 ### Releasing Costs A Lot
 
@@ -77,7 +77,7 @@ Besides changing the focus of the release process, we are adding a feature to Ru
 The first time you start Rubinius after a fresh installation, if the setting does not already exist, you'll get a message like the following:
 
     Rubinius is able to automatically install new versions. Installing
-    a new version will not overwrite you existing version.
+    a new version will not overwrite your existing version.
 
     Enable this feature? ([Y]es, [n]o, [a]uto, ne[v]er, [h]elp):
 
