@@ -105,7 +105,7 @@ Now that we've looked at the problems with releasing software and at what Rubini
 
 Recently, Tom Dale posted [The Road to Ember 2.0](https://github.com/emberjs/rfcs/pull/15). The Ember authors have many new features and better approaches they want to implement derived from ample contact with the struggles that developers using Ember face. However, they realize that Ember users _need things now_. To balance these needs, they have a mantra: _stability without stagnation_.
 
-I've always been impressed with the Ember development effort and it's exciting to read about the work they're doing. It's also validating to hear them talk about tackling similar issues to the ones we've faced with Rubinius. I would phrase their idea it the opposite way. In Rubinius, we are aiming for **progress with purpose**.
+I've always been impressed with the Ember development effort and it's exciting to read about the work they're doing. It's also validating to hear them talk about tackling similar issues to the ones we've faced with Rubinius. I would phrase their idea the opposite way. In Rubinius, we are aiming for **progress with purpose**.
 
 The guiding principle is to iterate _**on**_ what we want, not _**toward**_ what we want. We want to *start* with a functioning kernel of a feature and grow it into a full-fledged, mature component. Going back to the discussion of biological versus mechanical models above, we are focused on getting just enough of the skeleton and boundaries in place to enable consistent, functional growth. Much of the design for Rubinius 3.0 has been done. The next three posts will get into technical details.
 
