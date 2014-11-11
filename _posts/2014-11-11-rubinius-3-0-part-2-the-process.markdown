@@ -76,16 +76,16 @@ Besides changing the focus of the release process, we are adding a feature to Ru
 
 The first time you start Rubinius after a fresh installation, if the setting does not already exist, you'll get a message like the following:
 
-    Rubinius is able to automatically install new versions. Installing a new version will not overwrite you existing version.
-  
-    Enable this feature? ([Y]es, [n]o, [a]uto, ne[v]er, [h]elp): 
+    Rubinius is able to automatically install new versions. Installing
+    a new version will not overwrite you existing version.
+
+    Enable this feature? ([Y]es, [n]o, [a]uto, ne[v]er, [h]elp):
 
 When a new version is available, you'll get a message like the following:
 
-    Version 3.0.5 is available. You are running version 2.8.12.
-  
-    Installing the new version will not overwrite this version, both versions will be available.
-  
+    Version 3.0.5 is available. You are running version 2.8.12. Installing the
+    new version will not overwrite this version, both versions will be available.
+
     Install the new version? ([Y]es, [n]o, [a]uto, ne[v]er, [h]elp):
 
 We will install the new Rubinius from a binary build using the same packager that was used to install the existing one. Since [chruby](https://github.com/postmodern/chruby) already works exceedingly well with many existing system package managers, the new version of Rubinius should seamlessly fit into your workflow if you are using `chruby`.
