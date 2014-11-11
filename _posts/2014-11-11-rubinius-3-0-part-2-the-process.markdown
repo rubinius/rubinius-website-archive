@@ -16,7 +16,7 @@ Our priority is to have an _impact_, providing value to people using Rubinius. W
 
 > If it doesn't work when someone tries it, they may wait a long time before trying it again, if ever.
 
-There are several problems with this fallacy. It confuses local and global effects. For every one person for whom a feature did not work, there are an unknown number of people for whom some feature did work. The latter group may have a much bigger global affect than the one person. It also does not account for the cost of people waiting for features. Finally, it's rooted in fear. The best antidote to fear is facts. If engagement is important, we should measure engagement and take steps to improve it.
+There are several problems with this fallacy. It confuses local and global effects. For every one person for whom a feature did not work, there are an unknown number of people for whom some feature did work. The latter group may have a much bigger global effect than the one person. It also does not account for the cost of people waiting for features. Finally, it's rooted in fear. The best antidote to fear is facts. If engagement is important, we should measure engagement and take steps to improve it.
 
 Now that we know what to *not* do, what should we do? To understand that, we need to question how we release software.
 
