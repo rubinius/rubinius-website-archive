@@ -18,8 +18,8 @@ manager may have other packages available.
   * [GCC and G++ 4.x](http://gcc.gnu.org/)
   * [GNU Bison](http://www.gnu.org/software/bison/)
   * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) If your system does not have
-    Ruby 2.0.0 installed, consider using [RVM](https://rvm.beginrescueend.com/)
-    to install it.
+    Ruby 2.0.0 installed, consider using
+    [ruby-install](https://github.com/postmodern/ruby-install) to install it.
   * [Rubygems](http://www.rubygems.org/)
   * [Git](http://git.or.cz/)
   * [ZLib](http://www.zlib.net/)
