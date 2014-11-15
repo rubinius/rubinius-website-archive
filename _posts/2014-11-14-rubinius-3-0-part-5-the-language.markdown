@@ -175,7 +175,7 @@ The ideas explained in the other posts about the new instruction set and the too
 
 ## A New Machine
 
-We are living at a time where active experimentation with languages are escaping academia and having a major commercial impact. There was a dreary day when it looked like Java, C#, and C++ would dominate programming. Thankfully, that's no longer the case. Very good new languages like Rust and Swift are commercially viable, and "experimental" languages like Haskell and [Idris](http://idris-lang.org) are making their way into industry. Very exciting!
+We are living at a time where active experimentation with languages is escaping academia and having a major commercial impact. There was a dreary day when it looked like Java, C#, and C++ would dominate programming. Thankfully, that's no longer the case. Very good new languages like Rust and Swift are commercially viable, and "experimental" languages like Haskell and [Idris](http://idris-lang.org) are making their way into industry. Very exciting!
 
 While working on Rubinius, we have learned a lot about features that facilitate language development. However, underneath, we have been biased toward many features in Ruby. This has limited the utility of Rubinius in building languages with features that don't significantly overlap those in Ruby. However, as I've described in this post, Ruby's semantics are too limited to provide a language that is useful for many critical programming tasks today.
 
