@@ -26,7 +26,7 @@ Now that we see where language fits in, we can investigate it further. Is this c
 
 ## Everything Is An Object
 
-There's no gentle way to say this, you've been mislead about Ruby.
+There's no gentle way to say this, you've been misled about Ruby.
 
 > Everything is _not_ an object, and objects are not everything.
 
