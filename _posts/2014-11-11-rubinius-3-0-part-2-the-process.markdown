@@ -4,19 +4,19 @@ title: "Rubinius 3.0 - Part 2: The Process"
 author: Brian Shirai
 ---
 
-In this post, I'll talk about the release process for Rubinius 3.0. We want you to be using the new Rubinius 3.0 features as soon as possible. To explain our approach, I'll first talk about releasing software. I'm spending 20% of this week's posts on the release process because it's one of the hardest things we've struggled with.
+In this post, I'll talk about the release process for Rubinius 3.0. We want you to use the new Rubinius 3.0 features as soon as possible. To explain our approach, I'll first talk about releasing software. I'm spending 20% of this week's posts on the release process because it's one of the hardest things we've struggled with.
 
-Over the past about 12 months, we released Rubinius 15 times. It was less than the one release per week that I was aiming for. However, in the two years previous to that, we did not release Rubinius a single time. It's not that we didn't do tons of work; we did! In fact, the number of commits per year hasn't varied that much. But if we don't release, it's as if the features don't exist. Thus, how we release has a big impact.
+Over the past about twelve months, we released Rubinius fifteen times. It was less than the one release per week that I was aiming for. However, in the two years previous to that, we did not release Rubinius a single time. It's not that we didn't do tons of work; we did! In fact, the number of commits per year hasn't varied that much. But if we don't release, it's as if the features don't exist. Thus, how we release has a big impact.
 
 ## Conventional Wisdom
 
-Why did we wait so long to release Rubinius 2.0? It's simple, we put too much into it! The reason we did that was concern for quality, not to delay release. However, our decision when to release was flawed. We were aiming for broad feature coverage at a point in time instead of optimizing for how quickly we could roll out features to you. To understand why, we need to look at what our priority should have been and why it wasn't that.
+Why did we wait so long to release Rubinius 2.0? It's simple, we put too much into it! The reason we did that was concern for quality, not to delay release. However, our decision about when to release was flawed. We were aiming for broad feature coverage at a point in time instead of optimizing for how quickly we could roll out features to you. To understand why, we need to look at what our priority should have been and why it wasn't that.
 
-Our priority is to have an _impact_, providing value to people using Rubinius. We did not have our priorities straight, and this is why: we did not prioritize for people using Rubinius. Instead, we were persuaded by the following convention wisdom that was often offered as advice and is completely wrong:
+As a project, our priority is to have an _impact_, providing value to people using Rubinius. We did not have our priorities straight, and this is why: we did not prioritize for people using Rubinius. Instead, we were persuaded by the following conventional wisdom:
 
 > If it doesn't work when someone tries it, they may wait a long time before trying it again, if ever.
 
-There are several problems with this fallacy. It confuses local and global effects. For every one person for whom a feature did not work, there are an unknown number of people for whom some feature did work. The latter group may have a much bigger global effect than the one person. It also does not account for the cost of people waiting for features. Finally, it's rooted in fear. The best antidote to fear is facts. If engagement is important, we should measure engagement and take steps to improve it.
+This advice was often offered, and it is completely wrong. There are several problems with this fallacy. It confuses local and global effects. For every one person for whom a feature did not work, there are an unknown number of people for whom some feature did work. The latter group may have a much bigger global affect than the one person. It also does not account for the cost of people waiting for features. Finally, it's rooted in fear. The best antidote to fear is facts. If engagement is important, we should measure engagement and take steps to improve it.
 
 Now that we know what to *not* do, what should we do? To understand that, we need to question how we release software.
 
@@ -30,13 +30,13 @@ I see three fallacies in how we release software: we model software as being mec
 
 It seems that since software is technology, then it must be mechanical. Of course, this is not a new realization. We spend a lot of time arguing whether we should apply manufacturing or construction analogies and methods to creating software. However, software is not primarily mechanical.
 
-In fact, software is much more like biological systems than mechanical systems. We needlessly impose mechanical limitations on software. In software, we can build something figuratively in mid-air, with neither support nor suspension. It's a choice we made to model software on mechanical processes. We can choose differently.
+Really, software is much more like biological systems than mechanical systems. We needlessly impose mechanical limitations on software. In software, we can build something figuratively in mid-air, with neither support nor suspension. It's a choice we made to model software on mechanical processes. We can choose differently.
 
-The fact that features are constantly being developed does not mean that a system must be chaotic. Children do not wait till they are full-grown to chew on things. And while they are chewing on things with baby teeth, their adult teeth are growing. Some transitions (like loosing teeth) can be disruptive, but for the most part, they get along fine even as their abilities are constantly developing. Why don't we choose biology as a model for creating software?
+The fact that features are constantly being developed does not mean that a system must be chaotic. Children do not wait till they are full-grown to chew on things. And while they are chewing on things with baby teeth, their adult teeth are growing. Some transitions (like losing teeth) can be disruptive, but for the most part, they get along fine even as their abilities are constantly developing. Why don't we choose biology as a model for creating software?
 
 As opposed to mechanical systems, biological systems are *very well adapted* to functioning as a whole while changing or growing. Consider the difference between a plant growing from a seed and building a car. It's only at the very end of the manufacturing process that a car is able to function as a whole. Meanwhile, the fundamental metabolic processes in a plant function from the very beginning. The plant changes as it grows, so not every part is functional at the start. The key is to decide which parts should function first.
 
-Another important aspect of biological systems is where the boundaries lie. There are cellular boundaries, system boundaries, and the organism as a whole, which has a boundary between itself and its environment. These boundaries serve the dual purpose of keeping things separate but in contact. Along with these boundaries, different parts of a biological system have different degrees of resilience. For example, a skeleton versus soft tissue. These two concepts&#151;boundaries and joining different types of resilience&#151;can be useful in understanding software releases. I'll return to them later.
+Another important aspect of biological systems is where the boundaries lie. There are cellular boundaries, system boundaries, and the organism as a whole, which has a boundary between itself and its environment. These boundaries serve the dual purpose of keeping things separate but in contact. Along with these boundaries, different parts of a biological system have different degrees of resilience. For example, a skeleton versus soft tissue. These two concepts&#151;boundaries and joining different types of resilience&#151;can be useful in understanding software release. I'll return to them later.
 
 ### Releasing Costs A Lot
 
@@ -83,8 +83,10 @@ The first time you start Rubinius after a fresh installation, if the setting doe
 
 When a new version is available, you'll get a message like the following:
 
-    Version 3.0.5 is available. You are running version 2.8.12. Installing the
-    new version will not overwrite this version, both versions will be available.
+    Version 3.0.5 is available. You are running version 2.8.12.
+
+    Installing the new version will not overwrite this version, both versions
+    will be available.
 
     Install the new version? ([Y]es, [n]o, [a]uto, ne[v]er, [h]elp):
 
@@ -95,19 +97,21 @@ We will install the new Rubinius from a binary build using the same packager tha
 There are a number of things you can do to help us be more effective in getting new Rubinius features into your hands.
 
 1. Help us strip the ornamentation out of releases. Help us find the equivalents of the cardboard boxes, plastic wrap, CD cases, and related waste in our release process and eliminate them so we can deliver features more quickly.
-2. Help us create binary packages. We're going to dedicate December to _Binary Packages for Rubinius_ month. We hope that if you have some free time over the holidays, you will experiment with building binary packages for Rubinius or helping existing maintainers update their packages
+2. Help us create binary packages. We're going to dedicate December as _Binary Packages for Rubinius_ month. We hope that if you have some free time over the holidays, you will experiment with building binary packages for Rubinius or helping existing maintainers update their packages
 3. Communicate with us about what is working and what can improve. Help us understand the problem you have. Open an issue or write a post about how you're using Rubinius and link us.
 4. Help other people get started with Rubinius. The [chruby](https://github.com/postmodern/chruby) utility is our favorite Ruby switcher. It's so simple and just works. It also can switch Rubies installed by many OS system packages, and other installers/switchers like [rbenv](https://github.com/sstephenson/rbenv). Even if you don't end up changing your current Ruby switcher, give chruby a shot. It has made life _so much better_ for us.
 
 ## Principles
 
-Now that we've looked at the problems with releasing software and at what Rubinius is doing differently with 3.0, as well as what you can do to help, I want to tie everything together into one simple idea.
+Now that we've looked at the problems with releasing software and at what Rubinius is doing differently with 3.0, as well as what you can do to help, let's tie everything together into one simple idea.
 
 Recently, Tom Dale posted [The Road to Ember 2.0](https://github.com/emberjs/rfcs/pull/15). The Ember authors have many new features and better approaches they want to implement derived from ample contact with the struggles that developers using Ember face. However, they realize that Ember users _need things now_. To balance these needs, they have a mantra: _stability without stagnation_.
 
-I've always been impressed with the Ember development effort and it's exciting to read about the work they're doing. It's also validating to hear them talk about tackling similar issues to the ones we've faced with Rubinius. I would phrase their idea the opposite way. In Rubinius, we are aiming for **progress with purpose**.
+I've always been impressed with the Ember development effort and it's exciting to read about the work they're doing. It's also validating to hear them talk about tackling similar issues to the ones we've faced with Rubinius. However, I would phrase their idea it the opposite way. In Rubinius, we are aiming for **progress with purpose**.
 
 The guiding principle is to iterate _**on**_ what we want, not _**toward**_ what we want. We want to *start* with a functioning kernel of a feature and grow it into a full-fledged, mature component. Going back to the discussion of biological versus mechanical models above, we are focused on getting just enough of the skeleton and boundaries in place to enable consistent, functional growth. Much of the design for Rubinius 3.0 has been done. The next three posts will get into technical details.
+
+**Ed: Some minor grammatical and spelling changes suggested by Joe Mastey were made to the original version to improve readability and clarity.**
 
 ## Acknowledgments
 
