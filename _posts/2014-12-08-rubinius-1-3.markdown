@@ -1,0 +1,38 @@
+---
+layout: post
+title: Rubinius 1.3+
+author: Sophia Shao
+---
+
+# Rubinius 1.3+
+
+Now that Brian has talked about Rubinius 3.0, let's roll back several versions and talk about Rubinius 1.3+, the MRI 1.8.7-compatible Rubinius.
+
+While MRI 1.8.7 was [EOL'd in 2013](https://www.ruby-lang.org/en/news/2013/06/30/we-retire-1-8-7/) with [extended maintenance ending this past summer](https://www.ruby-lang.org/en/news/2014/07/01/eol-for-1-8-7-and-1-9-2/), there are still enterprise apps on 1.8.7 that we would like to support. In order to do so, we are maintaining Rubinius 1.3+ in parallel with Rubinius 2.
+
+However, as we've continued work on Rubinius 1.3+,  we've had to make a decision on how to handle those bugs still remaining in MRI 1.8.7.
+
+# Bug-free
+
+Many bugs reported for MRI 1.8.7+ were never fixed or back-ported, which means that buggy behavior still exists. This leads to an unfortunate side-effect: code that depends upon those bugs.
+
+For Rubinius 1.3+, that meant we could either:
+
+* duplicate MRI's buggy behavior, which perpetuates the application bugs that depend on MRI bugs, or
+* fix the application bugs so the code works with correct Ruby behavior.
+
+We have chosen the latter: to implement correct Ruby behavior in Rubinius 1.3+ and fix application bugs.
+
+Apps that depend upon buggy behavior should fix those dependencies. Leaving them in is harmful to future development, as it locks the codebase down to whatever architecture preserves those bugs, encouraging stagnation and complicating app maintenance.
+
+Our hope is that by patching those bugs in Rubinius 1.3+ and providing useful tooling, developers will be able to identify bug dependencies in their codebase and remove them.
+
+# RubySpec
+
+Beyond patching such bugs in Rubinius 1.3+, we will also be updating the specs in the Rubinius and RubySpec 1.8.7 branches to reflect our decision: `ruby_bug` guards will be removed, or commented out (to provide historical documentation).
+
+This means that this set of specs will fail when run against MRI 1.8.7 -- as they test for behavior that was never patched in MRI 1.8.7.
+
+# Looking Forwards
+
+While we certainly aren't encouraging the continued existence of 1.8.7 apps, we understand that they still exist, and that moving away from them can have significant costs. With Rubinius 1.3+, we hope to provide the support those apps need to better their codebase, improve their maintainability, and eventually migrate to current Ruby versions.
