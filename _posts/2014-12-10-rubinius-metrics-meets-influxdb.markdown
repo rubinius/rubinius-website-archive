@@ -7,7 +7,7 @@ author: Jose Narvaez
 
 ##A little bit of background
 
-Along with the release of 2.3.0 an exciting feature landed: the basic infrastructure for always-on metrics of Rubinius subsystems. And after reading the (2.3.0 release notes)[https://github.com/rubinius/rubinius/releases/tag/v2.3.0] I just fired my IRB session and tried:
+Along with the release of 2.3.0 an exciting feature landed: the basic infrastructure for always-on metrics of Rubinius subsystems. And after reading the [2.3.0 release notes](https://github.com/rubinius/rubinius/releases/tag/v2.3.0) I just fired my IRB session and tried:
 
 ```ruby
 irb(main):001:0> Rubinius::Metrics.data
