@@ -186,5 +186,5 @@ $ RBXOPT="-Xsystem.metrics.target=statsd -Xsystem.metrics.statsd.server=0.0.0.0:
 
 ## Conclusion
 
-There is a bright future coming for all Logging, Monitoring and Analysis for Rubinius, the fact that we now support StatsD directly opens a whole world of possibilities since we can send metrics to anything supported by StatsD, allowing you to X-RAY your Rubinius processes. Imagine sending your Rubinius metrics to NewRelic, Skylight out of the box? Please don't hesitate in sharing your ideas about this even requesting built-in support for other metrics or other targets. Happy Graphing! 
+There is a bright future coming for all logging, monitoring and analysis for Rubinius, the fact that we now support StatsD directly opens a whole world of possibilities since we can send metrics to anything supported by StatsD, allowing you to X-RAY your Rubinius processes. Imagine sending your Rubinius metrics to NewRelic, Skylight out of the box? Please don't hesitate in sharing your ideas about this even requesting built-in support for other metrics or other targets. Happy Graphing! 
 
