@@ -8,7 +8,7 @@ We live in a containerized world now and after seeing the complexity of setting 
 
 ## Setup
 
-If you are in Mac OS X like me you can install docker with the [Homebrew](http://brew.sh/) package manager. Is worth to mention that docker setup in OS X these days is a bit trickier than for lets say, Linux, because Docker depends on Linux kernel features and in order to run it in non-Linux operating systems you have to install [boot2docker](http://boot2docker.io/) (which in essence is a Linux based [VirtualBox](https://www.virtualbox.org/) virtual machine in which Docker will run). Being said that, here is an outline of the whole process:
+If you are on Mac OS X like me you can install docker with the [Homebrew](http://brew.sh/) package manager. It's worth to mention that docker setup in OS X these days is a bit trickier than for lets say, Linux, because Docker depends on Linux kernel features and in order to run it in non-Linux operating systems you have to install [boot3docker](http://boot2docker.io/) (which in essence is a Linux based [VirtualBox](https://www.virtualbox.org/) virtual machine in which Docker will run). Having said that, here is an outline of the whole process:
 
 1. Install VirtualBox.
 2. Install boot2docker and Docker.
