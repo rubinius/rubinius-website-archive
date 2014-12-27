@@ -122,11 +122,23 @@ $ boot2docker ip
 
 Enable Rubinius StatsD metrics emitting for your Rubinius process like this:
 
+On Linux based systems:
+
 ```sh
 RBXOPT="-Xsystem.metrics.target=statsd \
         -Xsystem.metrics.statsd.server=localhost:8125" \
   rbx # (your app here)
 ```
+
+On Mac OS X:
+
+```sh
+RBXOPT="-Xsystem.metrics.target=statsd \
+        -Xsystem.metrics.statsd.server=192.168.59.103:8125" \
+  rbx # (your app here)
+```
+
+Where "192.168.59.103" is the boot2docker VM ip address.
 
 Some screenshots while running [Rubinius Benchmarks](https://github.com/rubinius/rubinius-benchmark):
 
