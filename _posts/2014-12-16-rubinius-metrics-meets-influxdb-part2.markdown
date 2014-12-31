@@ -8,7 +8,7 @@ We live in a containerized world now and after seeing the complexity of setting 
 
 ## Setup
 
-If you are on Mac OS X like me you can install docker with the [Homebrew](http://brew.sh/) package manager. It's worth to mention that docker setup in OS X these days is a bit trickier than for lets say, Linux, because Docker depends on Linux kernel features and in order to run it in non-Linux operating systems you have to install [boot3docker](http://boot2docker.io/) (which in essence is a Linux based [VirtualBox](https://www.virtualbox.org/) virtual machine in which Docker will run). Having said that, here is an outline of the whole process:
+If you are on Mac OS X like me you can install docker with the [Homebrew](http://brew.sh/) package manager. It's worth to mention that Docker setup in OS X these days is a bit trickier because it depends on Linux kernel features. In order to run it in non-Linux operating systems you have to install [boot2docker](http://boot2docker.io/) (which in essence is a Linux based [VirtualBox](https://www.virtualbox.org/) virtual machine in which Docker will run). Having said that, here is an outline of the whole process:
 
 1. Install VirtualBox.
 2. Install boot2docker and Docker.
@@ -25,7 +25,7 @@ You can use the [Homebrew-cask](https://github.com/caskroom/homebrew-cask) brew 
 $ brew install caskroom/cask/brew-cask
 ```
 
-And after that you can use Homebrew-cask to install VirtualBox:
+And after that use Homebrew-cask to install VirtualBox:
 
 ```sh
 $ brew cask install virtualbox
@@ -41,19 +41,19 @@ Here is the command for installing both Docker and boot2docker:
 $ brew install boot2docker
 ```
 
-If you are wondering why I don't have an explicit section in how to install Docker is because in the Homebrew package manager Docker is a dependency of boot2docker which make things a little bit easier on my side. However you can check Docker's [official installation guide](https://docs.docker.com/installation/) for detailed information about how to install Docker in your OS or try installing it with your package manager.
+If you are wondering why there isn't an explicit section in how to install Docker is because it is a dependency of boot2docker in Homebrew. However, you can check Docker's [official installation guide](https://docs.docker.com/installation/) for detailed information about how to install Docker in your OS or try installing it with your package manager.
 
 ## Setting up boot2docker and Docker
 
-If you are in a Linux based operating system you have to start the docker daemon and of course, you can skip this step.
+On a Linux based operating system you have to start the docker daemon and of course, you can skip this step.
 
-If you are in OS X like me the first time you have to initialize the boot2docker VM:
+On Mac OS X the first time you have to initialize the boot2docker virtual machine:
 
 ```sh
 $ boot2docker init
 ```
 
-The first time the ISO image will be fetched, so probably you will have to wait a little bit. If everything goes well you are now able to start the boot2docker VM:
+The first time the ISO image will be fetched, so probably you will have to wait a bit. If everything goes well you are now able to start the boot2docker VM:
 
 ```sh
 $ boot2docker start
@@ -75,13 +75,13 @@ To connect the Docker client to the Docker daemon, please set:
     export DOCKER_TLS_VERIFY=1
 ```
 
-The last three lines are important because the Docker client uses it to connect to the Docker daemon. You can either copy and paste these lines in your current terminal session or put them in your shell's init file (.zshrc) in my case.
+The last three lines are important because the Docker client uses it to connect to the Docker daemon. You can either copy and paste these lines in your current terminal session or put them in your shell's init file.
 
 ## Setting up the rubinius/influxdb-grafana Docker container.
 
 When everything is in place you can go to the [homepage](https://github.com/rubinius/influxdb-grafana) of the Rubinius InfluxDB-Grafana container read a bit the instructions to start it or just be lazy like me and run:
 
-If you are in a Linux based OS:
+If you are on a Linux based OS:
 
 ```sh
  docker run -d \
@@ -110,7 +110,7 @@ From rubinius/influxdb-grafana container [site](https://github.com/rubinius/infl
 
 "Because docker relies on features of the Linux kernel, it does not run containers natively in Mac OS X - it hosts containers inside of a Linux VM called boot2docker. One consequence of this is that ports mapped to the docker host from containers are not mapped to localhost of OS X, but to the boot2docker host. Therefore, in all of the above commands, OS X users should replace localhost with the IP address given by running boot2docker ip."
 
-We have to be able to know the boot2doecker VM ip in order to allow Grafana (a client side application) to hit the dockerized InfluxDB instance.
+We have to be able to know the boot2doecker virtual machine ip address in order to allow Grafana (a client side application) to hit the dockerized InfluxDB server.
 
 How to get that boot2docker ip?
 
