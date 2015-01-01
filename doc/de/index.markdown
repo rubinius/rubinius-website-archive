@@ -58,7 +58,7 @@ next_url: what-is-rubinius
     1. [Umstellung von MRI zu Rubinius](/doc/de/guides/migrating-from-mri-to-rubinius/)
 1. [Anleitungen](/doc/de/how-to/)
     1. [Ein Ticket erstellen](/doc/de/how-to/write-a-ticket/)
-    1. [Einen Ruby Spec schreiben](/doc/de/how-to/write-a-ruby-spec/)
+    1. [Einen Spec schreiben](/doc/de/how-to/write-a-spec/)
     1. [Einen fehlgeschlagenen Spec reparieren](/doc/de/how-to/fix-a-failing-spec/)
     1. [Benchmarks schreiben](/doc/de/how-to/write-benchmarks)
     1. [Einen Blogeintrag schreiben](/doc/de/how-to/write-a-blog-post/)

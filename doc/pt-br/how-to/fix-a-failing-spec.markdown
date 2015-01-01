@@ -1,8 +1,8 @@
 ---
 layout: doc_pt_br
 title: How-To - Fix a Failing Spec
-previous: Write a Ruby Spec
-previous_url: how-to/write-a-ruby-spec
+previous: Write a Spec
+previous_url: how-to/write-a-spec
 next: Write Benchmarks
 next_url: how-to/write-benchmarks
 ---

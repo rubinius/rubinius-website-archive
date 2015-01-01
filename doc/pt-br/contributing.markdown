@@ -48,7 +48,7 @@ códigos de correção (_patch_) que corrigem o erro.
      especificar qualquer subdiretório do diretório spec/ para listar as tags dos specs
      naquele subdiretório.
 
-  2. Encontre comportamentos não especificados. Veja [Como Escrever um specs](/doc/pt-br/how-to/write-a-ruby-spec).
+  2. Encontre comportamentos não especificados. Veja [Como Escrever um specs](/doc/pt-br/how-to/write-a-spec).
 
 
 ## Corrigir Specs que estão falhando

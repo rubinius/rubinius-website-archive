@@ -4,7 +4,7 @@ title: Comment Faire - Ecrire un Ticket
 previous: Comment Faire
 previous_url: how-to
 next: Ecrire un Test Ruby
-next_url: how-to/write-a-ruby-spec
+next_url: how-to/write-a-spec
 ---
 
 Le gestionnaire de ticket Rubinius se trouve à l'adresse <http://github.com/rubinius/rubinius/issues>.

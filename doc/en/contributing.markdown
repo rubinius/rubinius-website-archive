@@ -47,7 +47,7 @@ that fixes it.
      that subdirectory.
 
   2. Find unspecified behaviors. See [How To Write a Ruby
-     Spec](/doc/en/how-to/write-a-ruby-spec).
+     Spec](/doc/en/how-to/write-a-spec).
 
 
 ## Fix Failing Specs

@@ -48,7 +48,7 @@ Rubiniusの、レポートの問題。見る[チケットお書きください�
      that subdirectory.
 
   2. Find unspecified behaviors. See [How To Write a Ruby
-     Spec](/doc/ja/how-to/write-a-ruby-spec).
+     Spec](/doc/ja/how-to/write-a-spec).
 
 
 ## Fix Failing Specs

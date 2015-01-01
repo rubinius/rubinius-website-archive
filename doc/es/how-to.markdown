@@ -9,7 +9,7 @@ review: true
 ---
 
 1. [Cómo escribir un reporte de fallos](/doc/es/how-to/write-a-ticket/)
-1. [Cómo escribir una especificación de Ruby](/doc/es/how-to/write-a-ruby-spec/)
+1. [Cómo escribir una especificación de Ruby](/doc/es/how-to/write-a-spec/)
 1. [Cómo corregir una especificación erronea](/doc/es/how-to/fix-a-failing-spec/)
 1. [Escribir Benchmarks](/doc/es/how-to/write-benchmarks/)
 1. [Escribir un Post en el blog](/doc/es/how-to/write-a-blog-post/)

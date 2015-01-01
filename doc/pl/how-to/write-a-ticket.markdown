@@ -4,7 +4,7 @@ title: Jak zgłosić problem.
 previous: Jak
 previous_url: how-to
 next: Jak dodać specyfikację
-next_url: how-to/write-a-ruby-spec
+next_url: how-to/write-a-spec
 ---
 
 The Rubinius issue tracker is <http://github.com/rubinius/rubinius/issues>.

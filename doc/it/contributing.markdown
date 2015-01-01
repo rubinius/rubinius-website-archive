@@ -51,7 +51,7 @@ che lo risolva.
      quella sottocartella.
 
   2. Trovate dei comportamenti non specificati. Si veda [Come scrivere una
-     specifica spec](/doc/it/how-to/write-a-ruby-spec).
+     specifica spec](/doc/it/how-to/write-a-spec).
 
 
 ## Correggete specifiche errate

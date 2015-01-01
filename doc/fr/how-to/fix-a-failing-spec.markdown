@@ -2,7 +2,7 @@
 layout: doc_fr
 title: Comment faire - Corriger un Test En Echec
 previous: Ecrire un Test Ruby
-previous_url: how-to/write-a-ruby-spec
+previous_url: how-to/write-a-spec
 next: Ecrire des Benchmarks
 next_url: how-to/write-benchmarks
 ---

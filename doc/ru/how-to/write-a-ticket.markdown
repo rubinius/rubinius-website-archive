@@ -4,7 +4,7 @@ title: How-To - Создание тикета
 previous: How-To
 previous_url: how-to
 next: Написание Ruby спецификации
-next_url: how-to/write-a-ruby-spec
+next_url: how-to/write-a-spec
 ---
 
 Трекер Rubinius-а расположен по адресу

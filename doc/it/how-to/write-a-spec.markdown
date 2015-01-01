@@ -1,6 +1,6 @@
 ---
-layout: doc_pt_br
-title: How-To - Write a Ruby Spec
+layout: doc_it
+title: How-To - Write a Spec
 previous: Write a Ticket
 previous_url: how-to/write-a-ticket
 next: Fix a Failing Spec
@@ -9,8 +9,8 @@ next_url: how-to/fix-a-failing-spec
 
 Make sure you have read:
 
-  *  [Getting Started](/doc/pt-br/getting-started/)
-  *  [Specs](/doc/pt-br/specs/)
+  *  [Getting Started](/doc/en/getting-started/)
+  *  [Specs](/doc/en/specs/)
 
 Then, follow these steps to write a spec for a Ruby method:
 
@@ -20,4 +20,4 @@ Then, follow these steps to write a spec for a Ruby method:
   4. Commit your changes
   7. Use `git format-patch`
   8. Create a gist with your patch and link to it in a ticket on the issue
-     tracker at <http://github.com/rubinius/rubinius/issues>.
+     tracker at <http://github.com/evanphx/rubinius/issues>.

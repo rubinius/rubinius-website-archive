@@ -1,6 +1,6 @@
 ---
 layout: doc_de
-title: Anleitung - Einen Ruby Spec schreiben
+title: Anleitung - Einen Spec schreiben
 previous: Ein Ticket erstellen
 previous_url: how-to/write-a-ticket
 next: Einen fehlgeschlagenen Spec reparieren

@@ -60,7 +60,7 @@ next_url: what-is-rubinius
     1. [Анализ памяти](/doc/ru/tools/memory-analysis/)
 1. [How-To](/doc/ru/how-to/)
     1. [Создание тикета](/doc/ru/how-to/write-a-ticket/)
-    1. [Написание Ruby спецификации](/doc/ru/how-to/write-a-ruby-spec/)
+    1. [Написание Ruby спецификации](/doc/ru/how-to/write-a-spec/)
     1. [Исправление неработающей спецификации](/doc/ru/how-to/fix-a-failing-spec/)
     1. [Написание бенчмарков](/doc/ru/how-to/write-benchmarks/)
     1. [Написание сообщения в блог](/doc/ru/how-to/write-a-blog-post/)

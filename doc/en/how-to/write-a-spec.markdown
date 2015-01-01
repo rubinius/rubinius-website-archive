@@ -1,6 +1,6 @@
 ---
 layout: doc_en
-title: How-To - Write a Ruby Spec
+title: How-To - Write a Spec
 previous: Write a Ticket
 previous_url: how-to/write-a-ticket
 next: Fix a Failing Spec

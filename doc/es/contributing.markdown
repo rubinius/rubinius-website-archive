@@ -49,7 +49,7 @@ parche que lo corrige.
      en ese subdirectorio.
 
   2. Encuentre conductas no especificadas. Vea [Cómo escribir un Ruby
-     Spec](/doc/es/how-to/write-a-ruby-spec).
+     Spec](/doc/es/how-to/write-a-spec).
 
 ## Corregir una Especificación erronea
 

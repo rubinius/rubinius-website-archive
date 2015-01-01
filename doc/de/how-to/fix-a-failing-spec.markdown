@@ -1,8 +1,8 @@
 ---
 layout: doc_de
 title: Anleitung - Einen fehlgeschlagenen Spec reparieren
-previous: Einen Ruby Spec schreiben
-previous_url: how-to/write-a-ruby-spec
+previous: Einen Spec schreiben
+previous_url: how-to/write-a-spec
 next: Benchmarks schreiben
 next_url: how-to/write-benchmarks
 ---

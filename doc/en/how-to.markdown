@@ -9,7 +9,7 @@ review: true
 ---
 
 1. [Write a Ticket](/doc/en/how-to/write-a-ticket/)
-1. [Write a Ruby Spec](/doc/en/how-to/write-a-ruby-spec/)
+1. [Write a Spec](/doc/en/how-to/write-a-spec/)
 1. [Fix a Failing Spec](/doc/en/how-to/fix-a-failing-spec/)
 1. [Write Benchmarks](/doc/en/how-to/write-benchmarks/)
 1. [Write a Blog Post](/doc/en/how-to/write-a-blog-post/)

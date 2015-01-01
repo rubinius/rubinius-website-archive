@@ -60,7 +60,7 @@ next_url: what-is-rubinius
     1. [メモリの分析](/doc/ja/tools/memory-analysis/)
 1. [How-To](/doc/ja/how-to/)
     1. [チケットを書く](/doc/ja/how-to/write-a-ticket/)
-    1. [Rubyの仕様を書く](/doc/ja/how-to/write-a-ruby-spec/)
+    1. [仕様を書く](/doc/ja/how-to/write-a-spec/)
     1. [間違っている仕様を直す](/doc/ja/how-to/fix-a-failing-spec/)
     1. [ブログへの投稿を書く](/doc/ja/how-to/write-a-blog-post/)
     1. [ドキュメントを書く](/doc/ja/how-to/write-documentation/)

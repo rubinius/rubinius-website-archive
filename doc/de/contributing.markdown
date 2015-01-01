@@ -47,7 +47,7 @@ mitliefern, die den Fehler beheben.
      Tags für dieses Verzeichnis anzuzeigen.
 
   2. Finde nicht vorgegebenes Verhalten. Siehe auch,
-     [wie man Ruby Specs schreibt](/doc/de/how-to/write-a-ruby-spec).
+     [wie man Specs schreibt](/doc/de/how-to/write-a-spec).
 
 
 

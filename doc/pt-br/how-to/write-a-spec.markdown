@@ -1,17 +1,16 @@
 ---
-layout: doc_ja
-title: How-To - Write a Ruby Spec
+layout: doc_pt_br
+title: How-To - Write a Spec
 previous: Write a Ticket
 previous_url: how-to/write-a-ticket
 next: Fix a Failing Spec
 next_url: how-to/fix-a-failing-spec
-translated: true
 ---
 
 Make sure you have read:
 
-  *  [Getting Started](/doc/ja/getting-started/)
-  *  [Specs](/doc/ja/specs/)
+  *  [Getting Started](/doc/pt-br/getting-started/)
+  *  [Specs](/doc/pt-br/specs/)
 
 Then, follow these steps to write a spec for a Ruby method:
 

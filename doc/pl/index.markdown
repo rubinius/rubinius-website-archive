@@ -60,7 +60,7 @@ next_url: what-is-rubinius
     1. [Analiza pamięci](/doc/pl/tools/memory-analysis/)
 1. [Jak](/doc/pl/how-to/)
     1. [zgłosić problem](/doc/pl/how-to/write-a-ticket/)
-    1. [dodać specyfikację spec](/doc/pl/how-to/write-a-ruby-spec/)
+    1. [dodać specyfikację spec](/doc/pl/how-to/write-a-spec/)
     1. [naprawić specyfikację spec](/doc/pl/how-to/fix-a-failing-spec/)
     1. [napisać testy wydajnościowe](/doc/pl/how-to/write-benchmarks/)
     1. [napisać posta na bloga Rubiniusa](/doc/pl/how-to/write-a-blog-post/)

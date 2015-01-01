@@ -9,7 +9,7 @@ review: true
 ---
 
 1. [Ecrire un ticket](/doc/en/how-to/write-a-ticket/)
-1. [Ecrire un Test Ruby](/doc/en/how-to/write-a-ruby-spec/)
+1. [Ecrire un Test Ruby](/doc/en/how-to/write-a-spec/)
 1. [Corriger un Test En Echec](/doc/en/how-to/fix-a-failing-spec/)
 1. [Ecrire des Benchmarks](/doc/en/how-to/write-benchmarks/)
 1. [Ecrire un Billet pour le Blog](/doc/en/how-to/write-a-blog-post/)
