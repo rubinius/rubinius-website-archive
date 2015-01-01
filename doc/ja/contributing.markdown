@@ -32,7 +32,7 @@ Rubiniusの、レポートの問題。見る[チケットお書きください�
 
 我々は確かに受け入れて、単純なバグ報告をお待ちしておりますが、私たちは与えることができる
 問題を再現するための簡単な手順が含まれてチケットを優先度を設定します。も
-より良いバグを示すRubySpecsおよびパッチを含むチケットです
+より良いバグを示すspecおよびパッチを含むチケットです
 それはそれを修正しています。
 
 
@@ -73,4 +73,4 @@ others learn about the implementation details.
 
   * Revive or close old tickets.
   * Build minimal test cases that reproduce the bugs. Then see if there are
-    already RubySpecs for the issue. If not, consider writing some.
+    already specs for the issue. If not, consider writing some.

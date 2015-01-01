@@ -94,15 +94,10 @@ che non sono compatibili con Rubinius, potete inserirle in un blocco
 
 ## 4. Problemi di compatibilità
 
-La comunità di Rubinius ha dato vita al progetto
-[RubySpec](http://rubyspec.org), il cui obiettivo è descrivere il comporamento
-di Ruby e monitorare la compatibilità delle diverse implementazioni di Ruby con
-MRI.
-
 Con qualche eccezione, Rubinius dovrebbe essere compatibile con MRI 2.1. Alcune
 funzionalità, come i keyword arguments, non sono ancora state implementate.
 Altre funzionalità potrebbero non essere state implementate in quanto
-sconosciute e non ancora coperte da RubySpec. Numerosi componenti della
+sconosciute e non ancora coperte da spec. Numerosi componenti della
 standard library, come Continuation, Ripper, TracePoint, e Tracer, non sono
 ancora presenti ma potrebbero esserlo in futuro.
 

@@ -1,9 +1,9 @@
 ---
 layout: doc_pl
-title: Jak napisać specyfikację RubySpec
+title: Jak napisać specyfikację
 previous: Jak zgłosić problem
 previous_url: how-to/write-a-ticket
-next: Jak naprawić specyfikację RubySpec
+next: Jak naprawić specyfikację
 next_url: how-to/fix-a-failing-spec
 ---
 

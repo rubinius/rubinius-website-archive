@@ -3,8 +3,8 @@ layout: doc_en
 title: Appendix B - Reading List
 previous: Appendix A - Glossary
 previous_url: appendix-a-glossary
-next: Terms Index
-next_url: terms-index
+next: Index of Terms
+next_url: index-of-terms
 review: true
 ---
 

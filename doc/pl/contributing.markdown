@@ -35,11 +35,11 @@ projektem łatwym do poznania, nauki oraz rozwoju.
 Na pewno zaakceptujemy proste raporty błędów, jednak lepiej będzie
 jeśli zamieścisz w swoim zgłoszeniu listę czynności, które należy
 wykonać aby zaobserwować dany problem. Jeszcze lepsze od tego są
-zgłoszenia, które zawierają specyfikację RubySpecs pokazującą problem
+zgłoszenia, które zawierają specyfikację specs pokazującą problem
 oraz łatę rozwiązującą go.
 
 
-## Napisz specyfikację RubySpecs
+## Napisz specyfikację specs
 
   1. Wpisz `bin/mspec tag --list incomplete <dir>` aby zobaczyć
      niekompletne specyfikacje. Te specyfikacje mogą wymagać poprawek

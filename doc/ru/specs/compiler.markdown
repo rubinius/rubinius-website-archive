@@ -1,8 +1,8 @@
 ---
 layout: doc_ru
 title: Спецификации компилятора
-previous: RubySpec
-previous_url: specs/rubyspec
+previous: Спецификации
+previous_url: specs/
 next: Система сборки
 next_url: build-system
 review: true

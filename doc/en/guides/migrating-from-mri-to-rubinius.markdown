@@ -95,13 +95,9 @@ using gems that are incompatible with Rubinius, you can put them in a
 
 ## 4. Compatibility Issues
 
-Rubinius created the [RubySpec](http://rubyspec.org) project, and continually
-enhances it, to describe the behavior of Ruby and monitor compatibility with
-MRI.
-
 With few exceptions, Rubinius is expected to be compatible with MRI 2.1.  Some
 features, like keyword arguments, are not yet implemented. Other features may
-not be implemented because they are unknown and no RubySpecs exist for the
+not be implemented because they are unknown and no spec exist for the
 feature yet. Several standard library components, including Continuation,
 Ripper, TracePoint, and Tracer, are not yet implemented but may be in the
 future.

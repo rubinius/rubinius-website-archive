@@ -20,7 +20,7 @@ Qui di seguito trovate diverse idee per contribuire a Rubinius.
 ## Eseguite il vostro codice
 
 Il vostro codice è spesso più ostico delle specifiche. Eseguite i vostri
-progetti personali su Rubinius e segnalate eventuali problemi. Si veda 
+progetti personali su Rubinius e segnalate eventuali problemi. Si veda
 [Come scrivere un ticket](/doc/it/how-to/write-a-ticket).
 
 
@@ -33,14 +33,14 @@ studiare, imparare, e, si spera, estendere.
 Accetteremo e apprezzeremo sicuramente anche semplici segnalazioni di
 malfunzionamenti, ma daremo la priorità ai ticket che contengono semplici
 istruzioni per riprodurre il problema. Ancora meglio sono i ticket che
-comprendono specifiche RubySpec che dimostrino il malfunzionamento e una patch
+comprendono specifiche spec che dimostrino il malfunzionamento e una patch
 che lo risolva.
 
 
 ## Scrivete delle specifiche
 
-  1. Eseguite `bin/mspec tag --list incomplete <dir>` per mostrare le 
-     specifiche che sono state marcate come incomplete. Queste specifiche 
+  1. Eseguite `bin/mspec tag --list incomplete <dir>` per mostrare le
+     specifiche che sono state marcate come incomplete. Queste specifiche
      potrebbero semplicemente necessitare di una revisione, o ci potrebbero
      essere specifiche mancanti per una classe particolare.
 
@@ -51,7 +51,7 @@ che lo risolva.
      quella sottocartella.
 
   2. Trovate dei comportamenti non specificati. Si veda [Come scrivere una
-     specifica RubySpec](/doc/it/how-to/write-a-ruby-spec).
+     specifica spec](/doc/it/how-to/write-a-ruby-spec).
 
 
 ## Correggete specifiche errate
@@ -85,5 +85,5 @@ codice](/doc/it/contributing/style-guide/).
 
   * Rilanciate o chiudete vecchi ticket.
   * Scrivete piccoli casi di test che riproducano i malfunzionamenti.
-    Verificate che esistano già specifiche RubySpec per il problema. Se non ne
+    Verificate che esistano già specifiche spec per il problema. Se non ne
     esistono, considerate di scriverne una.

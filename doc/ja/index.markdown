@@ -26,7 +26,6 @@ next_url: what-is-rubinius
     1. [クラス変数](/doc/ja/ruby/class-variables/)
     1. [グローバル変数](/doc/ja/ruby/global-variables/)
 1. [仕様](/doc/ja/specs/)
-    1. [Rubyの仕様](/doc/ja/specs/rubyspec/)
     1. [コンパイラの仕様](/doc/ja/specs/compiler/)
 1. [ビルドシステム](/doc/ja/build-system/)
 1. [ブートストラッピング](/doc/ja/bootstrapping/)

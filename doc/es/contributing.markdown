@@ -31,7 +31,7 @@ en el que usted pueda fácilmente estudiar, aprender, y contribuir.
 
 Desde luego, se aceptan y aprecian cualquier reporte de errores, pero podemos dar
 prioridad a los reportes que incluyen pasos para reproducir el problema.
-Incluso mejor son aquellos que incluyen RubySpecs que demuestran el error y un
+Incluso mejor son aquellos que incluyen specs que demuestran el error y un
 parche que lo corrige.
 
 
@@ -80,5 +80,5 @@ de programación.
 
   * Reviva o cierre algunos reportes de error viejos.
   * Creé casos de prueba mínima en los que se presenten
-    anomalias. Luego vea si hay algún RubySpecs para ese caso.
+    anomalias. Luego vea si hay algún specs para ese caso.
     Si no, considere escribir uno.

@@ -26,7 +26,6 @@ next_url: what-is-rubinius
     1. [Klassenvariablen](/doc/de/ruby/class-variables/)
     1. [Globale Variablen](/doc/de/ruby/global-variables/)
 1. [Specs](/doc/de/specs/)
-    1. [RubySpec](/doc/de/specs/rubyspec/)
     1. [Compiler](/doc/de/specs/compiler/)
 1. [Build System](/doc/de/build-system/)
 1. [Bootstrapping](/doc/de/bootstrapping/)

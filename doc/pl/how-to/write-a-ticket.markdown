@@ -3,7 +3,7 @@ layout: doc_pl
 title: Jak zgłosić problem.
 previous: Jak
 previous_url: how-to
-next: Jak dodać specyfikację RubySpec
+next: Jak dodać specyfikację
 next_url: how-to/write-a-ruby-spec
 ---
 

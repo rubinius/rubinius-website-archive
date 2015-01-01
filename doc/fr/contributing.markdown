@@ -31,7 +31,7 @@ learn from, and hopefully extend.
 
 We will certainly accept and appreciate simple bug reports, but we can give
 priority to tickets that include simple steps to reproduce the issue. Even
-better are tickets that include RubySpecs that demonstrate the bug and a patch
+better are tickets that include specs that demonstrate the bug and a patch
 that fixes it.
 
 
@@ -79,4 +79,4 @@ guidelines.
 
   * Revive or close old tickets.
   * Build minimal test cases that reproduce the bugs. Then see if there are
-    already RubySpecs for the issue. If not, consider writing some.
+    already specs for the issue. If not, consider writing some.

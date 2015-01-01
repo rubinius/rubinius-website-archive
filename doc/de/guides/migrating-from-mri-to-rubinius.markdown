@@ -100,14 +100,10 @@ Rubinius in einem `platforms`-Block aufgeführt werden:
 
 ## 4. Kompatibilitätsprobleme
 
-Rubinius hat das [RubySpec](http://rubyspec.org) Projekt ins Leben gerufen und
-erweitert es kontinuierlich. Es beschreibt das Verhalten von Ruby und beobachtet
-die Kompatibilität von Rubinius (wie auch anderer Implemtationen) zu MRI.
-
 Mit wenigen Ausnahmen ist Rubinius vollständig kompatibel zu MRI 2.1. Einige
 Funktionen, wie z.B. die sogenannten `keyword argumets`, sind bislang noch nicht
 implementiert. Andere Funktionen sind möglicherweise ebenfalls nicht
-implementiert, wenn sie z.B. unbekannt sind oder keine RubySpecs dazu
+implementiert, wenn sie z.B. unbekannt sind oder keine specs dazu
 existieren. Einige Komponenten der Standardbibliothek sind ebenfalls noch nicht
 implementiert, davon sind z.B. Continuation Ripper, TracePoint und Tracer
 betroffen. Möglicherweise wird dies in Zukunf noch nachgeholt.

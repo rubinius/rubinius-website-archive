@@ -3,8 +3,8 @@ layout: doc_pt_br
 title: Specs
 previous: Ruby - Variáveis Globais
 previous_url: ruby/global-variables
-next: RubySpec
-next_url: specs/rubyspec
+next: Compiler
+next_url: specs/compiler
 review: true
 ---
 
@@ -16,10 +16,9 @@ em duas partes:
   2. E todos os outros arquivos dentro do diretório './spec' descrevem o comportamento
      de Rubinius.
 
-The specs at ./spec/ruby are a copy of RubySpec at a particular revision. These are regularly imported from the RubySpec project and failing specs are tagged so that the CI process always runs a known good set of specs. This enables easily confirming that changes to Rubinius code do not cause regressions.
-
-Pode encontrar mais informações sobre a organização das specs 
-e os guias no [Projeto RubySpec](http://rubyspec.org/).
+Failing specs are tagged so that the CI process always runs a known good set
+of specs. This enables easily confirming that changes to Rubinius code do
+not cause regressions.
 
 Use o seguinte workflow ao adicionar specs e código no Rubinius:
 
@@ -29,7 +28,3 @@ Use o seguinte workflow ao adicionar specs e código no Rubinius:
      a separate commit from the spec changes.
   3. Run the `rake` command to ensure that all the CI specs pass.
 
-The changes to files in ./spec/ruby are regularly pushed to the RubySpec
-project. Also, current changes to RubySpec from committers to other Ruby
-implementations are regularly updated in the ./spec/ruby directories. When the
-specs are updated from RubySpec, the CI tags are also updated.

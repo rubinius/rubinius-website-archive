@@ -67,23 +67,23 @@ Ahora que Rubinius está instalado, puedes activarlo con el siguiente comando:
 La mayoría de las gemas que corren sobre MRI deberían correr sobre Rubinius,
 con excepción de las descritas más adelante. Adicionalmente, Rubinius pone
 muchos componentes del sistema disponibles como gemas. Estos incluyen
-herramientas de análisis y compilación de código Ruby, asía como el 
+herramientas de análisis y compilación de código Ruby, asía como el
 *debugger* y el *profiler*. Todas esas gemas son pre-instaladas cuando instalas
 Rubinius.
 
 ### Gemas con C-extensions (extensiones de C)
 
-Muchas gemas que usan extensiones de C corren bien sobre Rubinius. La 
+Muchas gemas que usan extensiones de C corren bien sobre Rubinius. La
 excepción son las gemas que dependen de las estructuras de datos internas de
-MRI. Estas gemas no pueden ser soportadas en Rubinius, entre las que se 
+MRI. Estas gemas no pueden ser soportadas en Rubinius, entre las que se
 incluyen gemas como `ruby-debug` y `ruby-prof`. Rubinius provee sus propias
 herramientas, tales como como su propio *debugger* y *profiler*. Para conocer
 más detalles refiérete a la [documentación de las herramientas](http://rubini.us/doc/en/tools/).
 
 ## 3. Gemfiles
 
-Tu Gemfile deberían funcionar bien con Rubinius pero deberías ejecutar 
-`bundle update` para forzar que se vuelvan a calcular las dependencias de las 
+Tu Gemfile deberían funcionar bien con Rubinius pero deberías ejecutar
+`bundle update` para forzar que se vuelvan a calcular las dependencias de las
 gemas para Rubinius. Adicionalmente si estás usando gemas que son
 incompatibles con Rubinius, puedes ponerlas en un bloque llamado `platforms`
 hasta que completes la migración a Rubinius como se muestra a continuación:
@@ -96,15 +96,11 @@ hasta que completes la migración a Rubinius como se muestra a continuación:
 
 ## 4. Problemas de Compatibilidad
 
-Rubinius creó el proyecto [RubySpec](http://rubyspec.org), el cual mejora
-continuamente, con el objetivo de describir el comportamiento de Ruby y 
-monitorear la compatibilidad con MRI.
-
 Fuera de unas pocas excepciones se espera que Rubinius sea compatible con la
 versión 2.1 de MRI. Algunas características como los argumentos *keyword*, no
 han sido implementados aún. Puede que otras características no hayan sido
-implementadas debido que son desconocidas y no existes RubySpecs para ellas 
-aún. Varios componentes de la librería estándar, incluyendo Continuation, 
+implementadas debido que son desconocidas y no existes specs para ellas
+aún. Varios componentes de la librería estándar, incluyendo Continuation,
 Ripper, TracePoint, y Tracer, no han sido implementados aún pero pueden ser
 implementados en el futuro.
 

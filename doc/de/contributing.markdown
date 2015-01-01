@@ -31,7 +31,7 @@ und natürlich auch beteiligt kann.
 
 Wir schätzen und nehmen einfache Fehlermeldungen gerne an, geben aber Tickets
 mit ausführlichen Fehlerberichten und Anweisungen zur Reproduktion des Fehlers
-eine höhere Priorität. Noch besser sind Fehlermeldungen, die RubySpecs
+eine höhere Priorität. Noch besser sind Fehlermeldungen, die specs
 beinhalten, die den Fehler genau eingrenzen und womöglich schon Patches
 mitliefern, die den Fehler beheben.
 
@@ -40,12 +40,12 @@ mitliefern, die den Fehler beheben.
   1. Starte `bin/mspec tag --list incomplete <dir>`, um zu zeigen, dass die
      Specs als unvollständig markiert sind. Diese Specs müssen dann häufig nur
      nachgeprüft werden oder es fehlen einer bestimmten Klasse noch Specs.
-    
+
      Hinweis: Du kannst auch ein pseudo-Verzeichnis ':files' für \<dir\>
      angeben, das für alle auf Rubinius laufenden Specs die Tags anzeigt. Oder
      du gibst ein Unterverzeichnis des 'spec/' Verzeichnisses an, um nur die
      Tags für dieses Verzeichnis anzuzeigen.
-    
+
   2. Finde nicht vorgegebenes Verhalten. Siehe auch,
      [wie man Ruby Specs schreibt](/doc/de/how-to/write-a-ruby-spec).
 
@@ -54,7 +54,7 @@ mitliefern, die den Fehler beheben.
 ## Fehlerhafte Specs korrigieren
   1. Starte `bin/mspec tag --list fails <dir>` zum Anzeigen von erfolglosen
      Specs.
-     
+
      Hinweis: Du kannst auch ein pseudo-Verzeichnis ':files' für \<dir\>
      angeben, das für alle auf Rubinius laufenden Specs die Tags anzeigt. Oder
      du gibst ein Unterverzeichnis des 'spec/' Verzeichnisses an, um nur die

@@ -1,8 +1,8 @@
 ---
 layout: doc_pl
 title: Kompilator
-previous: RubySpec
-previous_url: specs/rubyspec
+previous: Specs
+previous_url: specs/
 next: Build System
 next_url: build-system
 review: true

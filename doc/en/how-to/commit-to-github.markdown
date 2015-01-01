@@ -26,21 +26,23 @@ should be merged back to master and pushed to github. To avoid
 superfluous git merge messages, we ask that the committer first
 rebase the master branch prior to the merge.
 
-1. git branch name-of-fix-branch
-2. git checkout name-of-fix-branch
-3. <write the spec>
-4. <write code to pass the spec>
-5. git add <list of spec files>
-6. git commit
-7. git add <list of code files>
-8. git commit
-9. git checkout master
-10. git pull --rebase
-11. git checkout name-of-fix-branch
-12. git rebase master
-13. git checkout master
-14. git merge name-of-fix-branch
-15. git push origin master
+```
+$> git branch name-of-fix-branch
+$> git checkout name-of-fix-branch
+<write the spec>
+<write code to pass the spec>
+$> git add <list of spec files>
+$> git commit
+$> git add <list of code files>
+$> git commit
+$> git checkout master
+$> git pull --rebase
+$> git checkout name-of-fix-branch
+$> git rebase master
+$> git checkout master
+$> git merge name-of-fix-branch
+$> git push origin master
+```
 
 Steps 9 through 15 can be automated via a script to save on all
 of that typing.
