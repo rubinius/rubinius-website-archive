@@ -1,21 +1,26 @@
 ---
 layout: site
+s3_base_url: "https://s3.amazonaws.com/releases.rubini.us/rubinius-"
 ---
 
-* Rubinius 2.4.1 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.4.1.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.4.1.tar.bz2)
-* Rubinius 2.4.0 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.4.0.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.4.0.tar.bz2)
-* Rubinius 2.3.0 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.3.0.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.3.0.tar.bz2)
-* Rubinius 2.2.10 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.10.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.10.tar.bz2)
-* Rubinius 2.2.9 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.9.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.9.tar.bz2)
-* Rubinius 2.2.8 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.8.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.8.tar.bz2)
-* Rubinius 2.2.7 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.7.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.7.tar.bz2)
-* Rubinius 2.2.6 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.6.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.6.tar.bz2)
-* Rubinius 2.2.5 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.5.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.5.tar.bz2)
-* Rubinius 2.2.4 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.4.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.4.tar.bz2)
-* Rubinius 2.2.3 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.3.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.3.tar.bz2)
-* Rubinius 2.2.2 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.2.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.2.tar.bz2)
-* Rubinius 2.2.1 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.1.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.1.tar.bz2)
-* Rubinius 2.2.0 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.0.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.2.0.tar.bz2)
-* Rubinius 2.1.1 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.1.1.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.1.1.tar.bz2)
-* Rubinius 2.1.0 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.1.0.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.1.0.tar.bz2)
-* Rubinius 2.0.0 release [https://s3.amazonaws.com/releases.rubini.us/rubinius-2.0.0.tar.bz2](https://s3.amazonaws.com/releases.rubini.us/rubinius-2.0.0.tar.bz2)
+Rubinius 2.x targets Ruby 2.x, where Rubinius 1.x targets Ruby 1.8
+
+<table class="stack_effect">
+  <thead>
+    <tr>
+      <th>Version</th>
+      <th>Date</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for release in site.data.releases %}
+  <tr class="{% cycle 'odd', 'even' %}">
+    <td>{{ release.version }}</td>
+    <td>{{ release.date }}</td>
+    <td><a href="{{ page.s3_base_url }}{{ release.version }}.tar.bz2">[bzip2]</a></td>
+  </tr>
+{% endfor %}
+  </tbody>
+<table>
+
