@@ -45,7 +45,8 @@ Just run this to install required packages:
         libeditline-dev
 
 This is tested using fresh-installed Ubuntu 12.10. There may be minor differences with older
-Ubuntu, Debian or other Debian-based distributions.
+Ubuntu, Debian or other Debian-based distributions. For example, on Debian sid, you
+should also install the `libedit-dev` package.
 
 ### Fedora/CentOS
 
