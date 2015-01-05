@@ -2,6 +2,7 @@
 layout: post
 title: Rubinius Metrics meet InfluxDB part II
 author: Jose Narvaez
+twitter: goyox86
 ---
 
 We live in a containerized world now and after seeing the complexity of setting all up in [the first part](http://rubini.us/2014/12/10/rubinius-metrics-meets-influxdb/) Mr [Joe Eli McIlvain](https://github.com/jemc) kindly created [this](https://github.com/rubinius/influxdb-grafana) this awesome [Docker](https://www.docker.com/) image with everything ready for seeing some neat graphs about the Rubinius VM.
