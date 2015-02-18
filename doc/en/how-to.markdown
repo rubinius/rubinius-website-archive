@@ -16,3 +16,4 @@ review: true
 1. [Write Documentation](/doc/en/how-to/write-documentation/)
 1. [Translate Documentation](/doc/en/how-to/translate-documentation/)
 1. [Commit to Github](/doc/en/how-to/commit-to-github/)
+1. [Obtaining GDB Backtraces](/doc/en/how-to/obtaining-gdb-backtraces/)
