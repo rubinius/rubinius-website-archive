@@ -3,8 +3,8 @@ layout: doc_en
 title: How-To - Commit Changes to Github
 previous: Translate Documentation
 previous_url: how-to/translate-documentation
-next: Appendix A - Glossary
-next_url: appendix-a-glossary
+next: Obtaining GDB Backtraces
+next_url: how-to/obtaining-gdb-backtraces
 ---
 
 The Rubinius Project does a majority of its work on the master
