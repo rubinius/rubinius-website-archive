@@ -40,7 +40,7 @@ desarrolladores en: /Developer/Applications/Utilities/CrashReporterPrefs.app
 Ejecute el siguiente comando para instalar los paquetes requeridos:
 
   $ sudo apt-get install -y build-essential bison ruby-dev rake zlib1g-dev \
-        libyaml-dev libssl-dev libreadline-dev libncurses5-dev llvm llvm-dev
+        libyaml-dev libssl-dev libreadline-dev libncurses5-dev llvm llvm-dev libedit-dev
 
 Esto fue probado con una instalación *fresca* de Ubuntu 12.10. Puede haber
 algunas diferencias menores con distribuciones viejas de Ubuntu, Debian o
