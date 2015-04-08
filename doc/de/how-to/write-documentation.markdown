@@ -7,8 +7,9 @@ next: Dokumentation übersetzen
 next_url: how-to/translate-documentation
 ---
 
-Die Dokumentation für Rubinius ist integriert mit der Website und dem Blog. Sie
-nutzt genau wie die übrigen Komponenten Jekyll.
+Die Dokumentation für Rubinius ist integriert mit der Website und dem Blog
+[github.com/rubinius/rubinius.github.io](https://github.com/rubinius/rubinius.github.io).
+Sie nutzt genau wie die übrigen Komponenten Jekyll.
 
 Um zu starten, stelle sicher, dass du die `kramdown` und `jekyll` Gems 
 installiert hast.

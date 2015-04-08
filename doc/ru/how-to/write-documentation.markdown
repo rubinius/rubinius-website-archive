@@ -7,8 +7,9 @@ next: Перевод документации
 next_url: how-to/translate-documentation
 ---
 
-Документация по Rubinius интегрирована с веб-сайтом и блогом. Для нее также
-как и для других компонентов используется Jekyll.
+Документация по Rubinius интегрирована с веб-сайтом и блогом
+[github.com/rubinius/rubinius.github.io](https://github.com/rubinius/rubinius.github.io).
+Для нее также как и для других компонентов используется Jekyll.
 
 Для начала убедитесь, что у вас установлены гемы `kramdown` и `jekyll`.
 

@@ -8,7 +8,9 @@ next_url: how-to/translate-documentation
 translated: true
 ---
 
-Rubiniusのドキュメントは、Webサイトとブログで構成されています。他の部分と同じくJekyllを使用しています。
+Rubiniusのドキュメントは、Webサイトとブログで構成されています。
+[github.com/rubinius/rubinius.github.io](https://github.com/rubinius/rubinius.github.io)
+他の部分と同じくJekyllを使用しています。
 
 始めに、`kramdown`と`jekyll`がインストールされていることを確かめてください。
 
