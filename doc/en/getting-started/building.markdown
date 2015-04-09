@@ -8,7 +8,7 @@ next_url: getting-started/running-rubinius
 ---
 
 You can build and run Rubinius from the source directory. You do not need to
-install Rubinius to run it. The directions below will detail both installing
+install Rubinius to run it. The directions below describe both installing
 Rubinius and running it from the source directory.
 
 ### Getting the Source
@@ -48,7 +48,7 @@ superuser privileges. To install Rubinius:
   1. `bundle install`
   2. `./configure --prefix=/path/to/install/dir`
   3. `rake install`
-  4. Follow the directions to add the Rubinius _bin_ directory to your PATH
+  4. Add the Rubinius _bin_ directory to your PATH
 
 
 ### Running from the Source Directory
@@ -58,8 +58,7 @@ If you plan to work on Rubinius itself, you should use this option.
   1. `./configure`
   2. `rake`
 
-If you are just trying out Rubinius, follow the directions to add the _bin_
-directory to your PATH.
+If you are just trying out Rubinius, add the _bin_ directory to your PATH.
 
 However, if you are developing Rubinius, you should NOT add the _bin_
 directory to your PATH because the Rubinius build system will pick up the
