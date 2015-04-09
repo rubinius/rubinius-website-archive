@@ -11,12 +11,6 @@ You can build and run Rubinius from the source directory. You do not need to
 install Rubinius to run it. The directions below will detail both installing
 Rubinius and running it from the source directory.
 
-Rubinius uses LLVM for the JIT compiler and depends on LLVM 3.x. The
-`configure` script will automatically check whether a version is already
-available or will download one if not. If you do have LLVM installed and
-Rubinius fails to link with it for any reason, pass `--skip-system` to the
-`configure` script in the directions below.
-
 ### Getting the Source
 
 The Rubinius source code is available as a tarball and as a project on Github.
@@ -28,6 +22,19 @@ To use Git:
   1. Change your current working directory to your development directory
   2. `git clone git://github.com/rubinius/rubinius.git`
 
+### LLVM
+
+Rubinius uses LLVM for the JIT compiler and depends on LLVM 3.x. The
+`configure` script will automatically check whether a version is already
+available or will download one if not. If you do have LLVM installed and
+Rubinius fails to link with it for any reason, pass `--skip-system` to the
+`configure` script in the directions below.
+
+If the configure script does not have `--skip-system` then you can use
+--llvm-config=/path/to/bin/llvm-config to specify the correct llvm-config to
+use. E.g. on Ubuntu 12.04, `apt-get install llvm-3.4` installs
+/usr/bin/llvm-config-3.4, so you would use
+--llvm-config=/usr/bin/llvm-config-3.4.
 
 ### Installing Rubinius
 
