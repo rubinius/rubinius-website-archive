@@ -7,7 +7,7 @@ next_url: getting-started
 
 ## Rubinius とは
 
-Rubinius は [プログラミング言語 Ruby](http://ruby-lang.org) の実装です。
+Rubinius は [プログラミング言語 Ruby](https://www.ruby-lang.org) の実装です。
 
 Rubinius には、バイトコード仮想マシン、Ruby 
 の構文解析器、バイトコードコンパイラ、世代別ガベージコレクタ、ジャストインタイム 

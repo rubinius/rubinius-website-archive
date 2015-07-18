@@ -138,7 +138,7 @@ decision based on your reports about how the 2.0.0pre branch is working with
 existing 1.8.7 applications.
 
 We greatly appreciate your help polishing up the Rubinius 2.0 release! Follow
-us on [Twitter](http://twitter.com/rubinius) for updates and stop by #rubinius
+us on [Twitter](https://twitter.com/rubinius) for updates and stop by #rubinius
 on freenode.net to chat about anything on your mind.
 
 

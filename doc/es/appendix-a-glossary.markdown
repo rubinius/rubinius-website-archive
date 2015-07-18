@@ -101,7 +101,7 @@ segunda o tercera edición por Thomas et al [The Pragmatic Programmers 2005-2008
 
   "Matz's Ruby Interpreter" o "Matz's Ruby Implementation". Una abreviación
   para referirse a la implementación oficial de Ruby. Ver
-  <http://ruby-lang.org>.
+  <https://www.ruby-lang.org>.
 
 
 * _private send (send privado)_

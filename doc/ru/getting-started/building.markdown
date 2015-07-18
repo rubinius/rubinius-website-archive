@@ -12,7 +12,7 @@ next_url: getting-started/running-rubinius
 ниже, подробно описывают установку и запуск Rubinius из каталога с исходниками.
 
 Rubinius использует
-[LLVM](http://ru.wikipedia.org/wiki/Low_Level_Virtual_Machine) для
+[LLVM](https://ru.wikipedia.org/wiki/Low_Level_Virtual_Machine) для
 JIT-компиляции. Rubinius зависит от определенной
 версии LLVM, которая должна быть собрана с включенной RTTI (run-time type
 information). Скрипт "`configure`" автоматически проверит эти условия на стадии

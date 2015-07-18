@@ -14,5 +14,5 @@ times. We rely heavily on IRC, however, there are other communication channels
 as well. Below is a list of places we can be reached:
 
 * IRC: `#rubinius` on irc.freenode.net
-* Twitter: [twitter.com/rubinius](http://twitter.com/rubinius)
-* Mailing List: [Google Groups](http://groups.google.com/group/rubinius-dev)
+* Twitter: [twitter.com/rubinius](https://twitter.com/rubinius)
+* Mailing List: [Google Groups](https://groups.google.com/group/rubinius-dev)

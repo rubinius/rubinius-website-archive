@@ -15,17 +15,17 @@ Poniżej zostały przedstawione sugestie co do programów oraz bibliotek
 wymaganych do skompilowania Rubiniusa. Twój system operacyjny lub
 system zarządzania pakietami może udostępniać inne odpowiedniki tych bibliotek.
 
-  * [GCC oraz G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Jeśli nie masz
+  * [GCC oraz G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/) Jeśli nie masz
     zainstalowanego Ruby 2.0.0 w systemie rozważ skorzystanie z [RVM](https://rvm.beginrescueend.com/)
     aby go zainstalować.
-  * [Rubygems](http://www.rubygems.org/)
-  * [Git](http://git.or.cz/)
+  * [Rubygems](https://rubygems.org/)
+  * [Git](https://git-scm.com/)
   * [ZLib](http://www.zlib.net/)
   * pthread - Biblioteka pthread powinna być zainstalowana przez Twój
     system operacyjny
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 

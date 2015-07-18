@@ -100,7 +100,7 @@ Guide" 2nd or 3rd Edition by Thomas et al [The Pragmatic Programmers
 * _MRI_
 
   Matz's Ruby Interpreter ou implementação do interpretador ruby. O nome da
-  implementação oficial do Ruby. Veja <http://ruby-lang.org>.
+  implementação oficial do Ruby. Veja <https://www.ruby-lang.org>.
 
 
 * _private send_

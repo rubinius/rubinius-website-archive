@@ -7,7 +7,7 @@ author: Brian Ford
 Many thought the day would never come, but Rubinius finally has a blog. That's
 not all, though: We have integrated the website, blog, and documentation using
 Jekyll. The source code for it all is in the main [Rubinius
-repository](http://github.com/rubinius/rubinius).
+repository](https://github.com/rubinius/rubinius).
 
 People have often requested that we write more about the _awesome_ features in
 Rubinius. We hear you and we'd love to do this. However, there is always a
@@ -32,7 +32,7 @@ machine and open a browser window to display the Rubinius documentation. Now
 the documentation will also be available at the [rubini.us](http://rubini.us)
 website. I have added a basic outline and a bunch of files to further simplify
 the task of writing docs. In many cases, merely open a file and start writing
-docs in [Markdown](http://daringfireball.net/projects/markdown/syntax) format.
+docs in [Markdown](https://daringfireball.net/projects/markdown/syntax) format.
 
 We have also begun translating our documentation to other languages. I am
 excited about this, being a huge language geek. I wish that I were proficient

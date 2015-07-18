@@ -30,7 +30,7 @@ Um eine neue Übersetzung für eine weitere Sprache anzulegen, gehe wie folgt
 vor:
 
 1. Kopiere `web/doc/en` nach `web/doc/LANG`, wobei _LANG_ der
-   [ISO-639-1](http://en.wikipedia.org/wiki/List_of_ISO_639-2_codes) Code ist,
+   [ISO-639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes) Code ist,
    der beim Anlegen einer neuen Sprache maßgeblich ist.
 1. Bearbeite die Links im Inhaltsverzeichnis so, dass diese auf die übersetzten
    Dateien verweisen. (Beachte, dass aus derzeit unbekannten Gründen das 

@@ -6,7 +6,7 @@ next_url: getting-started
 
 ## Czym jest Rubinius ?
 
-Rubinius jest implementacją [języka programowania Ruby](http://ruby-lang.org).
+Rubinius jest implementacją [języka programowania Ruby](https://www.ruby-lang.org).
 
 Rubinius składa się z maszyny wirtualnej opartej na bajtkodzie,
 parsera składni, kompilatora bajtkodu, pokoleniowego odśmiecacza

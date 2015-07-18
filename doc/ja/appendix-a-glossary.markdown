@@ -101,7 +101,7 @@ Guide" 2nd or 3rd Edition by Thomas et al [The Pragmatic Programmers
 * _MRI_
 
   Matz's Ruby Interpreter or Matz's Ruby Implementation. A short name to refer
-  to the official implementation of Ruby. See <http://ruby-lang.org>.
+  to the official implementation of Ruby. See <https://www.ruby-lang.org>.
 
 
 * _private send_

@@ -15,16 +15,16 @@ The following are suggestions for getting more information about the programs
 and libraries needed to build Rubinius. Your operating system or package
 manager may have other packages available.
 
-  * [GCC and G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) If your system does not have
+  * [GCC and G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/) If your system does not have
     Ruby 2.0.0 installed, consider using
     [ruby-install](https://github.com/postmodern/ruby-install) to install it.
-  * [Rubygems](http://www.rubygems.org/)
-  * [Git](http://git.or.cz/)
+  * [Rubygems](https://rubygems.org/)
+  * [Git](https://git-scm.com/)
   * [ZLib](http://www.zlib.net/)
   * pthread - The pthread library should be installed by your operating system
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
   * [editline](http://thrysoee.dk/editline/) when using newer versions of LLVM
 
@@ -59,5 +59,5 @@ should also install the `libedit-dev` package.
 ### FreeBSD
 
 Rubinius has a port in FreeBSD ports tree. It's called `lang/rubinius`. You
-can find information about this port on [FreshPorts](http://www.freshports.org/lang/rubinius/). Once being
+can find information about this port on [FreshPorts](https://www.freshports.org/lang/rubinius/). Once being
 installed the port installs all the dependencies automagically.

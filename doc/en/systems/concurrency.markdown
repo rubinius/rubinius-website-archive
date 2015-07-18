@@ -111,5 +111,5 @@ worker dies (e.g. raises an exception):
     sleep 1
 
 This example is a snippet from
-[girl_friday](http://github.com/mperham/girl_friday). You can review that
+[girl_friday](https://github.com/mperham/girl_friday). You can review that
 codebase for more detail if you have questions.

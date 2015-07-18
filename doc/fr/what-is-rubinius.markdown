@@ -6,7 +6,7 @@ next_url: getting-started
 
 ## Qu'est-ce que Rubinius ?
 
-Rubinius est une implémentation du [langage de programmation Ruby](http://www.ruby-lang.org/fr/).
+Rubinius est une implémentation du [langage de programmation Ruby](https://www.ruby-lang.org/fr/).
 
 Rubinius inclut une machine virtuelle pour code intermédiaire, un analyseur de syntaxe
 Ruby, un compilateur de code intermédiaire, un ramasse-miettes générationnel, un compilateur

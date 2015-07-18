@@ -15,16 +15,16 @@ Las siguientes son sugerencias para obtener más información acerca de los
 programas y bibliotecas necesarias para construir Rubinius. Su sistema
 operativo o su manejador de paquetes podría tener otros paquetes disponibles.
 
-  * [GCC y G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Si su sistema no
+  * [GCC y G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/) Si su sistema no
     tiene Ruby 2.0.0 instalado, considere utilizar [RVM](https://rvm.beginrescueend.com/)
     para instalarlo.
-  * [Rubygems](http://www.rubygems.org/)
-  * [Git](http://git.or.cz/)
+  * [Rubygems](https://rubygems.org/)
+  * [Git](https://git-scm.com/)
   * [ZLib](http://www.zlib.net/)
   * pthread - La libreria pthread debe encontrarse instalada como parte de su sistema operativo.
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
@@ -57,5 +57,5 @@ variantes de Debian.
 ### FreeBSD
 
 Rubinius tiene un port en el árbol de ports de FreeBSD. Y se llama `lang/rubinius`. Puede
-encontrar más información acerca de este port en <http://freshports.org>. Una vez
+encontrar más información acerca de este port en <https://freshports.org>. Una vez
 instalado el port, automáticamente se incluirán todas las dependencias.

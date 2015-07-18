@@ -9,7 +9,7 @@ I wanted to share a few blog posts that people have written for today.
 It seems like lots of people are having lots of fun all while using Rubinius.
 That&rsquo;s what really matters.
 
-And I think [Andrew W. K.](http://twitter.com/andrewwk)
+And I think [Andrew W. K.](https://twitter.com/andrewwk)
 would probably be proud of that.
 
 Onto the blog posts...

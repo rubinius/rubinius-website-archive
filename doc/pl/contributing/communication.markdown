@@ -15,5 +15,5 @@ polegamy w głównej mierze na kanale IRC, ponadto możesz się z nami
 skontaktować przy pomocy poniższych sposobów:
 
 * IRC: `#rubinius` na irc.freenode.net
-* Twitter: [twitter.com/rubinius](http://twitter.com/rubinius)
-* Lista mailingowa: [Google Groups](http://groups.google.com/group/rubinius-dev)
+* Twitter: [twitter.com/rubinius](https://twitter.com/rubinius)
+* Lista mailingowa: [Google Groups](https://groups.google.com/group/rubinius-dev)

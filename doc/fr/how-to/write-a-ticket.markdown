@@ -7,7 +7,7 @@ next: Ecrire un Test Ruby
 next_url: how-to/write-a-spec
 ---
 
-Le gestionnaire de ticket Rubinius se trouve à l'adresse <http://github.com/rubinius/rubinius/issues>.
+Le gestionnaire de ticket Rubinius se trouve à l'adresse <https://github.com/rubinius/rubinius/issues>.
 
 Pour être utile, un ticket doit être concis, précis et permettre d'agir.
 S'il ne l'est pas, le ticket va engendrer des aller-tours, des

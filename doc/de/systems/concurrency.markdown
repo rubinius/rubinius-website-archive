@@ -110,5 +110,5 @@ wegen einer Exception) benachrichtigt:
     end
     sleep 1
 
-Dieses Beispiel stammt von [girl_friday](http://github.com/mperham/girl_friday).
+Dieses Beispiel stammt von [girl_friday](https://github.com/mperham/girl_friday).
 Weitere Einzelheiten finden sich im Repository.

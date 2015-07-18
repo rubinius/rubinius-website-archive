@@ -13,16 +13,16 @@ next_url: getting-started/building
 後ろに書かれているものは、必要となるプログラムやライブラリに関する提言です。
 ご使用のオペレーティングシステムまたはパッケージマネージャによっては、別のパッケージを利用できるかもしれません。
 
-  * [GCC and G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/)
+  * [GCC and G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/)
     システム上に Ruby 2.0.0 がインストールされていないのならば、[RVM](https://rvm.beginrescueend.com/)
     を使ってインストールすることをおすすめします。
-  * [Rubygems](http://www.rubygems.org/)
-  * [Git](http://git.or.cz/)
+  * [Rubygems](https://rubygems.org/)
+  * [Git](https://git-scm.com/)
   * [ZLib](http://www.zlib.net/)
   * pthread - The pthread library should be installed by your operating system
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
@@ -45,5 +45,5 @@ developer mode crash reporting を有効にできます。
 ### FreeBSD
 
 Rubinius は、FreeBSD の ports ツリーに lang/rubinius という port をもっています。
-この port に関する情報は [http://freshports.org](http://freshports) で得ることができます。
+この port に関する情報は [https://freshports.org](http://freshports) で得ることができます。
 インストールされると、このポートは、全ての依存するものを自動的にインストールします。

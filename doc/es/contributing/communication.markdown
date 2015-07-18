@@ -14,5 +14,5 @@ comunicación también. A continuación te presentamos una lista con distintos
 lugares donde encontrarnos:
 
 * IRC: `#rubinius` en irc.freenode.net
-* Twitter: [twitter.com/rubinius](http://twitter.com/rubinius)
-* Mailing List: [Google Groups](http://groups.google.com/group/rubinius-dev)
+* Twitter: [twitter.com/rubinius](https://twitter.com/rubinius)
+* Mailing List: [Google Groups](https://groups.google.com/group/rubinius-dev)

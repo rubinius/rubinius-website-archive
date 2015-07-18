@@ -130,7 +130,7 @@ Programmers 2005-2008]
 * _MRI_
 
   Matz's Ruby Interpreter или Matz's Ruby Implementation. Аббревиатура для обозначения
-  официальной реализации Ruby. Смотри <http://ruby-lang.org>.
+  официальной реализации Ruby. Смотри <https://www.ruby-lang.org>.
 
 
 * _приватный вызов_

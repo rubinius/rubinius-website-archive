@@ -14,5 +14,5 @@ review: true
 способы взаимодействия. Ниже следует список мест, где нас можно найти:
 
 * IRC: `#rubinius` на сервере `irc.freenode.net`
-* Твиттер: [@rubinius](http://twitter.com/rubinius)
-* Список рассылки: [Google Groups](http://groups.google.com/group/rubinius-dev)
+* Твиттер: [@rubinius](https://twitter.com/rubinius)
+* Список рассылки: [Google Groups](https://groups.google.com/group/rubinius-dev)
