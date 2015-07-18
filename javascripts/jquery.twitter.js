@@ -1,74 +1,164 @@
 (function($) {
 	/*
-		jquery.twitter.js v1.0
-		Last updated: 26 October 2008
+		jquery.twitter.js v1.6
+		Last updated: 16 October 2012
 
 		Created by Damien du Toit
-		http://coda.co.za/blog/2008/10/26/jquery-plugin-for-twitter
+		http://coda.co.za/content/projects/jquery.twitter/
 
 		Licensed under a Creative Commons Attribution-Non-Commercial 3.0 Unported License
 		http://creativecommons.org/licenses/by-nc/3.0/
 	*/
 
 	$.fn.getTwitter = function(options) {
+
+		$.fn.getTwitter.defaults = {
+			userName: null,
+			numTweets: 5,
+			loaderText: "Loading tweets...",
+			slideIn: true,
+			slideDuration: 750,
+			showHeading: true,
+			headingText: "Latest Tweets",
+			showProfileLink: true,
+			showTimestamp: true,
+			includeRetweets: false,
+			excludeReplies: true
+		};
+
 		var o = $.extend({}, $.fn.getTwitter.defaults, options);
 
-		// hide container element
-		$(this).hide();
+		return this.each(function() {
+			var c = $(this);
 
-		// add heading to container element
-		if (o.showHeading) {
-			$(this).append('<h2>'+o.headingText+'</h2>');
+			// hide container element, remove alternative content, and add class
+			c.hide().empty().addClass("twitted");
+
+			// add heading to container element
+			if (o.showHeading) {
+				c.append("<h2>"+o.headingText+"</h2>");
+			}
+
+			// add twitter list to container element
+			var twitterListHTML = "<ul id=\"twitter_update_list\"></ul>";
+			c.append(twitterListHTML);
+
+			var tl = $("#twitter_update_list");
+
+			// hide twitter list
+			tl.hide();
+
+			// add preLoader to container element
+			var preLoaderHTML = $("<p class=\"preLoader\">"+o.loaderText+"</p>");
+			c.append(preLoaderHTML);
+
+			// add Twitter profile link to container element
+			if (o.showProfileLink) {
+				var profileLinkHTML = "<p class=\"profileLink\"><a href=\"https://twitter.com/"+o.userName+"\">https://twitter.com/"+o.userName+"</a></p>";
+				c.append(profileLinkHTML);
+			}
+
+			// show container element
+			c.show();
+
+			// request (o.numTweets + 20) to avoid not having enough tweets if includeRetweets = false and/or excludeReplies = true
+			window.jsonTwitterFeed = "https://api.twitter.com/1/statuses/user_timeline.json?include_rts="+o.includeRetweets+"&excludeReplies="+o.excludeReplies+"&screen_name="+o.userName+"&count="+(o.numTweets + 20);
+
+			$.ajax({
+				url: jsonTwitterFeed,
+				data: {},
+				dataType: "jsonp",
+				callbackParameter: "callback",
+				timeout: 50000,
+				success: function(data) {
+					window.count = 0;
+
+					$.each(data, function(key, val) {
+						var tweetHTML = "<li><span>" + replaceURLWithHTMLLinks(val.text) + "</span>";
+
+						if (o.showTimestamp) tweetHTML += " <a style=\"font-size:85%\" href=\"https://twitter.com/" + o.userName + "/statuses/" + val.id_str + "\">" + relative_time(val.created_at) + "</a>";
+					
+						tweetHTML += "</li>";
+
+						$("#twitter_update_list").append(tweetHTML);
+
+						count++;
+
+						if (count == o.numTweets) {
+							// remove preLoader from container element
+							$(preLoaderHTML).remove();
+
+							// show twitter list
+							if (o.slideIn) {
+								// a fix for the jQuery slide effect
+								// Hat-tip: http://blog.pengoworks.com/index.cfm/2009/4/21/Fixing-jQuerys-slideDown-effect-ie-Jumpy-Animation
+								var tlHeight = tl.data("originalHeight");
+				
+								// get the original height
+								if (!tlHeight) {
+									tlHeight = tl.show().height();
+									tl.data("originalHeight", tlHeight);
+									tl.hide().css({height: 0});
+								}
+
+								tl.show().animate({height: tlHeight}, o.slideDuration);
+							}
+							else {
+								tl.show();
+							}
+				
+							// add unique class to first list item
+							tl.find("li:first").addClass("firstTweet");
+				
+							// add unique class to last list item
+							tl.find("li:last").addClass("lastTweet");
+
+							return false;
+						}
+					});
+				},
+				error: function(XHR, textStatus, errorThrown) {
+					//alert("Error: " + textStatus);
+					//alert("Error: " + errorThrown);
+				}
+			});
+		});
+
+		function replaceURLWithHTMLLinks(text) {
+			var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+			return text.replace(exp, "<a href=\"$1\">$1</a>");
 		}
 
-		// add twitter list to container element
-		$(this).append('<ul id="twitter_update_list"><li></li></ul>');
-
-		// hide twitter list
-		$("ul#twitter_update_list").hide();
-
-		// add preLoader to container element
-		var pl = $('<p id="'+o.preloaderId+'">'+o.loaderText+'</p>');
-		$(this).append(pl);
-
-		// add Twitter profile link to container element
-		if (o.showProfileLink) {
-			$(this).append('<a id="profileLink" href="http://twitter.com/'+o.userName+'">http://twitter.com/'+o.userName+'</a>');
-		}
-
-		// show container element
-		$(this).show();
-
-		$.getScript("http://twitter.com/javascripts/blogger.js");
-		$.getScript("http://twitter.com/statuses/user_timeline/"+o.userName+".json?callback=twitterCallback2&count="+o.numTweets, function() {
-			// remove preLoader from container element
-			$(pl).remove();
-
-			// show twitter list
-			if (o.slideIn) {
-				$("ul#twitter_update_list").slideDown(1000);
+		// sourced from https://twitter.com/javascripts/blogger.js
+		function relative_time(time_value) {
+			var values = time_value.split(" ");
+			time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
+			var parsed_date = Date.parse(time_value);
+			var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+			var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
+			delta = delta + (relative_to.getTimezoneOffset() * 60);
+			
+			if (delta < 60) {
+				return "less than a minute ago";
+			}
+			else if (delta < 120) {
+				return "about a minute ago";
+			}
+			else if (delta < (60*60)) {
+				return (parseInt(delta / 60)).toString() + " minutes ago";
+			}
+			else if (delta < (120*60)) {
+				return "about an hour ago";
+			}
+			else if (delta < (24*60*60)) {
+				return "about " + (parseInt(delta / 3600)).toString() + " hours ago";
+			}
+			else if (delta < (48*60*60)) {
+				return "1 day ago";
 			}
 			else {
-				$("ul#twitter_update_list").show();
+				return (parseInt(delta / 86400)).toString() + " days ago";
 			}
-
-			// give first list item a special class
-			$("ul#twitter_update_list li:first").addClass("firstTweet");
-
-			// give last list item a special class
-			$("ul#twitter_update_list li:last").addClass("lastTweet");
-		});
-	};
-
-	// plugin defaults
-	$.fn.getTwitter.defaults = {
-		userName: null,
-		numTweets: 5,
-		preloaderId: "preloader",
-		loaderText: "Loading tweets...",
-		slideIn: false,
-		showHeading: true,
-		headingText: "Latest Tweets",
-		showProfileLink: true
+		}
 	};
 })(jQuery);
