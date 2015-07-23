@@ -103,6 +103,6 @@ un singolo simbolo come parametro.
   * Utilizzate Doxygen per la documentazione del codice C++.
 
   * Utilizzate Markdown per la documentazione nella cartella doc/. Si veda
-    [La sintassi Markdown](http://daringfireball.net/projects/markdown/syntax)
+    [La sintassi Markdown](https://daringfireball.net/projects/markdown/syntax)
     Impostate la lunghezza delle righe a 78 caratteri e andate a capo
     manualmente.

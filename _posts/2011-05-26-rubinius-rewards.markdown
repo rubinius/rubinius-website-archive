@@ -28,7 +28,7 @@ and want one, we're very sorry, but don't you worry. We've got you covered.
 
 ## General Availability Stickers
 
-[![A box of Rubinius stickers](http://farm3.static.flickr.com/2458/5742057726_48c42d5462_z.jpg "A box of Rubinius stickers by veganstraightedge, on Flickr")](http://www.flickr.com/photos/veganstraightedge/5742057726)
+[![A box of Rubinius stickers](https://farm3.static.flickr.com/2458/5742057726_48c42d5462_z.jpg "A box of Rubinius stickers by veganstraightedge, on Flickr")](https://www.flickr.com/photos/veganstraightedge/5742057726)
 
 We've got a box of stickers in three designs:
 [square](http://asset.rubini.us/web/images/blog/rubinius_square_sticker.png),
@@ -52,10 +52,10 @@ in
 women's small, women's medium, unisex small, unisex medium, unisex large,
 unisex x-large or unisex xx-large.
 
-[![Rubinius &quot;Use Ruby&trade;&quot; T-Shirts at the Farmhouse in Hollywood, CA](http://farm4.static.flickr.com/3469/5709097384_0bde99e1d3_z.jpg "Rubinius &quot;Use Ruby&trade;&quot; T-Shirts at the Farmhouse in Hollywood, CA, on Flickr")](http://www.flickr.com/photos/veganstraightedge/5709097384)
+[![Rubinius &quot;Use Ruby&trade;&quot; T-Shirts at the Farmhouse in Hollywood, CA](https://farm4.static.flickr.com/3469/5709097384_0bde99e1d3_z.jpg "Rubinius &quot;Use Ruby&trade;&quot; T-Shirts at the Farmhouse in Hollywood, CA, on Flickr")](https://www.flickr.com/photos/veganstraightedge/5709097384)
 
 Photo by [Tj Nelson Jr](http://flickr.com/tjnelsonjunior "Flickr: tjnelsonjunior's Photostream")
-[@tjnelsonjr](http://twitter.com/tjnelsonjr "@tjnelsonjr")
+[@tjnelsonjr](https://twitter.com/tjnelsonjr "@tjnelsonjr")
 
 
 ## First Commit Sticker
@@ -96,7 +96,7 @@ Rubinius is obviously older than the new Rubinius Rewards program. To backfill
 for all the contributions people have made over the years up until, we have a
 *super duper limited edition never to be made again* sticker... the asterisk.
 
-[![Rubinius stickers on my laptop](http://farm4.static.flickr.com/3187/5742135762_521146bdf9_z.jpg "The new @Rubinius stickers on my @EngineYard laptop, on Flickr")](http://www.flickr.com/photos/veganstraightedge/5742135762)
+[![Rubinius stickers on my laptop](https://farm4.static.flickr.com/3187/5742135762_521146bdf9_z.jpg "The new @Rubinius stickers on my @EngineYard laptop, on Flickr")](https://www.flickr.com/photos/veganstraightedge/5742135762)
 
 ## Get in Touch
 

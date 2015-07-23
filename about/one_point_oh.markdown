@@ -14,7 +14,7 @@ This marks the end of a long and wonderful road we have all traveled over the
 last 3 1/2 years. There are so many people to thank for their help and
 support.
 
-[Fabius](http://en.wikipedia.org/wiki/Fabius_Maximus) is the release name of
+[Fabius](https://en.wikipedia.org/wiki/Fabius_Maximus) is the release name of
 version 1.0. This is a reference to the great defender of Rome. This name was
 given to Rubinius by [Geoffrey Grosenbach](http://peepcode.com/), who secured
 naming rights to version 1.0 many years ago by being the very first person to

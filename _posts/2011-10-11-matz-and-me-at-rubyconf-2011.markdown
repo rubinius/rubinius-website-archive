@@ -8,6 +8,6 @@ I had a great time at RubyConf 2011 in New Orleans, LA. I saw old friends from a
 
 Oh, and we took these pictures of me and Matz in the new Rubinius shirt. Altogether, not a bad conference at all.
 
-[![Me with Matz in a Rubinius shirt at RubyConf 2011 in New Orleans, LA](http://farm7.static.flickr.com/6232/6234562423_2c2c5b5f8b_z.jpg)](http://www.flickr.com/photos/veganstraightedge/6234562423)[![Matz in a Rubinius shirt at RubyConf 2011 in New Orleans, LA](http://farm7.static.flickr.com/6048/6234562147_d986abe428_z.jpg)](http://www.flickr.com/photos/veganstraightedge/6234562147)
+[![Me with Matz in a Rubinius shirt at RubyConf 2011 in New Orleans, LA](https://farm7.static.flickr.com/6232/6234562423_2c2c5b5f8b_z.jpg)](https://www.flickr.com/photos/veganstraightedge/6234562423)[![Matz in a Rubinius shirt at RubyConf 2011 in New Orleans, LA](https://farm7.static.flickr.com/6048/6234562147_d986abe428_z.jpg)](https://www.flickr.com/photos/veganstraightedge/6234562147)
 
 How was *your* RubyConf?

@@ -7,7 +7,7 @@ next_url: getting-started
 ## Cos'è Rubinius
 
 Rubinius è un'implementazione del [Linguaggio di programmazione
-Ruby](http://ruby-lang.org).
+Ruby](https://www.ruby-lang.org).
 
 Rubinius comprende una macchina virtuale per il bytecode, un parser della
 sintassi Ruby, un compilatore di bytecode, un garbage collector generazionale,

@@ -66,5 +66,5 @@ object* which by default is 2700 (such a good baud rate eh?) bytes.
 For more information on configuration variables available read the
 [vm configuration source file ][config]
 
-[gc]: http://en.wikipedia.org/wiki/Garbage_collection_(computer_science)#Generational_GC_.28ephemeral_GC.29
+[gc]: https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)#Generational_GC_.28ephemeral_GC.29
 [config]: https://github.com/rubinius/rubinius/blob/master/library/rubinius/configuration.rb

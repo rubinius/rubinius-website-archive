@@ -96,5 +96,5 @@ above in the alpha stage take a single, symbol argument.
   * Use Doxygen for documentation in C++ code.
 
   * Use Markdown for documentation in the /doc directory. See [Markdown
-    syntax](http://daringfireball.net/projects/markdown/syntax) Set the text
+    syntax](https://daringfireball.net/projects/markdown/syntax) Set the text
     width to 78 characters and use hard breaks.

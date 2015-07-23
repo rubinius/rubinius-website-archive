@@ -106,7 +106,7 @@ Programmer's Guide" 2. oder 3. Auflage von Thomas et al [The Pragmatic Programme
 
   Matz's Ruby Interpreter oder Matz's Ruby Implementation. Eine
   Abkürzung mit der die offizielle Implementierung von Ruby gemeint
-  ist. Siehe <http://ruby-lang.org>.
+  ist. Siehe <https://www.ruby-lang.org>.
 
 
 * _private send (Privater Nachrichtenversand / Methodenaufruf)_

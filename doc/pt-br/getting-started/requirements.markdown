@@ -15,16 +15,16 @@ Abaixo existem sugestões para obter mais informações sobre os programas e bib
 necessarias para instalar o Rubinius. Seu sistemas operacional ou gerenciador de pacotes 
 pode ter outros pacotes disponíveis.
 
-  * [GCC and G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Se o seu sistema não tiver o 
+  * [GCC and G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/) Se o seu sistema não tiver o 
     Ruby 2.0.0 instalado, considere usar o [RVM](https://rvm.beginrescueend.com/)
     para instala-lo.
-  * [Rubygems](http://www.rubygems.org/)
-  * [Git](http://git.or.cz/)
+  * [Rubygems](https://rubygems.org/)
+  * [Git](https://git-scm.com/)
   * [ZLib](http://www.zlib.net/)
   * pthread - A biblioteca pthread deve estar instalada no seu sistema operacional
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 

@@ -16,16 +16,16 @@ La liste suivante est un ensemble de suggestions pour avoir plus d'information
 Votre système d'exploitation ou gestionnaire de paquets peut avoir
 d'autres paquets disponibles.
 
-  * [GCC et G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Si votre système n'a pas
+  * [GCC et G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/) Si votre système n'a pas
     Ruby 2.0.0 installé, pensez à utiliser [RVM](https://rvm.beginrescueend.com/)
     pour l'installer.
-  * [Rubygems](http://www.rubygems.org/)
-  * [Git](http://git.or.cz/)
+  * [Rubygems](https://rubygems.org/)
+  * [Git](https://git-scm.com/)
   * [ZLib](http://www.zlib.net/)
   * pthread - La bibliothèque pthread devrait être installée par votre système d'exploitation
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 
@@ -54,6 +54,6 @@ développeur ici :
 ### FreeBSD
 
 Rubinius a un portage dans l'arbre des portages FreeBSD. Il s'appelle `lang/rubinius`.
-Vous pouvez trouver des informations à propos de ce portage sur [FreshPorts](http://freshports.org/lang/rubinius/).
+Vous pouvez trouver des informations à propos de ce portage sur [FreshPorts](https://freshports.org/lang/rubinius/).
 Lors de son installation, le portage installe toutes les dépendances automagiquement.
 

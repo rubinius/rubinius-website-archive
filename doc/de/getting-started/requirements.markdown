@@ -16,16 +16,16 @@ Im Folgenden eine Auflistung an vorgeschlagenen Links, um weitere Informationen
 Rubinius erfolgreich zu bauen. Ggf. hält dein Betriebssystem oder Paketmanager
 andere/weitere Pakete bereit.
 
-  * [GCC and G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Falls Ruby 2.0.0
+  * [GCC and G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/) Falls Ruby 2.0.0
     nicht auf deinem System installiert ist, sollte
     [RVM](https://rvm.beginrescueend.com/) in Erwägung gezogen werden.
-  * [Rubygems](http://www.rubygems.org/)
+  * [Rubygems](https://rubygems.org/)
   * [Git](http://git-scm.com)
   * [ZLib](http://www.zlib.net/)
   * pthread - Die pthread Bibliothek sollte auf deinem System installiert sein.
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
 
 

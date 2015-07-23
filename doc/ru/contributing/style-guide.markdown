@@ -99,6 +99,6 @@ irc.freenode.net.
   * Используйте Doxygen для документирования в C++ коде.
 
   * Используйте Markdown для документирования в директории `/doc`. См.
-    [<<Синтаксис Markdown>>](http://daringfireball.net/projects/markdown/syntax).
+    [<<Синтаксис Markdown>>](https://daringfireball.net/projects/markdown/syntax).
     Установите ширину текста в 78 символов и используйте жесткие переводы
     строки.

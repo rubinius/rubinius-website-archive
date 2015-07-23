@@ -477,9 +477,9 @@ new to programming languages and have some basic questions. We enjoy talking
 about these concepts. If you are quite new to Rubinius, you may find these
 posts informative:
 
-* [Making Ruby Fast: The Rubinius JIT](http://www.engineyard.com/blog/2010/making-ruby-fast-the-rubinius-jit/)
-* [Improving the Rubinius Bytecode Compiler](http://www.engineyard.com/blog/2009/improving-the-rubinius-bytecode-compiler/)
-* [Compiling Ruby: From Text to Bytecode](http://www.engineyard.com/blog/2009/the-anatomy-of-a-ruby-jit-compile/)
+* [Making Ruby Fast: The Rubinius JIT](https://blog.engineyard.com/2010/making-ruby-fast-the-rubinius-jit/)
+* [Improving the Rubinius Bytecode Compiler](https://blog.engineyard.com/2009/improving-the-rubinius-bytecode-compiler/)
+* [Compiling Ruby: From Text to Bytecode](https://blog.engineyard.com/2009/the-anatomy-of-a-ruby-jit-compile/)
 
 Finally, consider helping other knowledge seekers by writing blog posts on
 what you learn about Rubinius. Or, help us [write documentation](http://rubini.us/doc/en/how-to/write-documentation/)!
@@ -523,9 +523,9 @@ adding content is easy.
 
 You may also be interested in these previous posts about Rubinius:
 
-* [Rubinius wants to help YOU make Ruby better](http://www.engineyard.com/blog/2010/rubinius-wants-to-help-you-make-ruby-better/)
-* [5 Things You'll Love About Rubinius](http://www.engineyard.com/blog/2009/5-things-youll-love-about-rubinius/)
-* [Rubinius: The Book Tour](http://www.engineyard.com/blog/2009/rubinius-the-book-tour/)
+* [Rubinius wants to help YOU make Ruby better](https://blog.engineyard.com/2010/rubinius-wants-to-help-you-make-ruby-better/)
+* [5 Things You'll Love About Rubinius](https://blog.engineyard.com/2009/5-things-youll-love-about-rubinius/)
+* [Rubinius: The Book Tour](https://blog.engineyard.com/2009/rubinius-the-book-tour/)
 
 Most of all, experiment. Rubinius is easy to hack on. Are you curious about a
 particular feature needed in your language? Try adding it to Rubinius. Think
@@ -551,7 +551,7 @@ If we didn't answer your question here, leave us a comment. If you have a
 reason for using Rubinius that we didn't mention, let us know. As always, we
 appreciate your feedback. Chat with us in the #rubinius channel on
 freenode.net, [watch our Github project](https://github.com/rubinius/rubinius),
-and [follow us on Twitter](http://twitter.com/rubinius).
+and [follow us on Twitter](https://twitter.com/rubinius).
 
 P.S. Thanks to David Waite for suggesting the Academic Researcher and Language
 Enthusiast personas, I always forget those!

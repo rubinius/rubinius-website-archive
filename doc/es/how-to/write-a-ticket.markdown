@@ -7,7 +7,7 @@ next: Como escribir una especificación en Ruby
 next_url: how-to/write-a-spec
 ---
 
-El issue tracker de Rubinius es <http://github.com/rubinius/rubinius/issues>.
+El issue tracker de Rubinius es <https://github.com/rubinius/rubinius/issues>.
 
 Para ser útiles, los tickets deben ser concisos, específicos y acciones
 concretas. Si no, el ticket va a languidecer y convertirce en desorden. En

@@ -102,5 +102,5 @@ aquí durante la etapa alfa toman un argumento único: un símbolo.
 
   * Utilice Markdown para la documentación dentro del directorio
     /doc. Vea [Sintaxis de
-    Markdown](http://daringfireball.net/projects/markdown/syntax). Establezca
+    Markdown](https://daringfireball.net/projects/markdown/syntax). Establezca
     el ancho de texto a 78 caracteres y el uso de fin de lineas duras.

@@ -6,7 +6,7 @@ author: Shane Becker
 
 ### Allow Myself to Introduce Myself
 
-Hi. I'm Shane ([@veganstraightedge](http://twitter.com/veganstraightedge)
+Hi. I'm Shane ([@veganstraightedge](https://twitter.com/veganstraightedge)
 / [iamshane.com](http://iamshane.com)). I'll be helping out around here now.
 I was recently hired by [Engine Yard](http://engineyard.com) to be their Open
 Source Cheerleader. (Yes, there will be costumes at some point.) My
@@ -74,6 +74,6 @@ Only those of you that've committed so far will get that one.
 
 Come find us to get free Rubinius shirts and stickers. And stay tuned to
 [the Rubinius blog](http://rubini.us/blog) and to the Twitter account :
-[@rubinius](http://twitter.com/rubinius). We have lots more in store.
+[@rubinius](https://twitter.com/rubinius). We have lots more in store.
 
 &mdash; Use Ruby&trade;

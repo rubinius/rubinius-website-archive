@@ -10,7 +10,7 @@ International Rubinius Day that it was set out to be.
 
 The guys are [80beans](http://www.80beans.com/) are sponsoring the event and
 have graciously offered their office as the place to hang out and are
-providing refreshments. The office is located on the [Vijzelstraat 72](http://maps.google.com/maps/place?q=80beans,+Amsterdam,+The+Netherlands&hl=en&cid=15251096961071716406) in
+providing refreshments. The office is located on the [Vijzelstraat 72](https://maps.google.com/maps/place?q=80beans,+Amsterdam,+The+Netherlands&hl=en&cid=15251096961071716406) in
 Amsterdam and we're starting at 3pm.
 
 If you're living in the neighborhood, please come and join us. As long

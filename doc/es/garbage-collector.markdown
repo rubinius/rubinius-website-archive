@@ -10,7 +10,7 @@ review: true
 
 ## Introducción
 
-Rubinius implementa la [Generational Garbage Collector (GC)](http://en.wikipedia.org/wiki/Garbage_collection_&#40;computer_science&#41;#Generational_GC_.28ephemeral_GC.29).
+Rubinius implementa la [Generational Garbage Collector (GC)](https://en.wikipedia.org/wiki/Garbage_collection_&#40;computer_science&#41;#Generational_GC_.28ephemeral_GC.29).
 Rubinus gestiona el GC la asignación dinámica y liberación de memoria de 
 espacio dinámico de un pronceso ejecutandose en un proceso de 
 funcionamiento de Rubinius.

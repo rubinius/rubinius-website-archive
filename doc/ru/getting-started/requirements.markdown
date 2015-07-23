@@ -15,17 +15,17 @@ next_url: getting-started/building
 нужных для сборки Rubinius. Для вашей операционной системы или менеджера
 пакетов могут быть доступны и другие сборки, помимо перечисленных.
 
-  * [GCC и G++ 4.x](http://gcc.gnu.org/)
-  * [GNU Bison](http://www.gnu.org/software/bison/)
-  * [MRI Ruby 2.0.0+](http://www.ruby-lang.org/) Если на вашей системе не
+  * [GCC и G++ 4.x](https://gcc.gnu.org/)
+  * [GNU Bison](https://www.gnu.org/software/bison/)
+  * [MRI Ruby 2.0.0+](https://www.ruby-lang.org/) Если на вашей системе не
     установлен Ruby 2.0.0, подумайте об использовании
     [RVM](https://rvm.beginrescueend.com/) для его установки.
-  * [Rubygems](http://www.rubygems.org/)
-  * [Git](http://git.or.cz/)
+  * [Rubygems](https://rubygems.org/)
+  * [Git](https://git-scm.com/)
   * [ZLib](http://www.zlib.net/)
   * pthread: Библиотека pthread должна быть установлена вашей операционной
     системой.
-  * [gmake](http://savannah.gnu.org/projects/make/)
+  * [gmake](https://savannah.gnu.org/projects/make/)
   * [rake](http://rake.rubyforge.org/): `[sudo] gem install rake`
 
 
@@ -47,6 +47,6 @@ next_url: getting-started/building
 ### FreeBSD
 
 Под FreeBSD есть порт Rubinius, который называется `lang/rubinius`. Подробную
-информацию о порте можно найти на сайте <http://freshports.org>. В процессе
+информацию о порте можно найти на сайте <https://freshports.org>. В процессе
 инсталляции порта установка и настройка всех требуемых вспомогательных
 программ и библиотек происходит автоматически.

@@ -99,5 +99,5 @@ durchlaufen, lediglich ein :symbol Argument annehmen.
   * Für C++ Code verwende Doxygen.
 
   * Für die im /doc Verzeichnis vorliegende Dokumentation verwende Markdown.
-    Siehe [Markdown syntax](http://daringfireball.net/projects/markdown/syntax)
+    Siehe [Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
     Stelle die Textbreite auf 78 Zeichen und nutze harte Zeilenumbrüche.
