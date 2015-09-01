@@ -17,7 +17,7 @@ How does Ruby and Rails fit into this rapidly changing landscape? If you search 
 
 So, I've put together a really brief survey; I'd love to hear more about why people are using Ruby, or why they are not.
 
-Survey: [Who's Using Ruby (or Not), for What, and Why?](http://goo.gl/forms/cf8OstwXmI)
+Survey: [Who's Using Ruby (or Not), for What, and Why?](https://goo.gl/forms/cf8OstwXmI)
 
 Based on the responses I get, I'd also like to do a few Google hangouts with people on both sides of the question. It's one thing to go to a conference and hear an advocate for Ruby tell you reasons why it's a good choice. It's perhaps more informative and entertaining to watch a couple knowledgeable people debate its merits drawing from specific experiences working with Ruby or competing technologies.
 
