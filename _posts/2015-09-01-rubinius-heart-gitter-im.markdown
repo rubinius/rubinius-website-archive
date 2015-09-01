@@ -29,7 +29,7 @@ So, we have a vital need to communicate but just getting to the point of asking 
 
 On Gitter, your nick or handle is your GitHub user name. So simple; so useful.  It may not seem like a big thing: you have a GitHub user name and you have an IRC user name and you created them at different times so they are often different. Big deal; who can't remember two names?
 
-Well, me for one. I need to keep track of a lot of people and not having to even wonder what a person's GitHub user is when I'm chatting with them on is a huge help. It's also a huge help for people who are new to the project and just getting oriented.
+Well, me for one. I need to keep track of a lot of people and not having to even wonder what a person's GitHub user is when I'm chatting with them on Gitter is a huge help. It's also a huge help for people who are new to the project and just getting oriented.
 
 Think about this: when you go from one thing to two things, you've increased complexity by 100%. But as programmers, with our fancy loop constructs, we typically don't think twice (no pun intended) about multiplying by two. If you think that's not a huge deal, perhaps try asking for double your salary. In the "real world", multiplying by two is a big deal.
 
