@@ -9,7 +9,7 @@ If the only constant is change, as Heraclitus said, then we should constantly be
 
 The way we build, test, deploy, maintain, and support applications has changed a lot in the past five years. Containers, microservices, the growing number of connected devices (IoT, if you must), and the sorts of applications people are building with [Ember](http://emberjs.com/), [Angular](https://angularjs.org/), [React](http://facebook.github.io/react/) and [Meteor](https://www.meteor.com/) are big, not small, changes.
 
-Containers, in particular, are intriguing because of how central they are becoming to much of what is changing about the application development landscape. At his recent keynote at [MessoCon](https://www.youtube.com/watch?v=c0wSmr-u5vQ&index=40&list=PLVjgeV_avap2arug3vIz8c6l72rvh9poV), [Adrian Cockcroft](https://twitter.com/adrianco) showed the following slide when talking about adoption of Docker.
+Containers, in particular, are intriguing because of how central they are becoming to much of what is changing about the application development landscape. At his recent keynote at [MesosCon](https://www.youtube.com/watch?v=c0wSmr-u5vQ&index=40&list=PLVjgeV_avap2arug3vIz8c6l72rvh9poV), [Adrian Cockcroft](https://twitter.com/adrianco) showed the following slide when talking about adoption of Docker.
 
 ![Adoption of Docker](/images/adrianco-docker-adoption-mesoscon.jpg)o
 
