@@ -3,4 +3,6 @@
 *.un~
 public/*
 build/*
+workspace/*
+drafts/*
 Gemfile.lock

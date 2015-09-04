@@ -14,7 +14,7 @@ exclude:
   - .gitignore
   - ./public
   - ./stylesheets/*.scss
-  - drafts
+  - ./drafts
 markdown: rdiscount
 highlighter: pygments
 port: 9876
