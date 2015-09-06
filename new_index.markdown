@@ -2,8 +2,6 @@
 layout: index
 ---
 
-# Hello, Rubinius
-
 {% include package.markdown %}
 {% include lede.markdown %}
 {% include platform.markdown %}
