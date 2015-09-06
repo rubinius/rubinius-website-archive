@@ -78,7 +78,7 @@ This Code of Conduct is distributed under a [Creative Commons Attribution-ShareA
 
 This Code of Conduct text is derived from the [Stumptown Syndicate](http://stumptownsyndicate.org/) [Code of Conduct](http://stumptownsyndicate.org/code-of-conduct/) revision 2.1.
 
-<h3 id="#reporting_guidelines">Detailed Reporting Guidelines</h3>
+<h3 id="reporting_guidelines">Detailed Reporting Guidelines</h3>
 
 If you believe someone is violating the Code of Conduct, we ask that you report it to the Rubinius project by emailing <conduct@rubini.us>.
 
