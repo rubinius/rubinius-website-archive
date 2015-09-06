@@ -127,7 +127,7 @@ Finally, the Working Group will make a report on the situation to the Stumptown 
 
 #### Appealing
 
-Only permanent resolutions (such as bans) may be appealed. To appeal a decision of the working group, contact the Rubinius team at <team@rubin.us> with your appeal and the team will review the case.
+Only permanent resolutions (such as bans) may be appealed. To appeal a decision of the working group, contact the Rubinius team at <team@rubini.us> with your appeal and the team will review the case.
 
 These reporting guidelines are derived from the [Stumptown Syndicate](http://stumptownsyndicate.org) [Reporting Guidelines](http://stumptownsyndicate.org/code-of-conduct/reporting-guidelines/).
 
