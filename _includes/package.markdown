@@ -1,3 +1,3 @@
-<section class="hidden-xs hidden-sm">
-Download 2.5.8
-</section>
+<div class="hidden-xs hidden-sm">
+<p>Download 2.5.8</p>
+</div>
