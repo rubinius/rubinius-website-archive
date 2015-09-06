@@ -13,5 +13,5 @@ layout: index
 {% include roles.markdown %}
 {% include advice_process.markdown %}
 {% include book.markdown %}
-{% include showcase.markdown %}
+{% include gallery.markdown %}
 {% include store.markdown %}
