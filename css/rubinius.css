@@ -1,7 +1,3 @@
-body {
-  padding-bottom: 4em;
-}
-
 .content-container {
   width: 100%;
   max-width: 1000px;
@@ -19,4 +15,20 @@ body {
 
 .footer-nav-menu {
   display: none;
+}
+
+.footer-xs-padding {
+  padding-bottom: 12em;
+}
+
+.footer-sm-padding {
+  padding-bottom: 8em;
+}
+
+.footer-md-padding {
+  padding-bottom: 4em;
+}
+
+.footer-lg-padding {
+  padding-bottom: 4em;
 }
