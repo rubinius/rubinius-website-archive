@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 4em;
+}
+
 .content-container {
   width: 100%;
   max-width: 1000px;
@@ -11,4 +15,8 @@
 }
 
 .footer-column {
+}
+
+.footer-nav-menu {
+  display: none;
 }
