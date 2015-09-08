@@ -1,0 +1,11 @@
+.content-container {
+  width: 100%;
+  max-width: 1000px;
+}
+.package-button {
+  text-align: center;
+}
+
+.lede-content {
+  background-color: cornflowerblue;
+}
