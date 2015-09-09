@@ -10,10 +10,14 @@
   background-color: cornflowerblue;
 }
 
-.footer-column {
+.footer-menu {
 }
 
-.footer-nav-menu {
+.footer-menu-header {
+  font-weight: bold;
+}
+
+.footer-menu-body {
   display: none;
 }
 
