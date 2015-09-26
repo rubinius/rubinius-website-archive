@@ -5,16 +5,21 @@
   padding-bottom: 2em;
 }
 
-.conduct-content {
+.conduct-container {
   max-height: 20em;
   overflow-y: hidden;
+}
+
+.footer-row {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .package-button {
   text-align: center;
 }
 
-.lede-content {
+.lede-row {
   background-color: #ababab;
   color: white;
 }
