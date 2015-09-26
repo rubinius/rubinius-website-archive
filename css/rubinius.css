@@ -1,13 +1,22 @@
 .content-container {
   width: 100%;
   max-width: 1000px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
+
+.conduct-content {
+  max-height: 20em;
+  overflow-y: hidden;
+}
+
 .package-button {
   text-align: center;
 }
 
 .lede-content {
-  background-color: cornflowerblue;
+  background-color: #ababab;
+  color: white;
 }
 
 .footer-menu {
