@@ -55,6 +55,7 @@ should also install the `libedit-dev` package.
   * zlib-devel
   * openssl-devel
   * libedit-devel
+  * llvm-static
 
 ### FreeBSD
 

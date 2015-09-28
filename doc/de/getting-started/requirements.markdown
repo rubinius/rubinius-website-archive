@@ -46,3 +46,17 @@ Es gibt folgende Pakete die installiert werden sollten:
   * libreadline5-dev
   * zlib1g-dev
   * libssl-dev
+
+### Fedora/CentOS
+
+  * ruby-devel
+  * readline-devel
+  * zlib-devel
+  * openssl-devel
+  * libedit-devel
+  * llvm-static
+
+### FreeBSD
+
+Rubinius hat einen port in FreeBSD ports Verzeichnis. Der Name lautet `lang/rubinius`. Du kannst auf [FreshPorts](https://www.freshports.org/lang/rubinius/) weitere Informationen finden.
+Sobald man den port installiert werden alle benötigten Abhängigkeiten automatisch installiert.
