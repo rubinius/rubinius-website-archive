@@ -5,11 +5,11 @@ author: Chuck Remes
 twitter: chuckremes
 ---
 
-A recent project required me to process hundreds of CSV (comma-delimited) files and import them into a database. It's boring work, but it offer a few opportunities for me to utilize some of my favorite Ruby techniques and idioms.
+A recent project required me to process hundreds of CSV (comma-delimited) files and import them into a database. It's boring work, but it offers a few opportunities for me to utilize some of my favorite Ruby techniques and idioms.
 
 The first version of the script was very simple.
 
-1. Copy the zip file containg the CSVs to a working directory
+1. Copy the zip file containing the CSVs to a working directory
 2. Unzip the file
 3. Delete unwanted files (e.g. README)
 4. Loop through each filename
@@ -76,7 +76,7 @@ parse CSV - multithreaded  14.130549   0.136832  14.267381 (  2.984456)
 
 MRI ran the 4-thread benchmark in the same 8 seconds as before! We are often reminded that MRI now maps its threads to native threads, but there is still a global interpreter lock (GIL) that prevents MRI from truly running code in parallel. Rubinius eliminated its GIL years ago, so all threads can run in parallel and produce a finishing time of just over 3 seconds.
 
-With these improvements, Rubinius can finish my production job in about 5.5 days (versus the original 15 days). The CSV parsing work runs faster than the database can accept bulk inserts so, unless I want to spend a bunch of time optimizing the database configuration, my work is done. Thanks for Rubinius, I am saving 9 days on my import.
+With these improvements, Rubinius can finish my production job in about 5.5 days (versus the original 15 days). The CSV parsing work runs faster than the database can accept bulk inserts so, unless I want to spend a bunch of time optimizing the database configuration, my work is done. Thanks to Rubinius, I am saving 9 days on my import.
 
 To reproduce these numbers on your own system, [the benchmarks and test data can be found here.](https://www.dropbox.com/s/6nv7j9n2r9ro771/csv-benchmarks.tgz?dl=0)
 
