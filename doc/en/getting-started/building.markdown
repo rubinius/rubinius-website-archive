@@ -69,6 +69,6 @@ Ruby executable to bootstrap itself during the build process.
 
 If you are trying to debug the VM and want to attach a debugger, such as GDB,
 then you will want to compile Rubinius without optimizations. You can do this
-by setting the 'DEV' environment variable and then building.
+as following:
 
-For example: `DEV=1 rake build`
+    ./configure --debug-build
