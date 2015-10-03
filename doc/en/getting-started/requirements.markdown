@@ -27,7 +27,7 @@ manager may have other packages available.
   * [gmake](https://savannah.gnu.org/projects/make/)
   * [bundler](http://bundler.io/) `[sudo] gem install bundler`
   * [editline](http://thrysoee.dk/editline/) when using newer versions of LLVM
-
+  * [LLVM](http://llvm.org/) <= 3.5
 
 ### Apple OS X
 
