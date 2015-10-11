@@ -15,13 +15,63 @@ layout: index
 {% include packages.html %}
 
 <!-- Security reporting instructions -->
-{% include security.html %}
+<section>
+  <div class="security-row">
+    <div class="container content-container">
+      <div class="security-container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="security">
+              <a href="/security">Reporting Security Issues</a>
+            </h2>
+
+            {% include security.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Community -->
-{% include community.html %}
+<section>
+  <div class="community-row">
+    <div class="container content-container">
+      <div class="community-container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="community">
+              <a href="/community">Community</a>
+            </h2>
+
+            {% include community.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Code of conduct -->
-{% include code-of-conduct.html %}
+<section>
+  <div class="conduct-row">
+    <div class="container content-container">
+      <div class="conduct-container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="code-of-conduct">
+              <a href="/code-of-conduct">Code of Conduct</a>
+            </h2>
+
+            {% include code-of-conduct.html %}
+          </div>
+        </div>
+      </div>
+
+      <p><a href="/code-of-conduct">More</a></p>
+    </div>
+  </div>
+</section>
 
 <!-- Mission statement -->
 {% include mission.html %}
@@ -43,8 +93,3 @@ layout: index
 
 <!-- The Rubinius store -->
 {% include shop.html %}
-
-<div class="visible-xs-block footer-xs-padding"></div>
-<div class="visible-sm-block footer-sm-padding"></div>
-<div class="visible-md-block footer-md-padding"></div>
-<div class="visible-lg-block footer-lg-padding"></div>
