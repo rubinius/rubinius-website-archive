@@ -24,6 +24,11 @@
   color: white;
 }
 
+.quote-attribution {
+  display: block;
+  text-align: left;
+}
+
 .footer-menu {
 }
 
