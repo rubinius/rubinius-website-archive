@@ -21,7 +21,7 @@ Beginners and seasoned Ruby programmers alike need a constant stream of news and
 
 > At this point ruby feels dead I don't actively track it.
 
-That was definitely the bleakest response, but a few people cited not being as involved with Ruby. There's a natural ebb and flow of interest, but if a few people are willing to say this, there's certainly a lot more that feel it. It's a reminder that sharing the interesting things we're doing with Ruby helps everyone, including people we don't even know.
+That was definitely the bleakest response, but a few people cited not being as involved with Ruby. There's a natural ebb and flow of interest, but if a few people are willing to say this, there's certainly a lot more who feel it. It's a reminder that sharing the interesting things we're doing with Ruby helps everyone, including people we don't even know.
 
 If you're interested in adding your voice, take two minutes to fill out the survey:
 
