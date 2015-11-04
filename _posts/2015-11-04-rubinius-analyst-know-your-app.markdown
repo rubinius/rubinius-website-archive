@@ -25,6 +25,6 @@ One major goal of **[Analyst](http://analyst.rubinius.com)** is to preserve the 
 
 I'm announcing **[Analyst](http://analyst.rubinius.com)** now to invite you along on a collaborative and participatory journey to explore and tackle the biggest problems people have with existing apps, and build the tools that are essential for a new generation of apps, where developers must respond in seconds and minutes instead of days and weeks.
 
-As **[Analyst](http://analyst.rubinius.com)** is tool that builds on Rubinius features, expanding adoption of Rubinius will be an ongoing focus. As mentioned in the [Rubinius, Inc announcement](http://rubini.us/2015/10/27/rubinius-inc-a-benefit-company/), I'm excited to be able to work directly with customers to identify and solve problems they have with apps and processes.
+As **[Analyst](http://analyst.rubinius.com)** is a tool that builds on Rubinius features, expanding adoption of Rubinius will be an ongoing focus. As mentioned in the [Rubinius, Inc announcement](http://rubini.us/2015/10/27/rubinius-inc-a-benefit-company/), I'm excited to be able to work directly with customers to identify and solve problems they have with apps and processes.
 
-Please take a few minutes to let us know which **[Analyst](http://analyst.rubinius.com)** features would help you the most <analyst@rubinius.com>.
+Please take a few minutes to let us know which **[Analyst](http://analyst.rubinius.com)** features would help you the most: <analyst@rubinius.com>.
