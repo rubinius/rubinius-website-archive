@@ -10,6 +10,41 @@
   overflow-y: hidden;
 }
 
+.compute-cta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.compute-cta p {
+  text-align: center;
+}
+
+.compute-cta-button, .compute-cta a:hover {
+  padding: 0.6em 1.2em 0.6em 1.2em;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #b21b5c !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b21b5c", endColorstr="#b21b5c");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#b21b5c), to(#b21b5c));
+  background-image: -moz-linear-gradient(top, #b21b5c, #b21b5c);
+  background-image: -ms-linear-gradient(top, #b21b5c, #b21b5c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b21b5c), color-stop(100%, #b21b5c));
+  background-image: -webkit-linear-gradient(top, #b21b5c, #b21b5c);
+  background-image: -o-linear-gradient(top, #b21b5c, #b21b5c);
+  background-image: linear-gradient(#b21b5c, #b21b5c);
+  border-color: #b21b5c #b21b5c;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.00);
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0.3em;
+}
+
 .footer-row {
   padding-top: 0;
   padding-bottom: 0;
