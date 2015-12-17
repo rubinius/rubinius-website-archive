@@ -1,6 +1,5 @@
 ---
 layout: site
-s3_base_url: "https://s3.amazonaws.com/releases.rubini.us/rubinius-"
 ---
 
 Rubinius 2.x targets Ruby 2.x, where Rubinius 1.x targets Ruby 1.8
@@ -18,7 +17,7 @@ Rubinius 2.x targets Ruby 2.x, where Rubinius 1.x targets Ruby 1.8
   <tr class="{% cycle 'odd', 'even' %}">
     <td>{{ release.version }}</td>
     <td>{{ release.date }}</td>
-    <td><a href="{{ page.s3_base_url }}{{ release.version }}.tar.bz2">[bzip2]</a></td>
+    <td><a href="{{ site.data.urls.s3_base_url }}{{ release.version }}.tar.bz2">[bzip2]</a></td>
   </tr>
 {% endfor %}
   </tbody>
