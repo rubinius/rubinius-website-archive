@@ -22,6 +22,7 @@ result in a public disclosure. We will work with you for on a public disclosure
 after we have a fix ready.
 
 For security issues for extensions that are copies from CRuby, please report
-them there directly. The instructions can be found at https://www.ruby-lang.org/en/security/.
+them there directly. The instructions can be found at
+[https://www.ruby-lang.org/en/security/](https://www.ruby-lang.org/en/security/).
 We track those issues as well and are informed by their security team. This
 makes sure Rubinius also gets updated with these security fixes.
