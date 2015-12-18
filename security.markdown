@@ -5,16 +5,19 @@ layout: site
 ### Reporting security issues
 
 We care deeply about providing a secure Ruby environment for running your code.
-If you find a security issue, please send an email to [security@rubini.us](mailto:security@rubini.us).
+If you find a security issue, please send an email to <security@rubinius.com>.
 In order to keep your message safe, you can use our public key to send the report
 to us.
 
-The public key can be found in the Rubinius repository under [security.pub](https://github.com/rubinius/rubinius/blob/master/security.pub),
-on the website at http://rubini.us/security.pub, and in the
-[MIT PGP database](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x0F7D2F9537F9880C).
+The public key can be found in the Rubinius repository under
+[security.pub](https://github.com/rubinius/rubinius/blob/master/security.pub),
+on the website at
+[http://rubinius.com/security.pub](http://rubinius.com/security.pub), and in
+the [MIT PGP
+database](https://pgp.mit.edu/pks/lookup?op=vindex&search=0x0F7D2F9537F9880C).
 
 We will do our best to respond to you within 72 hours and will work with you
-to create a fix for the issue. Sending an email to security@rubini.us will not
+to create a fix for the issue. Sending an email to <security@rubinius.com> will not
 result in a public disclosure. We will work with you for on a public disclosure
 after we have a fix ready.
 
