@@ -13,7 +13,7 @@ email: veganstraightedge@gmail.com
 
 How are **you** using Rubinius? What are you doing with it that you couldn't do before? What is it missing for you to really dive in? Let us know. We're listening.
 
-* [community@rubini.us](community@rubini.us)
+* [community@rubinius.com](community@rubinius.com)
 * [@rubinius](https://twitter.com/rubinius "@rubinius on twitter")
 
 &mdash; Use Ruby&trade;

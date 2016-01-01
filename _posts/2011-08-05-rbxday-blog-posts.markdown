@@ -4,7 +4,7 @@ title: "&#35;rbxday Blog Posts"
 author: Shane Becker
 ---
 
-With just a few hours left in the first [#rbxday](http://rbxday.rubini.us),
+With just a few hours left in the first [#rbxday](http://rbxday.rubinius.com),
 I wanted to share a few blog posts that people have written for today.
 It seems like lots of people are having lots of fun all while using Rubinius.
 That&rsquo;s what really matters.
@@ -31,7 +31,7 @@ from MRI, JRuby and Rubinius:
 > scenes when they run their Ruby code. That&rsquo;s the beauty of it, easy to
 > write code that&rsquo;s given to Ruby and run for the developer. At some point
 > the developer may wonder, what&rsquo;s REALLY going on behind the scenes. How is
-> it that something meant to run Ruby can host [so many other languages](http://rubini.us/projects")?
+> it that something meant to run Ruby can host [so many other languages](http://rubinius.com/projects")?
 > The answer lies in what&rsquo;s known as a VM, or Virtual Machine.
 
 Finally, there&rsquo;s the
@@ -53,6 +53,6 @@ Use the hashtag [#rbxday](https://twitter.com/#!/search/%23rbxday), so we
 notice you and re-share your tweet. If there are bugs, please
 [create an issue](https://github.com/rubinius/rubinius/issues) on Github.
 Give us any other feedback you want on the
-[rbxday.rubini.us](http://rbxday.rubini.us/feedback) website.
+[rbxday.rubinius.com](http://rbxday.rubinius.com/feedback) website.
 
 *&mdash; XOXO RBX*

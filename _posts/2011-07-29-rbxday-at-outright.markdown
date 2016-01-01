@@ -8,7 +8,7 @@ Hey Ruby bytecode fans! The first ever **International Rubinius Day** is next
 Friday, August 5th. Around the world people will be trying their code on
 Rubinius and generally having a fun time. Follow the activities on Twitter
 under the _\#rbxday_ tag and use that to let folks know what you're up to. Stay
-tuned to the [rbxday website](http://rbxday.rubini.us/) for details as the day
+tuned to the [rbxday website](http://rbxday.rubinius.com/) for details as the day
 unfolds.
 
 If you are located in, around, or within traveling distance of beautiful

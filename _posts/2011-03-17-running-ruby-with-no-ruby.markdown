@@ -41,7 +41,7 @@ if there is no compilation step, how do we separate the source code from the
 executable code?
 
 You may recall from my [last
-post](http://rubini.us/2011/03/11/making-rubinius-rbc-files-disappear/) that
+post](http://rubinius.com/2011/03/11/making-rubinius-rbc-files-disappear/) that
 Rubinius does compile Ruby code to a bytecode format that the virtual machine
 executes. I also promised to explain how you could run the bytecode directly.
 

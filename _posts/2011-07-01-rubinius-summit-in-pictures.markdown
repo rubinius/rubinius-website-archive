@@ -10,7 +10,7 @@ Once a month Evan Phoenix, Brian Ford and I (Shane Beccker) get together for a f
 
 [![&quot;I Used Rubinius at RailsConf 2011&quot; stickers at The Farmhouse in Hollywood, CA](https://farm7.static.flickr.com/6052/5885836117_ba60ba6408_z.jpg "&quot;I Used Rubinius at RailsConf 2011&quot; stickers at The Farmhouse in Hollywood, CA                     ")](http://flickr.com/photos/veganstraightedge/5885836117)
 
-These stickers arrived and are ready to be shipped out. If you DMed your address to [us on Twitter](https://twitter.com/rubinius), we've got you. If you never contacted us, but used Rubinius while at RailsConf 2011 in Baltimore, email us at [community@rubini.us](mailto:community@rubini.us) to get your sticker.
+These stickers arrived and are ready to be shipped out. If you DMed your address to [us on Twitter](https://twitter.com/rubinius), we've got you. If you never contacted us, but used Rubinius while at RailsConf 2011 in Baltimore, email us at [community@rubinius.com](mailto:community@rubinius.com) to get your sticker.
 
 ### T-Shirts!
 

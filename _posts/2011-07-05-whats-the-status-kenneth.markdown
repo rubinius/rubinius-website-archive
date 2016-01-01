@@ -24,8 +24,8 @@ I&rsquo;m pretty sure it started like this.
 
 > [sometime later]
 
-> &ldquo;Alright, Grandma Betty. We made the Rubinius Status Board&trade; especially just for you. It&rsquo;s [status.rubini.us](http://status.rubini.us)&rdquo; &mdash; *Evan*
+> &ldquo;Alright, Grandma Betty. We made the Rubinius Status Board&trade; especially just for you. It&rsquo;s [status.rubinius.com](http://status.rubinius.com)&rdquo; &mdash; *Evan*
 
-That conversation may or may not be **completely fictionalized**. There is one thing that is most emphatically true: Rubinius has a Status Board&trade; now. If you are ever curious how progress is going on things, go check out [status.rubini.us](http://status.rubini.us). Tell your friends.
+That conversation may or may not be **completely fictionalized**. There is one thing that is most emphatically true: Rubinius has a Status Board&trade; now. If you are ever curious how progress is going on things, go check out [status.rubinius.com](http://status.rubinius.com). Tell your friends.
 
 XOXO RBX.

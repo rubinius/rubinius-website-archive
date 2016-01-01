@@ -26,4 +26,4 @@ Finally, this scheme ties in well with providing landmarks about Rubinius develo
 
 As for landmarks, here are a couple: the last version of Rubinius 2.x will be 2.71828182 and the last version of Rubinius 3.x will be 3.14159265. That should be plenty of numbers to do some interesting stuff.
 
-The new versioning scheme will start with the next release, version 2.6. We'll be working the issues out of the deprecations process, so please be patient with that. As always, we love to hear about your experiences, so drop us a note <community@rubini.us>.
+The new versioning scheme will start with the next release, version 2.6. We'll be working the issues out of the deprecations process, so please be patient with that. As always, we love to hear about your experiences, so drop us a note <community@rubinius.com>.

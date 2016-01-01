@@ -84,7 +84,7 @@ careful about introducing breaking changes, but we'll do so when the benefits
 outweigh the risks. Obviously, the more we know about how Rubinius is being
 used, the better we can evaluate these decisions.
 
-We've added a subdomain [http://releases.rubini.us](http://releases.rubini.us)
+We've added a subdomain [http://releases.rubinius.com](http://releases.rubinius.com)
 for hosting release tarballs. We expect that over the next few days the many
 Ruby installers and switchers will be updated to install Rubinius.
 
@@ -257,7 +257,7 @@ on MRI and JRuby. It provides Ruby applications excellent performance and
 multi-core scaling, especially when there's no global interpreter lock.
 
 Rubinius as a language platform has inspired many
-[**projects**](http://rubini.us/projects) and encouraged people who may have
+[**projects**](http://rubinius.com/projects) and encouraged people who may have
 thought language design was beyond their skills to experiment and discover the
 tremendous joy in creating [**their own programming
 language**](https://github.com/queenfrankie/lani).

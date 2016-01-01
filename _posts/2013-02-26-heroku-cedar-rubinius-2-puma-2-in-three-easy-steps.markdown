@@ -6,7 +6,7 @@ author: Shane Becker
 
 ### tl;dr
 
-It's now **[very easy](https://github.com/rubinius/heroku-rbx-puma-rails-app)** to get a [Rails app](https://devcenter.heroku.com/articles/rails3) on [Heroku's Cedar Stack](https://devcenter.heroku.com/articles/cedar) running on [Rubinius 2.0](http://rubini.us "Rubinius : Use Ruby&#8482;") and [Puma 2.0](http://puma.io "A Modern, Concurrent Web Server for Ruby - Puma").
+It's now **[very easy](https://github.com/rubinius/heroku-rbx-puma-rails-app)** to get a [Rails app](https://devcenter.heroku.com/articles/rails3) on [Heroku's Cedar Stack](https://devcenter.heroku.com/articles/cedar) running on [Rubinius 2.0](http://rubinius.com "Rubinius : Use Ruby&#8482;") and [Puma 2.0](http://puma.io "A Modern, Concurrent Web Server for Ruby - Puma").
 
 
 ### The Backstory

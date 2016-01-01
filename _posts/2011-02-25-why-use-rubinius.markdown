@@ -278,7 +278,7 @@ Gaga's _Poker Face_.
 
 (_Loooong pause_. You're not reading this. You've already written one or a few
 languages on Rubinius and posted them to our
-[Projects](http://rubini.us/projects/) page. But anyway, I'll continue...)
+[Projects](http://rubinius.com/projects/) page. But anyway, I'll continue...)
 
 You are the Luke Skywalker of Ruby; Yoda has nothing more to teach you. Only
 your fate confronts you now. Use the Source Luke and save the Federation of
@@ -482,7 +482,7 @@ posts informative:
 * [Compiling Ruby: From Text to Bytecode](https://blog.engineyard.com/2009/the-anatomy-of-a-ruby-jit-compile/)
 
 Finally, consider helping other knowledge seekers by writing blog posts on
-what you learn about Rubinius. Or, help us [write documentation](http://rubini.us/doc/en/how-to/write-documentation/)!
+what you learn about Rubinius. Or, help us [write documentation](http://rubinius.com/doc/en/how-to/write-documentation/)!
 
 <a href="#wur-personas"><strong>Back to personas</strong></a>
 
@@ -507,7 +507,7 @@ of features, Rubinius offers you immediate gratification. Look for Evan's
 upcoming post on his Language Toolkit or check out the code to
 [prattle](https://github.com/evanphx/prattle), a Smalltalk dialect used to
 illustrate the ease of building a language on Rubinius. Also look at some of
-the existing languages [projects](http://rubini.us/projects/) targeting
+the existing languages [projects](http://rubinius.com/projects/) targeting
 Rubinius.
 
 If it is the machinery under the covers that is more interesting, start
@@ -515,10 +515,10 @@ reading some code. The bytecode compiler lives in `lib/compiler/`. The virtual
 machine is in `vm/`, and the garbage collector is in `vm/gc`. As you are
 reading through, consider helping us write better documentation. There are
 already sections for the [virtual
-machine](http://rubini.us/doc/en/virtual-machine/),
-[garbage-collector](http://rubini.us/doc/en/garbage-collector/), [JIT
-compiler](http://rubini.us/doc/en/jit/) and [bytecode
-compiler](http://rubini.us/doc/en/bytecode-compiler/) in the documentation, so
+machine](http://rubinius.com/doc/en/virtual-machine/),
+[garbage-collector](http://rubinius.com/doc/en/garbage-collector/), [JIT
+compiler](http://rubinius.com/doc/en/jit/) and [bytecode
+compiler](http://rubinius.com/doc/en/bytecode-compiler/) in the documentation, so
 adding content is easy.
 
 You may also be interested in these previous posts about Rubinius:

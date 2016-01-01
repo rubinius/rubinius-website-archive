@@ -4,7 +4,7 @@ title: Come hack in Amsterdam for &#35;rbxday
 author: Dirkjan Bussink
 ---
 
-Not only in the US is [&#35;rbxday](http://rbxday.rubini.us/) celebrated, but
+Not only in the US is [&#35;rbxday](http://rbxday.rubinius.com/) celebrated, but
 we have also something in Amsterdam next Friday. It's really becoming the
 International Rubinius Day that it was set out to be.
 

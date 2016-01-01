@@ -49,9 +49,9 @@ tried your application and your 50 gems installed without problems, consider
 about your experiences. If you've done something
 [fancy](http://fancy-lang.org/) that you'd like to share with us, we're always
 happy to have [guest blog
-posts](http://rubini.us/2011/02/23/introduction-to-fancy/), too. We even have
+posts](http://rubinius.com/2011/02/23/introduction-to-fancy/), too. We even have
 documentation on [how to write a blog
-post](http://rubini.us/doc/en/how-to/write-a-blog-post/).
+post](http://rubinius.com/doc/en/how-to/write-a-blog-post/).
 
 
 ### Clone & Build
@@ -69,7 +69,7 @@ install it. We provide symlinks for common commands like `gem`, `rake`, `irb`,
 `ri`, `rdoc`, and even `ruby`. Just add `<rbx_clone>/bin` to your `PATH`.
 
 If you run into any trouble with these steps, see the [Getting
-Started](http://rubini.us/doc/en/getting-started/) page for more information.
+Started](http://rubinius.com/doc/en/getting-started/) page for more information.
 You may need to install libraries required to build Rubinius. If you don't
 find answers there, visit the `#rubinius` channel on freenode.net and we'll
 help you out.
@@ -93,7 +93,7 @@ divided into subdirectories that are loaded in order when Rubinius boots. The
 divisions were made to help share the Ruby core library with other
 implementations. I'll cover those basic divisions here. For more details about
 how the loading process works, see the
-[Bootstrapping](http://rubini.us/doc/en/bootstrapping/) documentation.
+[Bootstrapping](http://rubinius.com/doc/en/bootstrapping/) documentation.
 
 1. `alpha.rb` - Sets up very basic Ruby features needed to start loading the
    rest of the core library.

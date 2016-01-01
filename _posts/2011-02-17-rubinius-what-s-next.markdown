@@ -5,7 +5,7 @@ author: Brian Ford
 ---
 
 On Tuesday, we released version 1.2.1 (see the [Release
-notes](http://rubini.us/releases/1.2.1/)). This release weighs in at 256
+notes](http://rubinius.com/releases/1.2.1/)). This release weighs in at 256
 commits and 21 tickets closed in the 56 calendar days since the release of
 1.2.0. Many thanks to those who contributed patches and to everyone who helped
 us test it.
@@ -273,7 +273,7 @@ Of course, that is much more concisely written in Ruby, but combine this
 ability with a built-in PEG parser and you can be experimenting with your own
 fascinating syntax in a matter of minutes.
 
-Check out the Rubinius [Projects page](http://rubini.us/projects/) for some of
+Check out the Rubinius [Projects page](http://rubinius.com/projects/) for some of
 these language experiments. One language in particular is
 [Fancy](https://github.com/bakkdoor/fancy), which is fully bootstrapped (i.e.
 the Fancy compiler is now written in Fancy) on Rubinius.
@@ -292,9 +292,9 @@ getting a new documentation system in place. Since then, we've had
 contributors help with translations to Russian, Polish, Spanish, and German.
 Adam Gardiner started documenting the garbage collector algorithms. Yehuda
 Katz (you may have heard the name) has contributed documentation for [the
-bytecode compiler](http://rubini.us/doc/en/bytecode-compiler/) complete with
+bytecode compiler](http://rubinius.com/doc/en/bytecode-compiler/) complete with
 diagrams!. Chuck Remes wrote up a great piece on the [memory
-analysis](http://rubini.us/doc/en/tools/memory-analysis/) tool.
+analysis](http://rubinius.com/doc/en/tools/memory-analysis/) tool.
 
 We really appreciate these contributions. We understand the need for great
 documentation and we have been creating better support for it. In many cases,

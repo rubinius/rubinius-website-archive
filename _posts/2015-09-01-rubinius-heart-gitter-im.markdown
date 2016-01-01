@@ -45,11 +45,11 @@ Your GitHub organization and repositories have corresponding Gitter rooms.  Boom
 These are some of the contexts we are already using:
 
 1. The Rubinius organization room ([gitter.im/rubinius](https://gitter.im/rubinius)): This room is public/private. It's available for everyone who is a member of Rubinius (over 100 people), but it's not visible to people outside the organization.  This is a perfect place to hold organization-member wide discussions.
-2. The Rubinius team room: This is a private channel accessible only to [the Rubinius team members](http://rubini.us/2014/11/10/rubinius-3-0-part-1-the-rubinius-team/) where we can have a safe space to discuss and share.
+2. The Rubinius team room: This is a private channel accessible only to [the Rubinius team members](http://rubinius.com/2014/11/10/rubinius-3-0-part-1-the-rubinius-team/) where we can have a safe space to discuss and share.
 3. The main Rubinius room ([gitter.im/rubinius/rubinius](https://gitter.im/rubinius/rubinius)): This is a public room where anyone with a GitHub account can stop by to ask questions, leave comments, or interact. We have integrations enabled so we can see when issues are opened, comments are made on issues, code is updated, and Travis CI results are posted.
 4. Individual private discussions: These are rooms where two people can hold a conversation in private.
 5. Other project rooms: These are public rooms corresponding to other Rubinius repositories. Rubinius is a complex project with many parts. Having a dedicated room to discuss a specific project (for instance, the Rubinius bytecode compiler), provides a good way to put communication in context and cut down on the cross-communication that happens when a project has a single IRC channel. (Most projects I've been involved with had at most two IRC channels.)
-6. Other private group rooms: These can be created as-needed by people leading specific parts of the Rubinius project. This is not being used extensively yet, but with the [work we're doing to define project roles](http://rubini.us/2015/07/31/the-next-10-million-programmers/), this will be a very useful tool.
+6. Other private group rooms: These can be created as-needed by people leading specific parts of the Rubinius project. This is not being used extensively yet, but with the [work we're doing to define project roles](http://rubinius.com/2015/07/31/the-next-10-million-programmers/), this will be a very useful tool.
 
 Of course, all of this is possible with IRC. But it requires specific, extra work. It's built-in with Gitter, and that is the best part of the service. It's not _all_ of why it's good, but it's an essential aspect.
 
@@ -64,4 +64,4 @@ It seems like a simple thing, but it's not. For example, HipChat gets this horri
 
 We often make the assumption that code is concrete, but it's usually quite complex and being able to communicate about it well and visually is tremendously useful. And even when not communicating about code, the formatting available with Markdown makes communicating better and more enjoyable.
 
-So, those are the reasons I think Gitter is awesome. Have you used it? Do you like or dislike it? What do you use instead and why do you like that? We'd love to hear from you: <community@rubini.us>.
+So, those are the reasons I think Gitter is awesome. Have you used it? Do you like or dislike it? What do you use instead and why do you like that? We'd love to hear from you: <community@rubinius.com>.

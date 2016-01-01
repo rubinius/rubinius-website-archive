@@ -203,7 +203,7 @@ project and those who use Rubinius.
 
 I'm excited to share more about the path of Rubinius 3.0 in the other posts
 this week. We'd love to hear from you. Please send your comments to
-[community@rubini.us](mailto:community@rubini.us).
+[community@rubinius.com](mailto:community@rubinius.com).
 
 ## Acknowledgments
 

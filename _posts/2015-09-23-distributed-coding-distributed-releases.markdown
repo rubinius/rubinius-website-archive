@@ -5,7 +5,7 @@ author: Brian Shirai
 twitter: brixen
 ---
 
-In [the last post](http://rubini.us/2015/09/22/major-minor-maximize-delivering-features-minimize-trouble/), I talked about the new Rubinius versioning scheme. A version doesn't mean much to you if there's no release that goes with it. In this post, I'll describe the new release process we've been using.
+In [the last post](http://rubinius.com/2015/09/22/major-minor-maximize-delivering-features-minimize-trouble/), I talked about the new Rubinius versioning scheme. A version doesn't mean much to you if there's no release that goes with it. In this post, I'll describe the new release process we've been using.
 
 What is a release, fundamentally? **For Rubinius, it's a function from a version number to a commit SHA.** A release is a git tag on _master_, and from this we can automatically derive the version number, the date of the release, and the commit SHA.
 
@@ -15,4 +15,4 @@ This process solves a major coordination issue that we had with our previous pro
 
 This process also gives anyone with commit rights to the Rubinius repository the ability to make a release. Making a release requires a human; we are not going to automate it. The second part, building the release artifacts, needs to be automated and we are working on that. For example, we'll build the binary version that you use on Travis to test your code with Rubinius as part of our Travis CI job. We'll also upload the release source tarball directly from Travis.
 
-The new release process and automation of the release artifacts, in concert with the new version scheme, should help us accelerate getting Rubinius enhancements and features to you with a minimum amount of work. Additionally, by making releasing something that any contributor can do, it will improve the scope of participation in the project. We're really excited about these developments. If you have questions, let us know <community@rubini.us>.
+The new release process and automation of the release artifacts, in concert with the new version scheme, should help us accelerate getting Rubinius enhancements and features to you with a minimum amount of work. Additionally, by making releasing something that any contributor can do, it will improve the scope of participation in the project. We're really excited about these developments. If you have questions, let us know <community@rubinius.com>.

@@ -29,7 +29,7 @@ for Rubinius, but generally, we are thrilled to have your contributions.
 
 Recently, we added the `rbx docs` command. This will run a web server on your
 machine and open a browser window to display the Rubinius documentation. Now
-the documentation will also be available at the [rubini.us](http://rubini.us)
+the documentation will also be available at the [rubinius.com](http://rubinius.com)
 website. I have added a basic outline and a bunch of files to further simplify
 the task of writing docs. In many cases, merely open a file and start writing
 docs in [Markdown](https://daringfireball.net/projects/markdown/syntax) format.

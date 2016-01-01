@@ -82,7 +82,7 @@ zurückgreifen. Diese Gems können von Rubinius nicht unterstützt werden. Davon
 betroffen sind gems wie `ruby-debug` oder `ruby-prof`. Rubinius bringt dafür,
 wie oben erwähnt, einen eigenen Debugger und Profiler mit. Darüber hinaus auch
 noch weitere Hilfsprogramme. Eine Übersicht befindet sich auf den Seiten der
-[Hilfsprogramme](http://rubini.us/doc/de/tools/).
+[Hilfsprogramme](http://rubinius.com/doc/de/tools/).
 
 ## 3. Gemfiles
 

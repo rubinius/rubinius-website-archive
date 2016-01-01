@@ -8,7 +8,7 @@ author: Brian Shirai
 phrase"](https://twitter.com/reinh/status/390544258899664896) to improve
 readability.**
 
-Today, I'm announcing the [Rubinius X](http://x.rubini.us) project. Please read
+Today, I'm announcing the [Rubinius X](http://x.rubinius.com) project. Please read
 about the details at the website. Here's why I started the project.
 
 Ruby is a dying language. Business is over its dalliance with Ruby. No major

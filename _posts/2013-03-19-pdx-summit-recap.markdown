@@ -18,7 +18,7 @@ We spent the week mostly writing a ton of things on the whiteboard, discussing
 them, erasing them, and writing a bunch more. Ultimately, we touched on all
 the topics but we did not get to discussing the extension API in depth, so
 we'll skip that one for now. I've [previously
-blogged](http://rubini.us/2013/03/13/welcome-dirkjan/) about our inline cache
+blogged](http://rubinius.com/2013/03/13/welcome-dirkjan/) about our inline cache
 discussion. Here I'll summarize the rest of our discussions.
 
 

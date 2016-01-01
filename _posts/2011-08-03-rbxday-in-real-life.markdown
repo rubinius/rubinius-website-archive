@@ -6,7 +6,7 @@ author: Brian Ford
 
 **UPDATE:** _We have added several locations since this post was first
 published. See the list below for all the current details. Also, stay tuned to
-the official [rbxday.rubini.us](http://rbxday.rubini.us) website for updates
+the official [rbxday.rubinius.com](http://rbxday.rubinius.com) website for updates
 throughout_ [#rbxday](https://twitter.com/#!/search/%23rbxday).
 
 **The first ever** [#rbxday](https://twitter.com/#!/search/%23rbxday) is fast
@@ -35,7 +35,7 @@ people have taken the initiative of organizing meetups on
 
 * **Los Angeles, CA, USA**: [Shane Becker - @veganstraightedge](https://twitter.com/veganstraightedge)
   Open Source Cheerleader at [Engine Yard](http://engineyard.com)
-  for [Rubinius](http://rubini.us), 10am - 8pm at
+  for [Rubinius](http://rubinius.com), 10am - 8pm at
   [the Farmhouse](http://farmhouse.la)
 
 * **Portland, OR, USA**: [Kyle Drake - @kyledrake](https://twitter.com/kyledrake)
@@ -67,7 +67,7 @@ A final thought about all the ways you can help Rubinius. You don't have to
 contribute code directly to help. Each of these activities is just as
 valuable, and if you think of any I didn't include, please let me know:
 
-* Wearing your [Rubinius shirt](http://rubini.us/2011/05/26/rubinius-rewards)
+* Wearing your [Rubinius shirt](http://rubinius.com/2011/05/26/rubinius-rewards)
 * Talking to co-workers about Rubinius
 * Asking your company to sponsor some of your time contributing to Rubinius
 * Writing libraries in Ruby

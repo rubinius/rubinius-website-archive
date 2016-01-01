@@ -78,7 +78,7 @@ Many gems that use C-extensions run fine on Rubinius. The exceptions are ones
 that rely on MRI internal data structures. These gems cannot be supported on
 Rubinius and include gems like `ruby-debug` and `ruby-prof`. Rubinius provides
 its own Ruby source debugger and profiler, as well as other tools. See the
-[tools documentation](http://rubini.us/doc/en/tools/) for more details.
+[tools documentation](http://rubinius.com/doc/en/tools/) for more details.
 
 ## 3. Gemfiles
 

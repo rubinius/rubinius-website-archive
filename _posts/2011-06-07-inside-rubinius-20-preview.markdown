@@ -66,7 +66,7 @@ Then, install the Rubinius 2.0.0pre branch:
 If you are interested in helping develop Rubinius, we suggest you clone the
 repository directly and build. Rubinius runs fine from the source directory so
 you don't need to install it. For more details about building from a clone,
-see [Getting Started](http://rubini.us/doc/en/getting-started/).
+see [Getting Started](http://rubinius.com/doc/en/getting-started/).
 
 
 ### Configuration

@@ -78,7 +78,7 @@ excepción son las gemas que dependen de las estructuras de datos internas de
 MRI. Estas gemas no pueden ser soportadas en Rubinius, entre las que se
 incluyen gemas como `ruby-debug` y `ruby-prof`. Rubinius provee sus propias
 herramientas, tales como como su propio *debugger* y *profiler*. Para conocer
-más detalles refiérete a la [documentación de las herramientas](http://rubini.us/doc/en/tools/).
+más detalles refiérete a la [documentación de las herramientas](http://rubinius.com/doc/en/tools/).
 
 ## 3. Gemfiles
 

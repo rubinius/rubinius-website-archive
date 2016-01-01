@@ -167,7 +167,7 @@ To summarize, we have these things in Rubinius 3.0: _functions_, _gradual types 
 
 ## This Is Not Rubinius X
 
-I want to emphasize that this is *not* [Rubinius X](http://x.rubini.us).
+I want to emphasize that this is *not* [Rubinius X](http://x.rubinius.com).
 
 Rubinius X includes these ideas but has many additional features. My objective for introducing these features into Rubinius 3.0 is to massively reduce the complexity of the current implementation of Ruby, significantly improve the performance of Ruby, and build the foundation for Rubinius X (and other languages) to integrate with Ruby.
 

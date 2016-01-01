@@ -27,4 +27,4 @@ We'd love to have your input. Please take this short survey and let us know what
 
 Survey: [Code Climate vs Rubinius](https://goo.gl/forms/MWLEcLwFAS)
 
-If you have more you'd like to share, write us <community@rubini.us>.
+If you have more you'd like to share, write us <community@rubinius.com>.

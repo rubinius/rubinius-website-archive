@@ -57,7 +57,7 @@ running C-extensions. The terrific response to the 2.0 announcement has been
 ample validation of our vision for Rubinius. We're just getting started.
 
 Visit us in the #rubinius channel on Freenode and check out ways you can
-[contribute](http://rubini.us/doc/en/contributing/) to the project. The
+[contribute](http://rubinius.com/doc/en/contributing/) to the project. The
 simplest, and always the most fun, way to contribute is to use Rubinius to do
 something you find interesting.
 
