@@ -24,8 +24,31 @@
   text-align: center;
 }
 
-.compute-cta-button, .compute-cta a:hover {
-  padding: 0.6em 1.2em 0.6em 1.2em;
+.rubinius-topbar {
+  background-color: #ffef5b;
+  min-height: 1em;
+}
+
+.package-button-row {
+  background-color: #0096b2;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.package-container {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.package-button {
+  padding: 1em 1.5em 1em 1.5em;
   font-size: 1.3em;
   font-weight: bold;
   background-color: #b21b5c !important;
@@ -50,10 +73,6 @@
   padding-bottom: 0;
 }
 
-.package-button {
-  text-align: center;
-}
-
 .lede-row {
   background-color: #ababab;
   color: white;
@@ -72,6 +91,10 @@
 }
 
 .footer-menu-body {
+  list-style: none;
+  margin-top: 1em;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .footer-xs-padding {
