@@ -5,23 +5,68 @@
   padding-bottom: 2em;
 }
 
+.site h1 {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 3.2em;
+  font-weight: bolder;
+}
+
+.site h2 {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.site p {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #555;
+}
+
+.site blockquote {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #777;
+}
+
+.quote-attribution {
+  text-align: left;
+  display: block;
+}
+
+.lede-row {
+  background-color: #5e5f5e;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.lede-row h1 {
+  color: white;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.lede-row p {
+  color: white;
+}
+
+.lede-row a {
+  color: white;
+  font-weight: bold;
+}
+
+.lede-row a:hover {
+  color: white;
+  font-weight: bold;
+}
+
 .conduct-container {
   max-height: 20em;
   overflow-y: hidden;
-}
-
-.compute-cta {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.compute-cta p {
-  text-align: center;
 }
 
 .rubinius-topbar {
@@ -47,8 +92,12 @@
   padding: 0;
 }
 
+.package-container p {
+  margin-bottom: 0;
+}
+
 .package-button {
-  padding: 1em 1.5em 1em 1.5em;
+  padding: 0.8em 1.5em 0.8em 1.5em;
   font-size: 1.3em;
   font-weight: bold;
   background-color: #b21b5c !important;
@@ -68,19 +117,14 @@
   border-radius: 0.3em;
 }
 
+.package-button:hover {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
 .footer-row {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.lede-row {
-  background-color: #ababab;
-  color: white;
-}
-
-.quote-attribution {
-  display: block;
-  text-align: left;
 }
 
 .footer-menu {
@@ -95,20 +139,4 @@
   margin-top: 1em;
   margin-left: 0px;
   padding-left: 0px;
-}
-
-.footer-xs-padding {
-  padding-bottom: 12em;
-}
-
-.footer-sm-padding {
-  padding-bottom: 8em;
-}
-
-.footer-md-padding {
-  padding-bottom: 4em;
-}
-
-.footer-lg-padding {
-  padding-bottom: 4em;
 }
