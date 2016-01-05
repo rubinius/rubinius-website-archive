@@ -1,22 +1,20 @@
 .content-container {
   width: 100%;
   max-width: 1000px;
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
 
 .site h1 {
   text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   font-size: 3.2em;
   font-weight: bolder;
 }
 
 .site h2 {
   text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   font-size: 3em;
   font-weight: bolder;
 }
@@ -41,13 +39,13 @@
 .lede-row {
   background-color: #5e5f5e;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 1em;
 }
 
 .lede-row h1 {
   color: white;
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 1em;
 }
 
 .lede-row p {
@@ -64,9 +62,19 @@
   font-weight: bold;
 }
 
-.conduct-container {
-  max-height: 20em;
-  overflow-y: hidden;
+.security-row {
+  background-color: #0096b2;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.security-row p {
+  color: white;
+}
+
+.security-row a {
+  color: white;
+  font-weight: bold;
 }
 
 .rubinius-topbar {
@@ -78,8 +86,8 @@
   background-color: #0096b2;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .package-container {
