@@ -36,10 +36,17 @@
   display: block;
 }
 
+.rubinius-topbar {
+  background-color: #ffef5b;
+  min-height: 1em;
+}
+
 .lede-row {
   background-color: #5e5f5e;
   padding-top: 0;
   padding-bottom: 1em;
+  max-height: 40em;
+  overflow-y: hidden;
 }
 
 .lede-row h1 {
@@ -75,11 +82,6 @@
 .security-row a {
   color: white;
   font-weight: bold;
-}
-
-.rubinius-topbar {
-  background-color: #ffef5b;
-  min-height: 1em;
 }
 
 .package-button-row {
@@ -130,9 +132,100 @@
   font-weight: bolder;
 }
 
+.package-row h2 {
+  text-align: left;
+}
+
+.packages-row {
+  background-color: #efefef;
+}
+
+.packages-row h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.release-source {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vision-row {
+  background-color: #0e6170;
+  color: white;
+}
+
+.vision-row p, .vision-row a, .vision-row a:hover {
+  color: inherit;
+}
+
+.vision-parts a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.vision-row a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.vision-parts {
+  font-size: 80%;
+}
+
+.team-list {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.address-row {
+  padding-top: 1em;
+}
+
+.address-row ul {
+  display: block;
+  list-style: none;
+  padding-left: 0;
+}
+
+.copyright-row {
+  font-size: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .footer-row {
-  padding-top: 0;
+  color: white;
+  background-color: #2e2f2e;
+  padding-top: 1em;
   padding-bottom: 0;
+}
+
+.footer-row h1 {
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.footer-row h2 {
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.footer-row p {
+  color: white;
+}
+
+.footer-row a {
+  color: white;
+  font-weight: 500;
+}
+
+footer-row a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .footer-menu {
