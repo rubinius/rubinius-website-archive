@@ -40,9 +40,19 @@
   display: block;
 }
 
-.rubinius-topbar {
+.index-topbar {
   background-color: #ffef5b;
-  min-height: 1em;
+  min-height: 0.8em;
+}
+
+.community-topbar {
+  background-color: #0e6170;
+  min-height: 0.8em;
+}
+
+.packages-topbar {
+  background-color: #2e2e2e;
+  min-height: 0.8em;
 }
 
 .lede-row {
