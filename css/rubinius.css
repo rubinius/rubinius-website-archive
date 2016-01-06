@@ -1,3 +1,7 @@
+.row {
+  padding-bottom: 2em;
+}
+
 .content-container {
   width: 100%;
   max-width: 1000px;
@@ -44,7 +48,6 @@
 .lede-row {
   background-color: #5e5f5e;
   padding-top: 0;
-  padding-bottom: 1em;
   max-height: 40em;
   overflow-y: hidden;
 }
@@ -72,7 +75,6 @@
 .security-row {
   background-color: #0096b2;
   color: white;
-  padding-bottom: 1em;
 }
 
 .security-row p {
@@ -90,6 +92,10 @@
   margin-right: auto;
   padding-top: 3em;
   padding-bottom: 3em;
+}
+
+.package-button-row .row {
+  padding-bottom: 0;
 }
 
 .package-container {
@@ -151,6 +157,12 @@
   padding-left: 0;
 }
 
+.community-row h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
 .vision-row {
   background-color: #0e6170;
   color: white;
@@ -192,14 +204,16 @@
 .copyright-row {
   font-size: 1em;
   padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .footer-row {
   color: white;
   background-color: #2e2f2e;
   padding-top: 1em;
-  padding-bottom: 0;
+}
+
+.footer-row .row {
+  padding-bottom: 1em;
 }
 
 .footer-row h1 {
