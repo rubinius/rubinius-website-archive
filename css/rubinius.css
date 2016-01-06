@@ -211,6 +211,15 @@
   padding-left: 0;
 }
 
+.gallery-row h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+
+}
+
 .copyright-row {
   font-size: 1em;
   padding-top: 1em;
