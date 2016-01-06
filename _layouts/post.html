@@ -2,7 +2,14 @@
 layout: page
 atom_url: /feed/atom.xml
 ---
-<div class="container blog_posts">
+
+<section>
+  <div class="post-row">
+    <div class="container content-container">
+      <div class="packages-container">
+        <div class="row">
+          <div class="col-md-12">
+<div class="blog_posts">
   <h2 class="post_title">{{ page.title }}</h2>
   {% assign post = page %}
   {% include by_line.html %}
@@ -12,3 +19,9 @@ atom_url: /feed/atom.xml
   {% include mailchimp.html %}
   {% include recent_posts.html %}
 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
