@@ -148,10 +148,6 @@
   font-weight: bolder;
 }
 
-.package-row h2 {
-  text-align: left;
-}
-
 .packages-row {
   background-color: #efefef;
 }
@@ -365,4 +361,24 @@ footer-row a:hover {
   font-size: 1.2em;
   color: #444444;
   padding-left: 0.25em;
+}
+
+.post-row h1 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-size: 3.2em;
+  font-weight: bolder;
+}
+
+.post-row h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.post-row h3 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.8em;
 }
