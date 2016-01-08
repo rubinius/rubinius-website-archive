@@ -1,8 +1,14 @@
 ---
-layout: blog
+layout: page
 comment_count: true
 ---
 
+<section>
+  <div class="post-row">
+    <div class="container content-container">
+      <div class="packages-container">
+        <div class="row">
+          <div class="col-md-12">
 <div class="blog_posts">
 {% for post in site.posts limit:6 %}
   <div class="post">
@@ -16,3 +22,9 @@ comment_count: true
   </div>
 {% endfor %}
 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
