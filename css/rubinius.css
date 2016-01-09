@@ -382,3 +382,8 @@ footer-row a:hover {
   font-weight: normal;
   font-size: 1.8em;
 }
+
+img[alt="markdown_image"] {
+  max-width: 100%;
+  display: block;
+}

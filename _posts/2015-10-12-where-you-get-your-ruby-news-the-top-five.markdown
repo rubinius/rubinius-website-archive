@@ -11,11 +11,11 @@ Recently, I was curious where people get news about Ruby these days. Lacking fun
 
 If you're familiar with Ruby, it may come as no surprise that Peter Cooper's mighty media empire and [Ruby Weekly](http://rubyweekly.com) soundly takes first place. What surprised me is that Twitter scored so highly, above Hacker News and Reddit among the responders. Here is a graph of the top five sources cited by percentage of people (the percentages sum to greater than one hundred because many people listed more than one).
 
-![Top 5 sources for Ruby news](/images/top-5-sources-for-ruby-news.png)
+![markdown_image](/images/top-5-sources-for-ruby-news.png)
 
 The other aspect I looked at was how many sources people listed. Again, it was a surprise to me that so many listed a single source. Granted, something like Ruby Weekly, Hacker News, or Twitter aggregates a lot of content, but it was still interesting. Also note that this was difficult to calculate because the response field was completely unformatted. I've made some assumptions in parsing it but I think the results are mostly accurate. Here's a graph of the number of sources people cited, by percentage.
 
-![Number of sources cited](/images/number-of-ruby-sources-cited.png)
+![markdown_image](/images/number-of-ruby-sources-cited.png)
 
 Beginners and seasoned Ruby programmers alike need a constant stream of news and discussion to help them learn and grow as developers. It was sad to see one person answer with the following:
 
