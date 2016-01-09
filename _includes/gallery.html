@@ -2,28 +2,77 @@
   <div class="gallery-row">
     <div class="container content-container">
       <div class="gallery-container">
+
         <div class="row">
           <div class="col-md-12">
 <h1 id="gallery">Gallery</h1>
 
 <p>The gallery highlights Rubinius in action with testimonials, case studies, language implementations, and projects related to Rubinius.</p>
-
-<section class="testimonials">
-  <h2>Testimonials</h2>
-</section>
-
-<section class="case-studies">
-  <h2>Case Studies</h2>
-</section>
-
-<section class="languages">
-  <h2>Languages</h2>
-</section>
-
-<section class="languages">
-  <h2>Projects</h2>
-</section>
           </div>
+        </div>
+
+        <div class="row">
+<section class="testimonials">
+  <div class="col-md-12">
+  <h2>Testimonials</h2>
+  </div>
+  <div class="col-md-7">
+    <p>
+      <blockquote  cite="https://en.wikipedia.org/wiki/Darth_Vader">
+        I have felt a disturbance in the force; it is Rubinius.
+        <span class="quote-attribution">&mdash; Darth "Anakin Skywalker" Vader</span>
+      </blockquote>
+    </p>
+  </div>
+  <div class="col-md-5">
+    <p>
+      <blockquote cite="https://en.wikipedia.org/wiki/Gandalf">
+        I'm pretty sure I'd use this.
+        <span class="quote-attribution">&mdash; Gandalf</span>
+      </blockquote>
+    </p>
+  </div>
+</section>
+        </div>
+
+        <div class="row">
+<section class="case-studies">
+  <div class="col-md-12">
+  <h2>Case Studies</h2>
+  <p><a href="/gallery/case-studies/monmouth-telecom/">
+    <h3>Rubinius at Monmouth Telecom</h3></a></p>
+    <p><a href="http://www.monmouth.com">Ken Leland, CEO, Monmouth Telecom</a></p>
+  </div>
+</section>
+        </div>
+
+        <div class="row">
+<section class="languages">
+  <div class="col-md-12">
+    <h2>Languages</h2>
+    <ul>
+    {% for language in site.data.languages limit:8 %}
+      <li>
+        <div class="col-md-6 language-tile">
+          <h3>{{ language.name }}</h3>
+          <p><a href="{{ language.repository }}">{{ language.repository }}</a></p>
+          <p>{{ language.description }}</p>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+        </div>
+
+        <div class="row">
+          <!--
+<section class="projects">
+  <div class="col-md-12">
+    <h2>Projects</h2>
+  </div>
+</section>
+          -->
         </div>
       </div>
     </div>

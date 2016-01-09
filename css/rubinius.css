@@ -16,11 +16,17 @@
 }
 
 .site h2 {
-  text-align: center;
+  text-align: left;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  font-size: 3em;
-  font-weight: bolder;
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
+.site h3 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.8em;
 }
 
 .site p {
@@ -32,11 +38,13 @@
 .site blockquote {
   font-size: 1.5em;
   font-weight: 500;
+  font-style: italic;
   color: #777;
 }
 
 .quote-attribution {
   text-align: left;
+  font-style: normal;
   display: block;
 }
 
@@ -152,21 +160,9 @@
   background-color: #efefef;
 }
 
-.packages-row h2 {
-  text-align: left;
-  font-weight: normal;
-  font-size: 2.2em;
-}
-
 .release-source {
   list-style: none;
   padding-left: 0;
-}
-
-.community-row h2 {
-  text-align: left;
-  font-weight: normal;
-  font-size: 2.2em;
 }
 
 .vision-row {
@@ -192,6 +188,17 @@
   font-size: 80%;
 }
 
+.languages ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.language-tile {
+  max-height: 15em;
+  min-height: 15em;
+  overflow-y: hidden;
+}
+
 .team-list {
   list-style: none;
   padding-left: 1em;
@@ -205,15 +212,6 @@
   display: block;
   list-style: none;
   padding-left: 0;
-}
-
-.gallery-row h2 {
-  text-align: left;
-  font-weight: normal;
-  font-size: 2.2em;
-}
-
-
 }
 
 .copyright-row {
@@ -232,15 +230,14 @@
 }
 
 .footer-row h1 {
+  text-align: left;
   font-weight: 400;
   font-size: 1.5em;
-  text-align: left;
 }
 
 .footer-row h2 {
   font-weight: 400;
   font-size: 1.2em;
-  text-align: left;
 }
 
 .footer-row p {
@@ -366,24 +363,4 @@ footer-row a:hover {
 .post img {
   max-width: 100%;
   display: block;
-}
-
-.post-row h1 {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-  font-size: 3.2em;
-  font-weight: bolder;
-}
-
-.post-row h2 {
-  text-align: left;
-  font-weight: normal;
-  font-size: 2.2em;
-}
-
-.post-row h3 {
-  text-align: left;
-  font-weight: normal;
-  font-size: 1.8em;
 }
