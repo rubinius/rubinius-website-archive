@@ -4,6 +4,7 @@ comment_count: true
 ---
 
 {% for post in site.posts limit:6 %}
+  <div class="post">
     <h1 class="post_title">
       <a href="{{ post.url }}" title="{{ post.title }}" class="post_title">
       {{ post.title }}
@@ -11,4 +12,5 @@ comment_count: true
     </h1>
     {% include by_line.html %}
     {{ post.content }}
+  </div>
 {% endfor %}

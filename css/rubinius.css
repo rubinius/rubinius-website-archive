@@ -343,12 +343,12 @@ footer-row a:hover {
 #mc_embed_signup #mce-success-response {color:#529214; display:none;}
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 
-.blog_posts ul li,
-.blog_posts ol li {
+.post ul li,
+.post ol li {
   font-size: 1.2em;
 }
 
-.blog_posts div.by_line span.author {
+.post div.by_line span.author {
   font-size: 1.5em;
   font-weight: bold;
   color: #666666;
@@ -357,10 +357,15 @@ footer-row a:hover {
   border-right: 1px solid #cccccc;
 }
 
-.blog_posts div.by_line span.date {
+.post div.by_line span.date {
   font-size: 1.2em;
   color: #444444;
   padding-left: 0.25em;
+}
+
+.post img {
+  max-width: 100%;
+  display: block;
 }
 
 .post-row h1 {
@@ -381,9 +386,4 @@ footer-row a:hover {
   text-align: left;
   font-weight: normal;
   font-size: 1.8em;
-}
-
-img[alt="markdown_image"] {
-  max-width: 100%;
-  display: block;
 }
