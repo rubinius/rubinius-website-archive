@@ -57,10 +57,10 @@
 <p>Source code tarballs are available for the following releases:</p>
 
 <ul class="release-source">
-  {% for release in site.data.releases %}
-    <li class="{% cycle 'odd', 'even' %}">
-      <a href="{{ site.data.urls.s3_base_url }}{{ release.version }}.tar.bz2">
-        rubinius-{{ release.version }}.tar.bz2 ({{ release.date }})</a>
+  {% for release in site.data.releases limit:4 %}
+    <li>
+      <p><a href="{{ site.data.urls.s3_base_url }}{{ release.version }}.tar.bz2">
+        {{ release.version }} ({{ release.date }})</a></p>
     </li>
   {% endfor %}
 </ul>
