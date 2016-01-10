@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+
+<section>
+  <div class="container content-container">
+    <div class="gallery-container">
+      <div class="row">
+<section class="languages">
+  <div class="col-md-12">
+    <h2 id="languages">Languages</h2>
+    <ul>
+    {% for language in site.data.languages %}
+      <li>
+        <div class="col-md-6">
+          <div class="language-tile">
+            <h3>{{ language.name }}</h3>
+            <div class="language-tile-body">
+              <p><a href="{{ language.repository }}">{{ language.repository }}</a></p>
+              <p>{{ language.description }}</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+      </div>
+    </div>
+  </div>
+</section>
