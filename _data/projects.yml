@@ -1,0 +1,8 @@
+---
+- name: "Atom Rubinius Terminal"
+  repository: "https://github.com/rubinius/atom-rubinius-terminal"
+  link: "https://atom.io/packages/atom-rubinius-terminal"
+  description: "A terminal emulator for the Atom editor that is pre-configured for running Rubinius."
+- name: "Rubinius Console"
+  repository: "https://github.com/rubinius/rubinius-console"
+  description: "A console interface to the Rubinius language platform."

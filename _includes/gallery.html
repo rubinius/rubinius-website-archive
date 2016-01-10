@@ -53,10 +53,14 @@
     <ul>
     {% for language in site.data.languages limit:8 %}
       <li>
-        <div class="col-md-6 language-tile">
-          <h3>{{ language.name }}</h3>
-          <p><a href="{{ language.repository }}">{{ language.repository }}</a></p>
-          <p>{{ language.description }}</p>
+        <div class="col-md-6">
+          <div class="language-tile">
+            <h3>{{ language.name }}</h3>
+            <div class="language-tile-body">
+              <p><a href="{{ language.repository }}">{{ language.repository }}</a></p>
+              <p>{{ language.description }}</p>
+            </div>
+          </div>
         </div>
       </li>
     {% endfor %}
@@ -66,13 +70,26 @@
         </div>
 
         <div class="row">
-          <!--
 <section class="projects">
   <div class="col-md-12">
     <h2 id="projects">Projects</h2>
+    <ul>
+    {% for project in site.data.projects limit:8 %}
+      <li>
+        <div class="col-md-6">
+          <div class="project-tile">
+            <h3>{{ project.name }}</h3>
+            <div class="project-tile-body">
+              <p><a href="{{ project.repository }}">{{ project.repository }}</a></p>
+              <p>{{ project.description }}</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
   </div>
 </section>
-          -->
         </div>
       </div>
     </div>

@@ -222,6 +222,49 @@
   max-height: 15em;
   min-height: 15em;
   overflow-y: hidden;
+  margin: 0;
+  margin-top: 0.5em;
+  border-style: dotted;
+  border-width: thin;
+}
+
+.language-tile h3 {
+  padding: 0.1em;
+  padding-left: 0.5em;
+  background-color: #828282;
+  color: white;
+  margin-top: 0;
+}
+
+.language-tile-body {
+  margin: 0 0.5em;
+}
+
+.projects ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-tile {
+  max-height: 15em;
+  min-height: 15em;
+  overflow-y: hidden;
+  margin: 0;
+  margin-top: 0.5em;
+  border-style: dotted;
+  border-width: thin;
+}
+
+.project-tile h3 {
+  padding: 0.1em;
+  padding-left: 0.5em;
+  background-color: #828282;
+  color: white;
+  margin-top: 0;
+}
+
+.project-tile-body {
+  margin: 0 0.5em;
 }
 
 .team-list {
