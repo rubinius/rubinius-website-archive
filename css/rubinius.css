@@ -69,9 +69,7 @@
 }
 
 .carousel-inner {
-  max-height: 44em;
-  min-height: 44em;
-  overflow-y: hidden;
+  min-height: 45em;
 }
 
 .lede-row h1 {
