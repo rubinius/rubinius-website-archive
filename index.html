@@ -27,20 +27,21 @@ layout: index
   <div class="lede-row">
     <div id="lede-carousel" class="carousel slide">
       <ol class="carousel-indicators">
-        <li data-target="#lede-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#lede-carousel" data-slide-to="0"></li>
         <li data-target="#lede-carousel" data-slide-to="1"></li>
         <li data-target="#lede-carousel" data-slide-to="2"></li>
         <li data-target="#lede-carousel" data-slide-to="3"></li>
+        <li data-target="#lede-carousel" data-slide-to="4" class="active"></li>
       </ol>
       <!-- Carousel items -->
       <div class="carousel-inner">
-        <div class="active item">
+        <div class="item">
           <div class="container content-container lede-container">
             <div class="row">
               <div class="col-md-12">
 <h1>Rubinius Compute - Programming for the Internet</h1>
 
-<p>Today, I'm announcing <a href="http://compute.rubinius.com"><strong>Rubinius Compute</strong></a>, a platform for computation inspired by <a href="https://aws.amazon.com/lambda/">Amazon Lambda</a> that builds on the Rubinius language platform.</p>
+<p><a href="http://compute.rubinius.com"><strong>Rubinius Compute</strong></a> is a platform for computation inspired by <a href="https://aws.amazon.com/lambda/">Amazon Lambda</a> that builds on the Rubinius language platform.</p>
 
 <div class="compute-cta">
   <p><a class="compute-cta-button" href="http://compute.rubinius.com">Learn about Compute</a></p>
@@ -50,7 +51,7 @@ layout: index
 
 <p>The problem is, there's a massive asymmetry in the network. A relatively tiny number of "smart" nodes do all the work and receive most of the communication, while an enormous number of nodes mostly just add load to the network.</p>
 
-<p><a href="http://rubinius.com/2015/11/10/rubinius-compute-programming-for-the-internet/">Read more...</a></p>
+<p><a href="/2015/11/10/rubinius-compute-programming-for-the-internet/">Read more...</a></p>
               </div>
             </div>
           </div>
@@ -69,7 +70,7 @@ layout: index
 
 <p>Survey: <a href="https://goo.gl/forms/cf8OstwXmI">Who's Using Ruby (or Not), for What, and Why?</a></p>
 
-<p><a href="http://rubinius.com/2015/08/31/who-is-using-ruby-for-what-and-why/">Read more...</a></p>
+<p><a href="/2015/08/31/who-is-using-ruby-for-what-and-why/">Read more...</a></p>
               </div>
             </div>
           </div>
@@ -80,7 +81,7 @@ layout: index
               <div class="col-md-12">
 <h1>Rubinius Analyst - Know Your App</h1>
 
-<p>Today, I'm announcing <a href="http://analyst.rubinius.com"><strong>Analyst</strong></a>, the first product from <a href="http://rubinius.com/2015/10/27/rubinius-inc-a-benefit-company/">Rubinius, Inc</a>, building on the technology in the Rubinius language platform.</p>
+<p><a href="http://analyst.rubinius.com"><strong>Rubinius Analyst</strong></a> is the first product from <a href="/2015/10/27/rubinius-inc-a-benefit-company/">Rubinius, Inc</a>, building on the technology in the Rubinius language platform.</p>
 
 <p><a href="http://analyst.rubinius.com"><strong>Analyst</strong></a> is a tool for anyone who has struggled to understand, evolve, transform, and scale an application.</p>
 
@@ -88,7 +89,7 @@ layout: index
 
 <p>During the past 5-10 years, the world of programming has changed significantly. Languages like Clojure, Go, Rust, and Scala are commanding ever greater mind-share, and JavaScript has pushed into new territory, both within the browser and outside it. Programmers are not just switching languages, they are also changing the way they build applications.</p>
 
-<p><a href="http://rubinius.com/2015/11/04/rubinius-analyst-know-your-app/">Read more...</a></p>
+<p><a href="/2015/11/04/rubinius-analyst-know-your-app/">Read more...</a></p>
               </div>
             </div>
           </div>
@@ -107,21 +108,33 @@ layout: index
 
 <p>I elected to form a benefit company, rather than a foundation or non-profit, because I believe it provides the lowest administrative overhead while building a sustainable economic model to support Rubinius as an open source project. A portion of the shares of Rubinius, Inc are dedicated solely to sustaining Rubinius.</p>
 
-<p><a href="http://rubinius.com/2015/10/27/rubinius-inc-a-benefit-company/">Read more...</a></p>
+<p><a href="/2015/10/27/rubinius-inc-a-benefit-company/">Read more...</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <div class="container content-container lede-container">
+            <div class="row">
+              <div class="col-md-12">
+<h1>Rubinius 3.0: The Third Epoch</h1>
+
+<p>A little more than a year ago, I published a series of posts about the focus for Rubinius 3.0 (<a href="/2014/11/10/rubinius-3-0-part-1-the-rubinius-team/">part 1</a>, <a href="/2014/11/11/rubinius-3-0-part-2-the-process/">part 2</a>, <a href="/2014/11/12/rubinius-3-0-part-3-the-instructions/">part 3</a>, <a href="/2014/11/13/rubinius-3-0-part-4-the-system-and-tools/">part 4</a>, <a href="/2014/11/14/rubinius-3-0-part-5-the-language/">part 5</a>). We spent a lot of time last year on some architecture improvements, so now it's time to get busy on those 3.0 goals. This post will catch you up to date.</p>
+
+<h2>What's In A Version Number</h2>
+
+<p>I wrote two posts recently on the Rubinius <a href="/2015/09/22/major-minor-maximize-delivering-features-minimize-trouble/">versioning scheme</a> and <a href="/2015/09/23/distributed-coding-distributed-releases/">release process</a>. Review those posts for details, but I'll summarize the main ideas here.</p>
+
+<p>First, Rubinius uses a versioning scheme that associates a "version number", in the form of EPOCH.SEQ, with a particular git commit SHA via a git tag. The first part of the version number, the EPOCH, signifies "a period of time marked by notable events or particular characteristics" (see the dictionary definition). This post explains the Rubinius 3.x epoch.</p>
+
+<p>The SEQ is a monotonically increasing number that has no other meaning than to signal that newer code is available. The Rubinius versioning scheme is emphatically <em>not</em> <a href="http://semver.org">SemVer</a>.</p>
+
+<p><a href="/2016/01/07/rubinius-3-0-the-third-epoch/">Read more...</a></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Carousel nav -->
-      <a class="left carousel-control" href="#lede-carousel" role="button" data-slide="prev">
-       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-       <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#lede-carousel" role="button" data-slide="next">
-       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-       <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 </section>
@@ -180,7 +193,7 @@ layout: index
           <div class="col-md-12">
 <h1 id="security">Reporting Security Issues</h1>
 
-<p>We work hard to provide a secure environment for running your code. If you find a security issue, please email <a href="mailto:security@rubinius.com">security@rubinius.com</a>. Encrypt your email using <a href="https://github.com/rubinius/rubinius/blob/master/security.pub">our public key</a> (also available <a href="http://rubinius.com/security.pub">on the our website</a> or from the <a href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0x0F7D2F9537F9880C">MIT PGP database</a>).</p>
+<p>We work hard to provide a secure environment for running your code. If you find a security issue, please email <a href="mailto:security@rubinius.com">security@rubinius.com</a>. Encrypt your email using <a href="https://github.com/rubinius/rubinius/blob/master/security.pub">our public key</a> (also available <a href="/security.pub">on the our website</a> or from the <a href="https://pgp.mit.edu/pks/lookup?op=vindex&search=0x0F7D2F9537F9880C">MIT PGP database</a>).</p>
 
 <p>Our policy is to respond to you within 72 hours and we will work with you to create a fix for the issue. Sending an email to <a href="mailto:security@rubinius.com">security@rubinius.com</a> will not result in a public disclosure. We will work with you on a public disclosure after we have prepared a fix.</p>
 

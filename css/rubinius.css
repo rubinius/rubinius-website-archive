@@ -66,14 +66,25 @@
 .lede-row {
   background-color: #5e5f5e;
   padding-top: 0;
-  max-height: 40em;
+}
+
+.carousel-inner {
+  max-height: 44em;
+  min-height: 44em;
   overflow-y: hidden;
 }
 
 .lede-row h1 {
   color: white;
+  font-size: 3em;
+  font-weight: 400;
   padding-top: 0;
   margin-top: 1em;
+}
+
+.lede-row h2,
+.lede-row h3 {
+  color: white;
 }
 
 .lede-row p {
@@ -86,6 +97,20 @@
 }
 
 .lede-row a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.book-row {
+  background-color: #0e6170;
+  color: white;
+}
+
+.book-row p {
+  color: white;
+}
+
+.book-row a {
   color: white;
   font-weight: bold;
 }
