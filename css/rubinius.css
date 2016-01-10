@@ -321,6 +321,7 @@ footer-row a:hover {
 }
 
 .footer-menu {
+  min-height: 14em;
 }
 
 .footer-menu-header {
