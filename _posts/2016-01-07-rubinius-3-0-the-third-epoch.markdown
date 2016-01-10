@@ -45,7 +45,7 @@ The top things we're focused on with LLVM are these:
 These areas of focus will help make Rubinius more useful across problems that often appear to be in opposition, like having an executable versus a flexible managed runtime that supports quick prototyping and experimentation. These usually represent _different phases_ in a program's evolution, and they tend to be cyclical, not linear. Being forced to choose up-front to use a compiled language or managed runtime is unnecessary.
 
 
-## Elimating The Ruby
+## Eliminating The Ruby
 
 Two priorities for Rubinius 3.x are removing Ruby as a build dependency and de-coupling Ruby from the Rubinius core systems.
 
