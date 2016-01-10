@@ -347,6 +347,68 @@ footer-row a:hover {
   font-size: 1.2em;
 }
 
+/* Legacy documentation language styling
+   TODO: remove
+*/
+
+.doc-languages nav span.label {
+  font-weight: bold;
+}
+
+.doc-languages nav {
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.doc-languages nav ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.doc-languages nav li {
+  border-left: 1px solid #ccc;
+  display: inline;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0 0 0 .25em;
+  padding: 0 0 0 .25em;
+  text-align: right;
+  padding: 0 .75em;
+  white-space: pre;
+}
+
+.doc-languages nav li:first-child {
+  border: none;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.doc-languages nav li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.doc-languages nav li a {
+  padding: .5em;
+}
+
+.doc-languages nav li a.current {
+  background: #325986;
+  background: linear-gradient(#325986, #001A31);
+  color: white;
+  border-radius: .25em;
+}
+
+.doc_page_nav {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.doc_page_nav span.label {
+  font-weight: bold;
+}
+
 /* MailChimp Form Embed Code - Slim - 08/17/2011 */
 #mc_embed_signup form {
   display: block;
