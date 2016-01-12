@@ -7,6 +7,8 @@ twitter: brixen
 
 With the 2.3 release, Ruby has introduced a new operator. Designated the "lonely operator", this new Ruby syntax (`&.`) adds unnecessary complexity, inconsistency, and additional confusion for developers.
 
+**Edit:** _Here is the [Ruby 2.3 News file](https://github.com/ruby/ruby/blob/trunk/doc/NEWS-2.3.0#L28-L41) describing the "lonely operator" (aka the "safe navigation operator"). And this is the [Ruby Redmine feature ticket](https://bugs.ruby-lang.org/issues/11537)._
+
 Ruby is often criticized for code that developers cannot easily understand or reason about. This new operator creates a second way to call a method that doesn't improve code, nor does it improve the ability of a developer to reason about the code.
 
 This post dissects some of the confusion about nil and explains the significant downsides of this new operator.
