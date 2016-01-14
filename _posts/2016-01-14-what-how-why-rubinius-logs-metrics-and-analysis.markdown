@@ -66,7 +66,7 @@ $ rbx -Xsystem.metrics.target=./metrics.dat.1 \
       some_script.rb
 ```
 
-I've written [a quick script](https://gist.github.com/brixen/26ee9b8189ea7a65f6ff) that I'll be packaging up as the Rubinius Grapher gem to create a quick terminal ASCII groph from the data.
+I've written [a quick script](https://gist.github.com/brixen/26ee9b8189ea7a65f6ff) that I'll be packaging up as the Rubinius Grapher gem to create a quick terminal ASCII graph from the data.
 
 <div class="rubinius-logs-metrics-analysis">
 <script src="https://gist.github.com/brixen/c6bc41ba15bcc3bf238d.js"></script>
@@ -87,7 +87,7 @@ From the above discussion of inspectable systems, we have a clear view of what i
 
 We've started to build this system and it will be the topic of many future posts, so I'm only introducing it briefly here.
 
-One of the major aspects of analysis in Rubinius rooted in how we have built our object memory. Typically, when we think of memory, we think of our Ruby object, but not usually of _how our Ruby methods are running_.
+One of the major aspects of analysis in Rubinius is rooted in how we have built our object memory. Typically, when we think of memory, we think of our Ruby objects, but not usually of _how our Ruby methods are running_.
 
 In Rubinius, the object graph (ie the Ruby objects and the graph created by these objects referencing each other) _also contains information about the ruby methods_. The _inline cache_ objects that record the type of object at a method call site are just plain Ruby objects. For example, in method `meow` below, the type of `repeat` is Fixnum (because we pass in 5 below), so when `meow` runs, the inline cache for `repeat.times` records that `repeat` is a Fixnum, and also where the `times` method is found.
 
