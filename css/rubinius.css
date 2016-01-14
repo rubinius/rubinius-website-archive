@@ -335,6 +335,12 @@ footer-row a:hover {
   padding-left: 0px;
 }
 
+/* Blog post specific */
+.rubinius-logs-metrics-analysis .gist .blob-wrapper {
+  max-height: 20em !important;
+  overflow:auto;
+}
+
 /* TODO: Replace legacy CSS with new CSS */
 .comments {
   text-align: center;
