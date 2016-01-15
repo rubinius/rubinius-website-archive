@@ -341,6 +341,21 @@ footer-row a:hover {
   overflow:auto;
 }
 
+.blog-max-width-pre {
+  max-width: 80%;
+  margin: 1em 4em;
+  padding: 1em;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: #888;
+  background-color: #efefef;
+}
+
+.blog-max-width-pre p {
+  font-size: 1em;
+  font-family: monospace;
+}
+
 /* TODO: Replace legacy CSS with new CSS */
 .comments {
   text-align: center;

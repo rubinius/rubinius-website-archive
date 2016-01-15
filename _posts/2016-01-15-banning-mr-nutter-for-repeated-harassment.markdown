@@ -1,0 +1,114 @@
+---
+layout: post
+title: "Banning Mr. Nutter For Repeated Harassment"
+author: Brian Shirai
+twitter: brixen
+---
+
+Due to repeated harassment, personal attacks, and unwanted contact directed at me over nearly 10 years, I have decided to ban Charles Nutter from any participation in any forum or space, online or in-person, that is primarily devoted to the Rubinius project or any project primarily maintained by the Rubinius project.
+
+I'm writing this post to tell you what happened, why I am taking this action, and to answer some of the questions I've received about it when discussing this with various people.
+
+I'm posting this publicly because of the nature of Mr. Nutter's position in the Ruby community and the fact that repeated requests over many years to stop making personal attacks, and even to stop making contact, have been treated dismissively and have not been respected.
+
+This post is not for Mr. Nutter's benefit. This post is for two different groups of people participating in the community: 1. for people who may observe Mr. Nutter's behavior and think it is acceptable: **this post is to make clear that such behavior _is not_ acceptable and _will not be_ tolerated;** 2. for people who observe Mr. Nutter's behavior and fear they may also be subjected to it: **this post is to make clear that we do not accept harassment and we will take action against it.**
+
+
+## What happened?
+
+On January 2nd, Mr. Nutter inserted himself into a public Twitter conversation among some people who were discussing, and who disagreed with or questioned, the Rubinius versioning scheme and release process.
+
+&nbsp;
+
+![https://twitter.com/headius/status/683510909902393348](/images/nutter_683510909902393348.png)
+
+&nbsp;
+
+One of the conversation participants had mentioned the Rubinius Twitter account in a tweet that was not obviously related to any Rubinius tweet. Clicking into the tweet to view the conversation, I discovered [Mr Nutter's tweet](https://twitter.com/headius/status/683510909902393348) above.
+
+I then sent Mr. Nutter the following email:
+
+&nbsp;
+
+<div class="blog-max-width-pre">
+<p>Charles,</p>
+
+<p>I have many, many times requested that when you disagree with [me]<sup><a id="banning-fn1" href="#banning-fn1-text">1</a></sup>, you not resort to personal attacks. Such behavior is unwanted, unprofessional, and unacceptable in any community. Repeatedly, you have agreed to stop making personal attacks, yet continue to do so.</p>
+
+<p>Recently, you inserted yourself into discussions about the Rubinius versioning and release process, something that has absolutely nothing to do with you, and to which you were not invited, and have again resorted to making personal attacks.</p>
+
+<p><a href="https://twitter.com/headius/status/683510909902393348">https://twitter.com/headius/status/683510909902393348</a>
+
+<p>(Attached is a scree shot if you delete the tweet.)</p>
+
+<p>I have reported your behavior to Evan Phoenix and Sarah Mei. I'll also take the following actions:</p>
+
+<p>1. I will write a Rubinius blog post calling out your behavior as a violation of the Rubinius Code of Conduct as referenced in this post ( http://rubinius.com/2014/11/10/rubinius-3-0-part-1-the-rubinius-team/) and shortly linked on the website. *You are banned from participating in any Rubinius-related project, space, and event. This includes any thread on any public forum, mailing list, or issue that is specifically related to Rubinius.* I'll be publishing this email in that post.</p>
+
+<p>2. As I have a company that is intimately related to the Rubinius project, and on which your actions can have deleterious economic consequences, I will investigate any legal actions that may be available against you now or in the future.</p>
+
+<p>You have engaged in these unprofessional and unacceptable behaviors for nearly ten years. You've repeatedly acknowledged they are unacceptable, promised to cease, yet continue to do so.</p>
+
+<p>Regards,</p>
+<p>Brian</p>
+</div>
+
+&nbsp;
+
+Mr. Nutter's response to my email was the following:
+
+<div class="blog-max-width-pre">
+<p>Don't email me again.</p>
+</div>
+
+
+## Some questions and answers
+
+**Q. Why are you making such a big deal about this? Isn't this a relatively minor incident?**
+
+Yes, there is a vast distance between the sort of behaviors Mr. Nutter has displayed over the years and the level of abusive harassment that exists online.
+
+I am well aware of the privilege that I enjoy. I am aware of a significant number of women on Twitter who receive astonishing, brutal, despicable harassment every day. I am not in any way suggesting that these different types of harassment are equivalent.
+
+However, we are not going to tolerate the standard, "Well, if it's not something like a rape threat, it's not really harassment". Harassment of any kind absolutely and unquestionably needs to stop. Period.
+
+
+**Q. You only recently updated the website and project README to include a Code of Conduct. Isn't banning Mr. Nutter unfair?**
+
+No, it is not unfair. I have had numerous conversations with Mr. Nutter about this for years. His repeated behavior makes it clear that he thinks his behavior is justified and acceptable. More importantly, Mr. Nutter readily [plays the civility card](https://github.com/ruby/spec/issues/182#issuecomment-170202302) when he desires. He's not confused about what is and is not appropriate behavior.
+
+
+**Q. Won't taking this action scare other people away from contributing to the project? Won't people fear harsh consequences for a "minor" conduct infraction?**
+
+No, it won't. No one should be "scared" of contributing to a project that expects everyone to be treated with respect. If anyone thinks they may have trouble maintaining respectful interactions with others, they are not a good "culture fit" for the Rubinius project.
+
+
+**Q. Why did you report this to Evan Phoenix and Sarah Mei? What do they have to do with this?**
+
+Evan Phoenix and Sarah Mei are directors of [Ruby Central](http://rubycentral.org), the organization that runs the two most important Ruby-related conferences in the world: RubyConf and RailsConf. They take responsibility for establishing the codes of conduct at those conferences. Mr. Nutter is a frequent speaker at Ruby conferences, and I think they need to be aware of situations like this.
+
+
+**Q. Why did you threaten legal action?**
+
+The biggest reason that so much harassment exists online is because the people doing it don't think there are consequences for their behavior.
+
+It is true that often the harassment does not violate criminal codes. However, civil damages are a different area of law with different remedies. The criminal and civil legal systems exist to make society as a whole better for everyone. Harassment doesn't make society better and if it had legal consequences, it would be far less common.
+
+
+**Q. What can I do to contribute to a more respectful community?**
+
+Simple, demonstrate respect for others and expect to be treated with respect in return.
+
+There are lots of problems to solve, and lots of things to have disagreements about, and conflict can be sustained without harassment and personal attacks.
+
+Consider this tweet on [Principles of Conversation](https://twitter.com/andrew_zolli/status/476360075398119424) that I read in [Andrew Zolli](https://twitter.com/andrew_zolli) feed:
+
+1. Together, we know more.
+1. Be tough on ideas, gentle on people.
+1. Avoid jargon.
+1. Threads beat points.
+1. Proceed with generosity.
+
+---
+
+<sup><a id="banning-fn1-text" href="#banning-fn1">1</a></sup> <span style="font-size: 1em;">Edited for clarity.</span>
