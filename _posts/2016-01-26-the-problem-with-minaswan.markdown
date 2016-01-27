@@ -74,7 +74,7 @@ There are four important aspects to an argument. The purpose of arguing is to ex
 
 Without open-minded people, you spend time futilely trying to change someone's mind. It's impossible to change someone's mind. You can provide facts and concepts, but people make up their own minds. Having the goal of changing someone's mind virtually ensures you will argue ineffectively.
 
-Without people who have something something to gain from understanding your position, expressing a truth or disputing a falsehood simply doesn't matter. People are busy. They don't have extra time to care about every falsehood perpetuated in the world. If they have something to gain, they _may_ listen to you. Even if they have a lot to gain, they may not.
+Without people who have something to gain from understanding your position, expressing a truth or disputing a falsehood simply doesn't matter. People are busy. They don't have extra time to care about every falsehood perpetuated in the world. If they have something to gain, they _may_ listen to you. Even if they have a lot to gain, they may not.
 
 To repeat: Your audience are the people who are open-minded about the topic and have something to gain from _understanding_ your message (even if they disagree with it).
 
