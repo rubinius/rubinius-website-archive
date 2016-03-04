@@ -1,5 +1,6 @@
 .bundle
 .rbx
+.jekyll-metadata
 *.un~
 public/*
 build/*
